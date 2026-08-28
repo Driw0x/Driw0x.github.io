@@ -5,34 +5,41 @@ export const skills: Skill[] = [
     category: "Langage",
     title: "Python",
     description:
-      "Développement d'applications, automatisation, intelligence artificielle et backend.",
+      "Développement d'applications, automatisation, traitement de données et intelligence artificielle.",
   },
 
   {
     category: "Intelligence Artificielle",
     title: "Machine Learning",
     description:
-      "Prétraitement des données, classification, évaluation de modèles et analyse.",
+      "Prétraitement des données, entraînement, classification et évaluation de modèles avec Scikit-learn.",
   },
 
   {
-    category: "LLM",
-    title: "RAG",
+    category: "Intelligence Artificielle",
+    title: "Deep Learning",
     description:
-      "Recherche augmentée, embeddings et génération de réponses contextualisées.",
+      "Conception et expérimentation de modèles d'apprentissage profond.",
   },
 
   {
-    category: "Recherche vectorielle",
-    title: "FAISS",
+    category: "Vision par ordinateur",
+    title: "Traitement d'image",
     description:
-      "Indexation d'embeddings et recherche de similarité à grande échelle.",
+      "Traitement et analyse d'images avec OpenCV, notamment pour des applications de vision et d'OCR.",
+  },
+
+  {
+    category: "Données",
+    title: "Data Science",
+    description:
+      "Manipulation, transformation et analyse de données avec NumPy, Pandas et SQL.",
   },
 
   {
     category: "Développement",
     title: "Git",
     description:
-      "Gestion de versions, collaboration et suivi de projets.",
+      "Gestion de versions, suivi des développements et organisation de projets.",
   },
 ];
