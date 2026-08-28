@@ -9,9 +9,9 @@ function Navbar({ projectsPage = false }: NavbarProps) {
 
   const links = projectsPage
     ? [
-        { href: base, label: "Accueil" },
-        { href: `${base}projects`, label: "Projets" },
-        { href: `${base}#contact`, label: "Contact" },
+        { href: import.meta.env.BASE_URL, label: "Accueil" },
+        { href: `${import.meta.env.BASE_URL}#/projects`, label: "Projets" },
+        { href: `${import.meta.env.BASE_URL}#contact`, label: "Contact" },
       ]
     : [
         { href: "#about", label: "À propos" },

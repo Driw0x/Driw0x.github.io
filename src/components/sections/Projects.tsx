@@ -21,7 +21,7 @@ export default function Projects() {
 
         <div className="mt-10 flex justify-center">
           <a
-            href={`${import.meta.env.BASE_URL}projects`}
+            href={`${import.meta.env.BASE_URL}#/projects`}
             className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white transition hover:border-white/20 hover:bg-white/10"
           >
             Voir tous les projets

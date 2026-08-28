@@ -11,10 +11,9 @@ import Personal from "./components/sections/Personal";
 import ProjectsPage from "./pages/ProjectsPage";
 
 export default function App() {
-  const path = window.location.pathname;
-  const base = import.meta.env.BASE_URL;
+  const path = window.location.hash;
 
-  if (path === `${base}projects` || path === `${base}projects/`) {
+  if (path === "#/projects") {
     return <ProjectsPage />;
   }
 
