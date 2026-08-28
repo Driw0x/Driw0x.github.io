@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Container from "../common/Container";
 import SectionTitle from "../common/SectionTitle";
+import { projects } from "../../data/projects";
 
 const stats = [
   {
@@ -9,19 +10,19 @@ const stats = [
     description: "Sorbonne Université",
   },
   {
-    value: "2",
-    label: "Projets réalisés",
-    description: "CodeAgent & Projet AI2D",
+    value: projects.length.toString(),
+    label: "Projets techniques",
+    description: "IA, Computer Vision & développement",
   },
   {
-    value: "5",
+    value: "6",
     label: "Domaines techniques",
-    description: "Python, ML, RAG, FAISS, Git",
+    description: "Python, ML, Deep Learning, Vision, Data, Git",
   },
   {
     value: "2027",
     label: "Recherche de stage",
-    description: "Fin d'études",
+    description: "Stage de fin d'études",
   },
 ];
 
@@ -32,7 +33,7 @@ export default function About() {
         <SectionTitle
           eyebrow="Profil"
           title="Quelques informations clés."
-          description="Un aperçu rapide de mon parcours académique, de mes projets et de mes domaines d'intérêt."
+          description="Un aperçu de mon parcours, de mes projets et de mes principaux domaines techniques."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
