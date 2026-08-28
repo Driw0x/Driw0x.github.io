@@ -12,7 +12,7 @@ export const skills: Skill[] = [
     category: "Intelligence Artificielle",
     title: "Machine Learning",
     description:
-      "Prétraitement des données, entraînement, classification et évaluation de modèles avec Scikit-learn.",
+      "Prétraitement des données, entraînement et évaluation de modèles avec Scikit-learn, Pandas et NumPy.",
   },
 
   {
@@ -33,7 +33,7 @@ export const skills: Skill[] = [
     category: "Données",
     title: "Data Science",
     description:
-      "Manipulation, transformation et analyse de données avec NumPy, Pandas et SQL.",
+      "Manipulation, analyse et exploitation de données, notamment avec Python et SQL.",
   },
 
   {
