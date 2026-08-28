@@ -44,6 +44,14 @@ export default function Hero() {
                 <FiArrowDown />
               </Button>
 
+              <Button
+                href="/cv/Victor_Ye_CV.pdf"
+                variant="secondary"
+                external
+              >
+                Voir mon CV
+              </Button>
+
               <Button href="#contact" variant="secondary">
                 Me contacter
               </Button>

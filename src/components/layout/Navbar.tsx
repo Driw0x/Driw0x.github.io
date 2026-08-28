@@ -10,7 +10,11 @@ function Navbar({ projectsPage = false }: NavbarProps) {
   const links = projectsPage
     ? [
         { href: "/", label: "Accueil" },
-        { href: "#/projects", label: "Projets" },
+        {
+          href: `${base}cv/Victor_Ye_CV.pdf`,
+          label: "CV",
+          external: true,
+        },
         { href: "/#contact", label: "Contact" },
       ]
     : [
@@ -18,6 +22,11 @@ function Navbar({ projectsPage = false }: NavbarProps) {
         { href: "#skills", label: "Compétences" },
         { href: "#projects", label: "Projets" },
         { href: "#timeline", label: "Parcours" },
+        {
+          href: `${base}cv/Victor_Ye_CV.pdf`,
+          label: "CV",
+          external: true,
+        },
         { href: "#contact", label: "Contact" },
       ];
 
@@ -36,6 +45,8 @@ function Navbar({ projectsPage = false }: NavbarProps) {
             <a
               key={link.href}
               href={link.href}
+              target={"external" in link && link.external ? "_blank" : undefined}
+              rel={"external" in link && link.external ? "noreferrer" : undefined}
               className="transition hover:text-cyan-200"
             >
               {link.label}
