@@ -23,7 +23,29 @@ export const projects: Project[] = [
 
     featured: true,
   },
-  
+
+  {
+    title: "MiniMind DirectML",
+
+    subtitle: "Adaptation Windows / DirectML de MiniMind",
+
+    description:
+      "Fork de MiniMind visant à permettre l'exécution et l'entraînement de petits modèles de langage sur Windows avec des GPU compatibles DirectX 12, sans dépendance à CUDA. Le projet adapte progressivement le pipeline d'entraînement et d'inférence à PyTorch DirectML.",
+
+    technologies: [
+      "Python",
+      "PyTorch",
+      "DirectML",
+      "LLM",
+      "Deep Learning",
+    ],
+
+    github: "https://github.com/Driw0x/minimind",
+
+    status: "En développement",
+
+  },
+
   {
     title: "Genshin Achievement Scanner",
 
