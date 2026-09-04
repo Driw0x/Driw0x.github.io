@@ -47,6 +47,26 @@ export const projects: Project[] = [
   },
 
   {
+    title: "Kaggriculture",
+
+    subtitle: "Agent autonome pour une compétition Kaggle",
+
+    description:
+      "Développement d'un agent autonome pour une compétition de stratégie au tour par tour sur Kaggle. Le projet explore la planification et l'optimisation des décisions liées aux ressources, à la production, aux terrains et au marché.",
+
+    technologies: [
+      "Python",
+      "Intelligence Artificielle",
+      "Algorithmes",
+      "Optimisation",
+    ],
+
+    github: "https://github.com/Driw0x/Kaggriculture",
+
+    status: "En développement",
+  },
+  
+  {
     title: "Genshin Achievement Scanner",
 
     subtitle: "Scanner semi-automatique de succès Genshin Impact",
