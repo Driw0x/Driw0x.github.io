@@ -21,7 +21,7 @@ export const projects: Project[] = [
 
     status: "En développement",
 
-    featured: true,
+    featured: false,
   },
 
   {
@@ -64,6 +64,8 @@ export const projects: Project[] = [
     github: "https://github.com/Driw0x/Kaggriculture",
 
     status: "En développement",
+
+    featured: true,
   },
   
   {
