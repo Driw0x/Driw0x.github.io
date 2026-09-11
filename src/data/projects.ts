@@ -49,16 +49,17 @@ export const projects: Project[] = [
   {
     title: "Kaggriculture",
 
-    subtitle: "Agent autonome pour une compétition Kaggle",
+    subtitle: "Agent autonome de planification et d'optimisation",
 
     description:
-      "Développement d'un agent autonome pour une compétition de stratégie au tour par tour sur Kaggle. Le projet explore la planification et l'optimisation des décisions liées aux ressources, à la production, aux terrains et au marché.",
+      "Développement d'un agent autonome pour la compétition Kaggriculture sur Kaggle. L'agent utilise des heuristiques de planification et d'optimisation pour gérer dynamiquement la production, la main-d'œuvre, les déplacements, les achats et les interactions avec le marché sous contraintes temporelles et économiques.",
 
     technologies: [
       "Python",
-      "Intelligence Artificielle",
-      "Algorithmes",
-      "Optimisation",
+      "Heuristic Planning",
+      "Optimization",
+      "Pathfinding",
+      "Decision Making",
     ],
 
     github: "https://github.com/Driw0x/Kaggriculture",
