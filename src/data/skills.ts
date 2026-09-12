@@ -5,41 +5,36 @@ export const skills: Skill[] = [
     category: "Langage",
     title: "Python",
     description:
-      "Développement d'applications, automatisation, traitement de données et intelligence artificielle.",
+      "Développement d'outils, pipelines de données, agents autonomes et modèles d'intelligence artificielle.",
   },
-
   {
     category: "Intelligence Artificielle",
     title: "Machine Learning",
     description:
-      "Prétraitement des données, entraînement et évaluation de modèles avec Scikit-learn, Pandas et NumPy.",
+      "Préparation de données, extraction de caractéristiques, entraînement et évaluation de modèles avec Scikit-learn, Pandas et NumPy.",
   },
-
   {
-    category: "Intelligence Artificielle",
-    title: "Deep Learning",
+    category: "Deep Learning",
+    title: "PyTorch & LLM",
     description:
-      "Conception et expérimentation de modèles d'apprentissage profond.",
+      "Expérimentation, entraînement et adaptation de modèles de langage avec PyTorch, notamment sur GPU via DirectML.",
   },
-
   {
-    category: "Vision par ordinateur",
-    title: "Traitement d'image",
+    category: "Algorithmique",
+    title: "Planification & Optimisation",
     description:
-      "Traitement et analyse d'images avec OpenCV, notamment pour des applications de vision et d'OCR.",
+      "Conception d'heuristiques, optimisation sous contraintes, allocation de ressources et prise de décision séquentielle.",
   },
-
   {
     category: "Données",
-    title: "Data Science",
+    title: "Data Processing",
     description:
-      "Manipulation, analyse et exploitation de données, notamment avec Python et SQL.",
+      "Construction de datasets, traitement de données structurées et temporelles, analyse et pipelines de préparation des données.",
   },
-
   {
     category: "Développement",
-    title: "Git",
+    title: "Git & GitHub",
     description:
-      "Gestion de versions, suivi des développements et organisation de projets.",
+      "Gestion de versions, organisation de projets, documentation et suivi itératif des développements.",
   },
 ];
