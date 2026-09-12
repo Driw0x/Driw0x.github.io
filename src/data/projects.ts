@@ -70,6 +70,28 @@ export const projects: Project[] = [
   },
   
   {
+    title: "France Tech Arena 2025 — Future Network",
+
+    subtitle: "Optimisation heuristique de ressources réseau",
+
+    description:
+      "Développement de deux approches heuristiques pour le challenge Future Network (Data Communications) de la Huawei France Tech Arena 2025. Les solutions explorent différentes stratégies de priorisation et de scoring pour l'allocation de ressources réseau sous contraintes.",
+
+    technologies: [
+      "Python",
+      "Heuristics",
+      "Optimization",
+      "Resource Allocation",
+      "Networking",
+    ],
+
+    github:
+      "https://github.com/Driw0x/france-tech-arena-2025-future-network",
+
+    status: "Terminé",
+  },
+
+  {
     title: "Genshin Achievement Scanner",
 
     subtitle: "Scanner semi-automatique de succès Genshin Impact",
