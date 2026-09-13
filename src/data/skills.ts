@@ -5,36 +5,41 @@ export const skills: Skill[] = [
     category: "Langage",
     title: "Python",
     description:
-      "Développement d'outils, pipelines de données, agents autonomes et modèles d'intelligence artificielle.",
+      "Développement d'outils, pipelines de données, agents autonomes et applications d'intelligence artificielle.",
   },
+
   {
     category: "Intelligence Artificielle",
     title: "Machine Learning",
     description:
       "Préparation de données, extraction de caractéristiques, entraînement et évaluation de modèles avec Scikit-learn, Pandas et NumPy.",
   },
+
   {
     category: "Deep Learning",
     title: "PyTorch & LLM",
     description:
-      "Expérimentation, entraînement et adaptation de modèles de langage avec PyTorch, notamment sur GPU via DirectML.",
+      "Pré-entraînement, fine-tuning, expérimentation et adaptation de modèles de langage avec PyTorch, notamment sur GPU via DirectML.",
   },
+
   {
     category: "Algorithmique",
     title: "Planification & Optimisation",
     description:
-      "Conception d'heuristiques, optimisation sous contraintes, allocation de ressources et prise de décision séquentielle.",
+      "Conception d'heuristiques, optimisation sous contraintes, allocation de ressources, pathfinding et prise de décision séquentielle.",
   },
+
   {
-    category: "Données",
-    title: "Data Processing",
+    category: "IA générative",
+    title: "AI Workflows & Semantic Search",
     description:
-      "Construction de datasets, traitement de données structurées et temporelles, analyse et pipelines de préparation des données.",
+      "Conception de workflows pour agents IA, prompt et context engineering, embeddings, recherche sémantique et gestion structurée des connaissances.",
   },
+
   {
-    category: "Développement",
-    title: "Git & GitHub",
+    category: "Vision par ordinateur",
+    title: "OCR & Image Processing",
     description:
-      "Gestion de versions, organisation de projets, documentation et suivi itératif des développements.",
+      "Prétraitement d'images, reconnaissance de texte et fuzzy matching avec OpenCV, EasyOCR et RapidFuzz.",
   },
 ];
