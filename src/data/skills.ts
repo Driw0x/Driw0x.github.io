@@ -2,44 +2,44 @@ import type { Skill } from "../types/skill";
 
 export const skills: Skill[] = [
   {
-    category: "Langage",
+    category: "Développement",
     title: "Python",
     description:
-      "Développement d'outils, pipelines de données, agents autonomes et applications d'intelligence artificielle.",
+      "Développement de pipelines de données, outils d'analyse, agents heuristiques et expérimentations en intelligence artificielle.",
   },
 
   {
-    category: "Intelligence Artificielle",
-    title: "Machine Learning",
+    category: "Données pour l'IA",
+    title: "Data & Feature Engineering",
     description:
-      "Préparation de données, extraction de caractéristiques, entraînement et évaluation de modèles avec Scikit-learn, Pandas et NumPy.",
-  },
-
-  {
-    category: "Deep Learning",
-    title: "PyTorch & LLM",
-    description:
-      "Pré-entraînement, fine-tuning, expérimentation et adaptation de modèles de langage avec PyTorch, notamment sur GPU via DirectML.",
+      "Construction de datasets, préparation de données, extraction de caractéristiques et traitement de données structurées et temporelles.",
   },
 
   {
     category: "Algorithmique",
-    title: "Planification & Optimisation",
+    title: "Heuristiques & Décision",
     description:
-      "Conception d'heuristiques, optimisation sous contraintes, allocation de ressources, pathfinding et prise de décision séquentielle.",
+      "Conception de méthodes heuristiques pour la planification, l'allocation de ressources et la prise de décision sous contraintes.",
   },
 
   {
-    category: "IA générative",
-    title: "AI Workflows & Semantic Search",
+    category: "Deep Learning",
+    title: "PyTorch & Model Training",
     description:
-      "Conception de workflows pour agents IA, prompt et context engineering, embeddings, recherche sémantique et gestion structurée des connaissances.",
+      "Entraînement, diagnostic numérique et expérimentation de modèles avec PyTorch, notamment sous Windows avec DirectML.",
   },
 
   {
-    category: "Vision par ordinateur",
-    title: "OCR & Image Processing",
+    category: "Machine Learning",
+    title: "ML appliqué",
     description:
-      "Prétraitement d'images, reconnaissance de texte et fuzzy matching avec OpenCV, EasyOCR et RapidFuzz.",
+      "Préparation de pipelines destinés à l'apprentissage, expérimentation de modèles et méthodologie d'évaluation.",
+  },
+
+  {
+    category: "AI Workflows",
+    title: "Prompt & Context Engineering",
+    description:
+      "Conception de prompts structurés, règles de contexte, contrats de sortie et workflows réutilisables pour outils d'IA.",
   },
 ];

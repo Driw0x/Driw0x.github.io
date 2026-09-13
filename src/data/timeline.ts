@@ -6,7 +6,7 @@ export const timeline: TimelineItem[] = [
     title: "Master 2 AI2D",
     subtitle: "Sorbonne Université",
     description:
-      "Deuxième année du Master Algorithmes, Intelligence Artificielle, Interactions et Décision. Approfondissement en intelligence artificielle, modèles de langage, RAG, prise de décision, interactions homme-machine et ingénierie logicielle.",
+      "Deuxième année du Master Algorithmes, Intelligence Artificielle, Interactions et Décision. Approfondissement en intelligence artificielle, algorithmique, apprentissage automatique et systèmes de décision.",
   },
   {
     period: "2025 - 2026",

@@ -15,9 +15,9 @@ const stats = [
     description: "IA, Computer Vision & développement",
   },
   {
-    value: "6",
-    label: "Domaines techniques",
-    description: "Python, ML, Deep Learning, Vision, Data, Git",
+    value: "3",
+    label: "Axes techniques",
+    description: "Data pour l'IA, ML & décision algorithmique",
   },
   {
     value: "2027",

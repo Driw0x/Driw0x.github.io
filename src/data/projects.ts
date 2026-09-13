@@ -4,17 +4,17 @@ export const projects: Project[] = [
   {
     title: "CS2Guard",
 
-    subtitle: "Système intelligent de détection de triche sur Counter-Strike 2",
-
+    subtitle: "Pipeline d'analyse de données pour l'anti-cheat CS2",
+    
     description:
-      "Projet d'anti-cheat basé sur l'analyse comportementale des joueurs de Counter-Strike 2. Le projet commence par l'analyse de fichiers de démo afin d'extraire des données de gameplay, construire des features pertinentes et entraîner des modèles de Machine Learning capables d'identifier des comportements suspects. L'objectif final est d'adapter cette détection à un système d'analyse en temps réel côté serveur.",
+      "Développement d'un pipeline d'analyse de démos CS2 : parsing multi-source, construction de datasets, extraction de caractéristiques comportementales et traitement reproductible des données en préparation de futurs modèles de détection.",
 
     technologies: [
       "Python",
-      "Machine Learning",
-      "Data Analysis",
-      "CS2 Demo Parsing",
-      "Scikit-learn",
+      "Data Processing",
+      "Feature Engineering",
+      "Temporal Data",
+      "Dataset Engineering",
     ],
 
     github: "https://github.com/Driw0x/CS2Guard",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
   {
     title: "Kaggriculture",
 
-    subtitle: "Agent autonome de planification et d'optimisation",
+    subtitle: "Agent heuristique de décision sous contraintes",
 
     description:
       "Développement d'un agent autonome pour la compétition Kaggriculture sur Kaggle. L'agent utilise des heuristiques de planification et d'optimisation pour gérer dynamiquement la production, la main-d'œuvre, les déplacements, les achats et les interactions avec le marché sous contraintes temporelles et économiques.",
@@ -57,9 +57,9 @@ export const projects: Project[] = [
     technologies: [
       "Python",
       "Heuristic Planning",
-      "Optimization",
-      "Pathfinding",
       "Decision Making",
+      "Pathfinding",
+      "Resource Management",
     ],
 
     github: "https://github.com/Driw0x/Kaggriculture",
@@ -72,16 +72,16 @@ export const projects: Project[] = [
   {
     title: "AI Knowledge Workflows",
 
-    subtitle: "Workflows et prompts réutilisables pour agents IA",
+    subtitle: "Workflows structurés pour l'utilisation d'outils IA",
 
     description:
-      "Conception d'une architecture de workflows réutilisables pour agents IA, combinant prompt engineering, gestion de contexte, contraintes explicites et sorties structurées. Le projet fournit des prompts et templates versionnés pour la recherche, la gestion de projets, l'évaluation de compétences et la maintenance d'une base de connaissances.",
+      "Bibliothèque de prompts, règles de contexte et templates versionnés pour structurer des workflows assistés par IA autour de la recherche, des projets, des compétences et de la gestion de connaissances.",
 
     technologies: [
       "Prompt Engineering",
-      "AI Agents",
-      "Knowledge Management",
       "Context Engineering",
+      "Knowledge Management",
+      "Structured Workflows",
       "Git",
     ],
 
@@ -104,8 +104,8 @@ export const projects: Project[] = [
     technologies: [
       "Python",
       "Heuristics",
-      "Optimization",
       "Resource Allocation",
+      "Constraint-based Decision Making",
       "Networking",
     ],
 
@@ -160,17 +160,17 @@ export const projects: Project[] = [
   {
     title: "CodeAgent",
 
-    subtitle: "Agent IA local pour l'analyse de code",
+    subtitle: "Prototype de recherche sémantique dans du code",
 
     description:
-      "Développement d'un agent IA local permettant d'analyser une base de code. Le projet combine parsing AST, chunking intelligent, embeddings, recherche sémantique, indexation vectorielle et RAG afin d'assister les développeurs dans la compréhension d'un projet.",
+      "Prototype expérimental combinant segmentation de code basée sur l'AST, embeddings et indexation FAISS pour explorer la recherche sémantique dans des bases de code.",
 
     technologies: [
       "Python",
       "AST",
-      "FAISS",
       "Embeddings",
-      "RAG",
+      "FAISS",
+      "Semantic Search",
     ],
 
     github: "https://github.com/Driw0x/CodeAgent",

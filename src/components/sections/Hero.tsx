@@ -33,9 +33,10 @@ export default function Hero() {
             </div>
 
             <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-300">
-              Je recherche un stage de fin d'études en intelligence artificielle et développement logiciel 
-              afin de mettre en pratique mes compétences acquises durant mon cursus. Je m'intéresse particulièrement 
-              aux modèles de langage (LLM), au RAG et à l'analyse de données.
+              Je recherche un stage de fin d'études en intelligence artificielle et développement logiciel
+              afin de mettre en pratique mes compétences acquises durant mon cursus. Je m'intéresse particulièrement
+              à l'ingénierie des données pour l'IA, au machine learning appliqué et à la prise de décision
+              algorithmique sous contraintes.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
