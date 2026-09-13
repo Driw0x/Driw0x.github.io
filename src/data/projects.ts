@@ -70,6 +70,30 @@ export const projects: Project[] = [
   },
   
   {
+    title: "AI Knowledge Workflows",
+
+    subtitle: "Workflows et prompts réutilisables pour agents IA",
+
+    description:
+      "Conception d'une architecture de workflows réutilisables pour agents IA, combinant prompt engineering, gestion de contexte, contraintes explicites et sorties structurées. Le projet fournit des prompts et templates versionnés pour la recherche, la gestion de projets, l'évaluation de compétences et la maintenance d'une base de connaissances.",
+
+    technologies: [
+      "Prompt Engineering",
+      "AI Agents",
+      "Knowledge Management",
+      "Context Engineering",
+      "Git",
+    ],
+
+    github:
+      "https://github.com/Driw0x/ai-knowledge-workflows",
+
+    status: "En développement",
+
+    featured: false,
+  },
+  
+  {
     title: "France Tech Arena 2025 — Future Network",
 
     subtitle: "Optimisation heuristique de ressources réseau",
