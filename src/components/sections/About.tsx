@@ -12,7 +12,7 @@ const stats = [
   {
     value: projects.length.toString(),
     label: "Projets techniques",
-    description: "IA, Computer Vision & développement",
+    description: "IA, données & algorithmique",
   },
   {
     value: "3",

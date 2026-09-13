@@ -193,14 +193,12 @@ https://driw0x.github.io/
 
 Ce portfolio a pour objectif de présenter mes compétences et mes projets dans plusieurs domaines :
 
-* Intelligence Artificielle
-* Machine Learning
-* LLM
-* RAG
-* Recherche sémantique
-* Computer Vision
+* Ingénierie des données pour l'IA
+* Machine Learning appliqué
+* Algorithmique et décision sous contraintes
+* Entraînement et systèmes pour le Machine Learning
+* Analyse structurelle de code
 * Développement logiciel
-* Outils pour développeurs
 
 ## Contact
 

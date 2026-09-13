@@ -10,7 +10,7 @@ export default function Projects() {
         <SectionTitle
           eyebrow="Projets"
           title="Quelques projets techniques."
-          description="Une sélection de projets autour de l'intelligence artificielle, du développement logiciel et de la recherche sémantique."
+          description="Une sélection de projets autour des données pour l'IA, de l'algorithmique et des systèmes de machine learning."
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
