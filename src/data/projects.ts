@@ -7,12 +7,12 @@ export const projects: Project[] = [
     subtitle: "Pipeline d'analyse de données pour l'anti-cheat CS2",
     
     description:
-      "Développement d'un pipeline d'analyse de démos CS2 : parsing multi-source, construction de datasets et feature engineering comportemental. Un premier benchmark non supervisé compare Isolation Forest, Local Outlier Factor et One-Class SVM ; la détection supervisée reste une étape future.",
+      "Pipeline offline d'analyse de démos CS2 combinant parsing, feature engineering, détection d'anomalies et classification supervisée. Les modèles sont évalués avec séparation des matchs, validation croisée groupée, tuning et comparaison multi-métriques. Le projet reste expérimental : aucun seuil opérationnel n'est retenu et l'analyse complète d'une démo ainsi que le server-side restent à développer.",
 
     technologies: [
       "Python",
       "Scikit-learn",
-      "Data Processing",
+      "Supervised Learning",
       "Feature Engineering",
       "Anomaly Detection",
     ],
@@ -67,6 +67,27 @@ export const projects: Project[] = [
     status: "En développement",
 
     featured: true,
+  },
+  
+  {
+    title: "CodeAgent",
+
+    subtitle: "Pipeline RAG local sourcé pour l'analyse de code",
+
+    description:
+      "Assistant local d'analyse de code Python basé sur un pipeline RAG sourcé. Le code est segmenté via AST puis indexé avec FAISS pour combiner recherche sémantique et reranking lexical avant la génération locale avec Ollama et Qwen2.5-Coder 14B. Sept LLM locaux ont été comparés sur un benchmark commun ; la qualité du retrieval et du RAG complet reste encore à évaluer.",
+
+    technologies: [
+      "Python",
+      "AST",
+      "FAISS",
+      "RAG",
+      "Ollama",
+    ],
+
+    github: "https://github.com/Driw0x/CodeAgent",
+
+    status: "En développement",
   },
   
   {
@@ -156,26 +177,5 @@ export const projects: Project[] = [
     github: "https://github.com/Driw0x/Projet-AI2D",
 
     status: "Terminé",
-  },
-
-  {
-    title: "CodeAgent",
-
-    subtitle: "Prototype de recherche sémantique dans du code",
-
-    description:
-      "Prototype expérimental combinant segmentation de code basée sur l'AST, embeddings et indexation FAISS pour explorer la recherche sémantique dans des bases de code.",
-
-    technologies: [
-      "Python",
-      "AST",
-      "Embeddings",
-      "FAISS",
-      "Semantic Search",
-    ],
-
-    github: "https://github.com/Driw0x/CodeAgent",
-
-    status: "En pause",
   },
 ];

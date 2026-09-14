@@ -33,7 +33,7 @@ export const skills: Skill[] = [
     category: "Machine Learning",
     title: "ML appliqué",
     description:
-      "Préparation de pipelines, expérimentation et évaluation de modèles, dont une première comparaison de méthodes de détection d'anomalies non supervisée.",
+      "Expérimentation ML offline : détection d'anomalies, classification tabulaire, validation groupée, tuning et comparaison de modèles, avec analyse des métriques et des seuils de décision.",
   },
 
   {
