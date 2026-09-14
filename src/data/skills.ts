@@ -12,7 +12,7 @@ export const skills: Skill[] = [
     category: "Données pour l'IA",
     title: "Data & Feature Engineering",
     description:
-      "Construction de datasets, préparation de données, extraction de caractéristiques et traitement de données structurées et temporelles.",
+      "Construction et validation de datasets, feature engineering, prévention du data leakage et reprise par checkpoint de traitements longs.",
   },
 
   {
@@ -26,20 +26,20 @@ export const skills: Skill[] = [
     category: "Deep Learning",
     title: "PyTorch & Model Training",
     description:
-      "Entraînement, diagnostic numérique et expérimentation de modèles avec PyTorch, notamment sous Windows avec DirectML.",
+      "Entraînement PyTorch sous Windows avec DirectML, mixed precision, diagnostic numérique, checkpoints reprenables et benchmarks GPU sur une configuration de référence.",
   },
 
   {
     category: "Machine Learning",
     title: "ML appliqué",
     description:
-      "Préparation de pipelines destinés à l'apprentissage, expérimentation de modèles et méthodologie d'évaluation.",
+      "Préparation de pipelines, expérimentation et évaluation de modèles, dont une première comparaison de méthodes de détection d'anomalies non supervisée.",
   },
 
   {
     category: "AI Workflows",
     title: "Prompt & Context Engineering",
     description:
-      "Conception de prompts structurés, règles de contexte, contrats de sortie et workflows réutilisables pour outils d'IA.",
+      "Conception de prompts et contextes structurés, évaluation manuelle des sorties, tests de non-régression ciblés et provenance des affirmations.",
   },
 ];

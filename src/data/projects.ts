@@ -7,14 +7,14 @@ export const projects: Project[] = [
     subtitle: "Pipeline d'analyse de données pour l'anti-cheat CS2",
     
     description:
-      "Développement d'un pipeline d'analyse de démos CS2 : parsing multi-source, construction de datasets, extraction de caractéristiques comportementales et traitement reproductible des données en préparation de futurs modèles de détection.",
+      "Développement d'un pipeline d'analyse de démos CS2 : parsing multi-source, construction de datasets et feature engineering comportemental. Un premier benchmark non supervisé compare Isolation Forest, Local Outlier Factor et One-Class SVM ; la détection supervisée reste une étape future.",
 
     technologies: [
       "Python",
+      "Scikit-learn",
       "Data Processing",
       "Feature Engineering",
-      "Temporal Data",
-      "Dataset Engineering",
+      "Anomaly Detection",
     ],
 
     github: "https://github.com/Driw0x/CS2Guard",
@@ -30,14 +30,14 @@ export const projects: Project[] = [
     subtitle: "Adaptation Windows / DirectML de MiniMind",
 
     description:
-      "Fork de MiniMind visant à permettre l'exécution et l'entraînement de petits modèles de langage sur Windows avec des GPU compatibles DirectX 12, sans dépendance à CUDA. Le projet adapte progressivement le pipeline d'entraînement et d'inférence à PyTorch DirectML.",
+      "Adaptation de MiniMind à Windows et PyTorch DirectML, implémentée et validée sur une configuration de référence avec GPU AMD Radeon RX 7800 XT. Le travail couvre l'entraînement mixed precision, la stabilité numérique, les checkpoints et le benchmarking GPU.",
 
     technologies: [
       "Python",
       "PyTorch",
       "DirectML",
-      "LLM",
-      "Deep Learning",
+      "Mixed Precision",
+      "GPU Benchmarking",
     ],
 
     github: "https://github.com/Driw0x/minimind",
@@ -75,14 +75,15 @@ export const projects: Project[] = [
     subtitle: "Workflows structurés pour l'utilisation d'outils IA",
 
     description:
-      "Bibliothèque de prompts, règles de contexte et templates versionnés pour structurer des workflows assistés par IA autour de la recherche, des projets, des compétences et de la gestion de connaissances.",
+      "Bibliothèque de prompts, règles de contexte et templates versionnés pour structurer des workflows assistés par IA. Le projet formalise la provenance des affirmations et un framework manuel d'évaluation des sorties, sans benchmark automatisé.",
 
     technologies: [
       "Prompt Engineering",
       "Context Engineering",
+      "Manual Evaluation",
+      "Information Provenance",
       "Knowledge Management",
       "Structured Workflows",
-      "Git",
     ],
 
     github:
