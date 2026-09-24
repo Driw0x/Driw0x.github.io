@@ -26,7 +26,7 @@ export const skills: Skill[] = [
     category: "Deep Learning",
     title: "PyTorch & Model Training",
     description:
-      "Entraînement PyTorch sous Windows avec DirectML, mixed precision, diagnostic numérique, checkpoints reprenables et benchmarks GPU sur une configuration de référence.",
+      "Entraînement PyTorch sur GPU AMD sous Windows, mixed precision, diagnostic numérique, checkpoints reprenables et benchmarks GPU ; expérience DirectML désormais historique et migration ROCm en cours.",
   },
 
   {

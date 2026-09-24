@@ -5,6 +5,6 @@ export interface Project {
   technologies: string[];
   github: string;
   demo?: string;
-  status: "En développement" | "Terminé" | "En pause" | "A venir";
+  status: "En développement" | "Prototype fonctionnel" | "Terminé" | "En pause" | "À venir";
   featured?: boolean;
 }

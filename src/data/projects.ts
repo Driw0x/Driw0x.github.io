@@ -25,19 +25,19 @@ export const projects: Project[] = [
   },
 
   {
-    title: "MiniMind DirectML",
+    title: "MiniMind AMD / ROCm",
 
-    subtitle: "Adaptation Windows / DirectML de MiniMind",
+    subtitle: "Migration Windows / ROCm de MiniMind",
 
     description:
-      "Adaptation de MiniMind à Windows et PyTorch DirectML, implémentée et validée sur une configuration de référence avec GPU AMD Radeon RX 7800 XT. Le travail couvre l'entraînement mixed precision, la stabilité numérique, les checkpoints et le benchmarking GPU.",
+      "Adaptation de MiniMind à Windows et aux GPU AMD. Après comparaison de checkpoints, DirectML a été archivé comme backend d'entraînement en raison d'une validation qualité négative ; le développement actif cible PyTorch ROCm. Un préentraînement Dense court et une génération cohérente sont documentés, tandis que le run Dense complet, le SFT et le pipeline complet restent planifiés.",
 
     technologies: [
       "Python",
       "PyTorch",
-      "DirectML",
-      "Mixed Precision",
-      "GPU Benchmarking",
+      "ROCm",
+      "BF16",
+      "GPU Training",
     ],
 
     github: "https://github.com/Driw0x/minimind",
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     subtitle: "Pipeline RAG local sourcé pour l'analyse de code",
 
     description:
-      "Assistant local d'analyse de code Python basé sur un pipeline RAG sourcé. Le code est segmenté via AST puis indexé avec FAISS pour combiner recherche sémantique et reranking lexical avant la génération locale avec Ollama et Qwen2.5-Coder 14B. Sept LLM locaux ont été comparés sur un benchmark commun ; la qualité du retrieval et du RAG complet reste encore à évaluer.",
+      "Assistant local d'analyse de code Python : segmentation AST, retrieval FAISS avec reranking lexical, puis génération sourcée via Ollama et Qwen2.5-Coder 14B, retenu après comparaison de sept LLM locaux. M4 ajoute un index persistant, sa mise à jour incrémentale et un historique. Un benchmark de 25 questions mesure le retrieval ; les réponses RAG, le grounding et les citations restent sans évaluation de bout en bout.",
 
     technologies: [
       "Python",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/CodeAgent",
 
-    status: "En développement",
+    status: "Prototype fonctionnel",
   },
   
   {
