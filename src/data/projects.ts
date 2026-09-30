@@ -52,7 +52,7 @@ export const projects: Project[] = [
     subtitle: "Agent heuristique de décision sous contraintes",
 
     description:
-      "Développement d'un agent autonome pour la compétition Kaggriculture sur Kaggle. L'agent utilise des heuristiques de planification et d'optimisation pour gérer dynamiquement la production, la main-d'œuvre, les déplacements, les achats et les interactions avec le marché sous contraintes temporelles et économiques.",
+      "Agent autonome terminé pour la compétition Kaggriculture sur Kaggle. Sa version finale CHI14 applique un planning heuristique sous horizon fini pour allouer ressources, travailleurs et actions sous contraintes temporelles et économiques. L'évaluation locale est reproductible dans les limites documentées ; aucun résultat de leaderboard n'est revendiqué.",
 
     technologies: [
       "Python",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/Kaggriculture",
 
-    status: "En développement",
+    status: "Terminé",
 
     featured: true,
   },
