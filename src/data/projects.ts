@@ -21,7 +21,7 @@ export const projects: Project[] = [
 
     status: "En développement",
 
-    featured: false,
+    featured: true,
   },
 
   {
@@ -72,10 +72,10 @@ export const projects: Project[] = [
   {
     title: "CodeAgent",
 
-    subtitle: "Pipeline RAG local sourcé pour l'analyse de code",
+    subtitle: "RAG local évalué et tool use borné pour l'analyse de code",
 
     description:
-      "Assistant local d'analyse de code Python : segmentation AST, retrieval FAISS avec reranking lexical, puis génération sourcée via Ollama et Qwen2.5-Coder 14B, retenu après comparaison de sept LLM locaux. M4 ajoute un index persistant, sa mise à jour incrémentale et un historique. Un benchmark de 25 questions mesure le retrieval ; les réponses RAG, le grounding et les citations restent sans évaluation de bout en bout.",
+      "Assistant local d'analyse de code Python combinant retrieval hybride, RAG sourcé avec citations et grounding, puis orchestration bornée de tools read-only via MCP. Des benchmarks internes couvrent le retrieval, les réponses RAG et le tool use. Le prototype ne démontre ni autonomie générale, ni mémoire conversationnelle, ni planification multi-étapes, ni système de production.",
 
     technologies: [
       "Python",
@@ -83,11 +83,14 @@ export const projects: Project[] = [
       "FAISS",
       "RAG",
       "Ollama",
+      "MCP",
     ],
 
     github: "https://github.com/Driw0x/CodeAgent",
 
     status: "Prototype fonctionnel",
+
+    featured: true,
   },
   
   {

@@ -10,11 +10,11 @@ export default function Projects() {
         <SectionTitle
           eyebrow="Projets"
           title="Quelques projets techniques."
-          description="Une sélection de projets autour des données pour l'IA, de l'algorithmique et des systèmes de machine learning."
+          description="Une sélection de projets autour des agents, de la décision algorithmique et du machine learning appliqué."
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {projects.slice(0, 3).map((project) => (
+          {projects.filter((project) => project.featured).slice(0, 3).map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
         </div>
