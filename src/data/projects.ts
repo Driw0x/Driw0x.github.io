@@ -44,6 +44,8 @@ export const projects: Project[] = [
 
     status: "En développement",
 
+    featured: true,
+
   },
 
   {
@@ -89,8 +91,6 @@ export const projects: Project[] = [
     github: "https://github.com/Driw0x/CodeAgent",
 
     status: "Prototype fonctionnel",
-
-    featured: true,
   },
   
   {

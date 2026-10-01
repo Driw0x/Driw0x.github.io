@@ -14,9 +14,12 @@ export default function Projects() {
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {projects.filter((project) => project.featured).slice(0, 3).map((project) => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
+          {projects
+            .filter((project) => project.featured)
+            .slice(0, 3)
+            .map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
         </div>
 
         <div className="mt-10 flex justify-center">
