@@ -42,7 +42,7 @@ export default function ProjectsPage() {
             <SectionTitle
               eyebrow="Projets"
               title="Tous mes projets."
-              description="Découvrez l'ensemble de mes projets en intelligence artificielle, développement logiciel et ingénierie."
+              description="Découvrez mes projets en intelligence artificielle appliquée, systèmes décisionnels et expérimentation machine learning."
             />
 
             <div className="mt-12 space-y-16">

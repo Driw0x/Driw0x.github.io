@@ -10,7 +10,7 @@ function Skills() {
         <SectionTitle
           eyebrow="Compétences"
           title="Technologies que j'utilise."
-          description="Un ensemble de compétences orienté IA, développement logiciel et construction de projets maintenables."
+          description="Des compétences orientées IA appliquée, systèmes LLM, décision algorithmique et expérimentation machine learning."
         />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

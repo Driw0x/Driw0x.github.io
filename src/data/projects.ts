@@ -2,9 +2,34 @@ import type { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
+    title: "CodeAgent",
+
+    subtitle: "Système LLM local avec RAG, grounding et tool use",
+
+    description:
+      "Assistant local d'analyse de code Python combinant retrieval hybride, reranking, RAG sourcé avec citations et grounding, puis orchestration bornée de tools read-only via MCP. Des benchmarks internes couvrent retrieval, réponses RAG, routing et tool use. Le prototype ne démontre ni autonomie générale, ni mémoire conversationnelle, ni planification multi-étapes, ni système de production.",
+
+    technologies: [
+      "Python",
+      "AST",
+      "FAISS",
+      "RAG",
+      "Ollama",
+      "MCP",
+      "Tool Use",
+    ],
+
+    github: "https://github.com/Driw0x/CodeAgent",
+
+    status: "Prototype fonctionnel",
+
+    featured: true,
+  },
+
+  {
     title: "CS2Guard",
 
-    subtitle: "Pipeline d'analyse de données pour l'anti-cheat CS2",
+    subtitle: "ML expérimental pour l'analyse de comportements suspects",
     
     description:
       "Pipeline offline d'analyse de démos CS2 combinant parsing, feature engineering, détection d'anomalies et classification supervisée. Les modèles sont évalués avec séparation des matchs, validation croisée groupée, tuning et comparaison multi-métriques. Le projet reste expérimental : aucun seuil opérationnel n'est retenu et l'analyse complète d'une démo ainsi que le server-side restent à développer.",
@@ -27,16 +52,16 @@ export const projects: Project[] = [
   {
     title: "MiniMind AMD / ROCm",
 
-    subtitle: "Migration Windows / ROCm de MiniMind",
+    subtitle: "Entraînement local d'un Transformer decoder-only",
 
     description:
-      "Adaptation de MiniMind à Windows et aux GPU AMD. Après comparaison de checkpoints, DirectML a été archivé comme backend d'entraînement en raison d'une validation qualité négative ; le développement actif cible PyTorch ROCm. Un préentraînement Dense court et une génération cohérente sont documentés, tandis que le run Dense complet, le SFT et le pipeline complet restent planifiés.",
+      "Adaptation et entraînement local d'un petit modèle de langage Transformer decoder-only sous Windows sur GPU AMD. Après comparaison de checkpoints, DirectML a été archivé à cause d'une validation qualité négative ; le développement actif cible PyTorch ROCm. Un préentraînement Dense court et une génération cohérente sont documentés, tandis que le run complet et le SFT restent planifiés.",
 
     technologies: [
       "Python",
       "PyTorch",
+      "Transformers",
       "ROCm",
-      "BF16",
       "GPU Training",
     ],
 
@@ -44,7 +69,7 @@ export const projects: Project[] = [
 
     status: "En développement",
 
-    featured: true,
+    featured: false,
 
   },
 
@@ -69,28 +94,6 @@ export const projects: Project[] = [
     status: "Terminé",
 
     featured: true,
-  },
-  
-  {
-    title: "CodeAgent",
-
-    subtitle: "RAG local évalué et tool use borné pour l'analyse de code",
-
-    description:
-      "Assistant local d'analyse de code Python combinant retrieval hybride, RAG sourcé avec citations et grounding, puis orchestration bornée de tools read-only via MCP. Des benchmarks internes couvrent le retrieval, les réponses RAG et le tool use. Le prototype ne démontre ni autonomie générale, ni mémoire conversationnelle, ni planification multi-étapes, ni système de production.",
-
-    technologies: [
-      "Python",
-      "AST",
-      "FAISS",
-      "RAG",
-      "Ollama",
-      "MCP",
-    ],
-
-    github: "https://github.com/Driw0x/CodeAgent",
-
-    status: "Prototype fonctionnel",
   },
   
   {

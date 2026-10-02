@@ -2,7 +2,7 @@
 
 Portfolio personnel développé avec **React**, **Vite**, **TypeScript** et **Tailwind CSS**.
 
-Il présente mon parcours, mes compétences et mes projets autour de l'**Intelligence Artificielle** et du **développement logiciel**, dans le cadre de ma recherche d'un stage de fin d'études.
+Il présente mon parcours, mes compétences et mes projets autour de l'**intelligence artificielle appliquée**, dans le cadre de ma recherche d'un stage de fin d'études.
 
 ## Aperçu
 
@@ -198,7 +198,7 @@ Ce portfolio a pour objectif de présenter mes compétences et mes projets dans 
 * Machine Learning appliqué
 * LLM, RAG et tool use
 * Données pour l'IA
-* Systèmes ML et développement logiciel
+* Systèmes ML et ingénierie logicielle pour l'IA
 
 ## Contact
 

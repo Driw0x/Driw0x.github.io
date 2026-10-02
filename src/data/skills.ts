@@ -2,13 +2,6 @@ import type { Skill } from "../types/skill";
 
 export const skills: Skill[] = [
   {
-    category: "Développement",
-    title: "Python",
-    description:
-      "Développement de pipelines de données, outils d'analyse, agents heuristiques et expérimentations en intelligence artificielle.",
-  },
-
-  {
     category: "Données pour l'IA",
     title: "Data & Feature Engineering",
     description:
@@ -23,10 +16,17 @@ export const skills: Skill[] = [
   },
 
   {
+    category: "Systèmes LLM",
+    title: "RAG & Tool Use",
+    description:
+      "Retrieval hybride, reranking, citations et grounding, puis orchestration bornée de tools read-only avec MCP, validation structurée et évaluation par composant.",
+  },
+
+  {
     category: "Deep Learning",
     title: "PyTorch & Model Training",
     description:
-      "Entraînement PyTorch sur GPU AMD sous Windows, mixed precision, diagnostic numérique, checkpoints reprenables et benchmarks GPU ; expérience DirectML désormais historique et migration ROCm en cours.",
+      "Entraînement local d'un Transformer decoder-only avec PyTorch sur GPU AMD : ROCm, mixed precision, diagnostics, checkpoints et benchmarks ; DirectML historique et pratique guidée du fine-tuning avec Hugging Face.",
   },
 
   {

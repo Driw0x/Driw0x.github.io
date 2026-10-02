@@ -17,7 +17,7 @@ const stats = [
   {
     value: "3",
     label: "Axes techniques",
-    description: "Agents, décision & ML appliqué",
+    description: "Agents, systèmes LLM & décision",
   },
   {
     value: "2027",
