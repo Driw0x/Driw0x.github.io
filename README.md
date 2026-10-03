@@ -205,5 +205,5 @@ Ce portfolio a pour objectif de présenter mes compétences et mes projets dans 
 **Victor Ye**
 
 * GitHub : `Driw0x`
-* LinkedIn : `victor-ye-7703b1327`
+* LinkedIn : `https://www.linkedin.com/in/victor-ye-ai/`
 * Email : `victorye@outlook.fr`

@@ -1,9 +1,9 @@
 import type { Interest, Language } from "../types/personal";
 
 export const languages: Language[] = [
-  { code: "FR", name: "Français", level: "Natif" },
-  { code: "CN", name: "Chinois", level: "Natif" },
-  { code: "EN", name: "Anglais", level: "Intermédiaire" },
+  { code: "FR", name: "Français", level: "Langue maternelle" },
+  { code: "CN", name: "Chinois", level: "Langue maternelle" },
+  { code: "EN", name: "Anglais", level: "B2" },
 ];
 
 export const interests: Interest[] = [
@@ -15,7 +15,7 @@ export const interests: Interest[] = [
   },
   {
     icon: "🎮",
-    title: "E-sport",
+    title: "E-sport et jeux compétitifs",
     description:
       "Compétition, stratégie et travail d'équipe.",
   },
