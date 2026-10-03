@@ -116,7 +116,7 @@ export const projects: Project[] = [
     github:
       "https://github.com/Driw0x/ai-knowledge-workflows",
 
-    status: "En développement",
+    status: "Terminé",
 
     featured: false,
   },
