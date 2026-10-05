@@ -99,10 +99,10 @@ export const projects: Project[] = [
   {
     title: "AI Knowledge Workflows",
 
-    subtitle: "Workflows structurés pour l'utilisation d'outils IA",
+    subtitle: "Workflows réutilisables pour assistants IA",
 
     description:
-      "Bibliothèque de prompts, règles de contexte et templates versionnés pour structurer des workflows assistés par IA. Le projet formalise la provenance des affirmations et un framework manuel d'évaluation des sorties, sans benchmark automatisé.",
+      "Collection structurée et évaluée de workflows réutilisables pour assistants IA, avec gestion du contexte, contraintes explicites, provenance des affirmations et sorties vérifiables. Elle couvre notamment la préparation de candidatures fondée sur les preuves et la généralisation privacy-aware de repositories, tout en gardant le contexte privé local. L'évaluation repose sur quatre walkthroughs qualitatifs manuels, sans benchmark automatisé.",
 
     technologies: [
       "Prompt Engineering",
