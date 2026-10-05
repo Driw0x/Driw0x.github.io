@@ -194,7 +194,8 @@ https://driw0x.github.io/
 Ce portfolio a pour objectif de présenter mes compétences et mes projets dans plusieurs domaines :
 
 * Agentic AI et systèmes autonomes bornés
-* Planification, optimisation et décision sous contraintes
+* Recherche opérationnelle, planification, optimisation et décision
+* Modélisation agent et systèmes multi-agents comme domaines d'intérêt académiques
 * Machine Learning appliqué
 * LLM, RAG et tool use
 * Données pour l'IA

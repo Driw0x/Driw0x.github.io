@@ -17,9 +17,9 @@ export const skills: Skill[] = [
 
   {
     category: "Systèmes LLM",
-    title: "RAG & Tool Use",
+    title: "Agentic AI & Tool Use",
     description:
-      "Retrieval hybride, reranking, citations et grounding, puis orchestration bornée de tools read-only avec MCP, validation structurée et évaluation par composant.",
+      "Retrieval hybride, reranking, citations et grounding ; tool use et orchestration bornée read-only avec MCP ; prompts et contextes structurés, validation des sorties, évaluation par composant et tests de non-régression ciblés.",
   },
 
   {
@@ -37,9 +37,9 @@ export const skills: Skill[] = [
   },
 
   {
-    category: "AI Workflows",
-    title: "Prompt & Context Engineering",
+    category: "Formation & intérêts",
+    title: "Optimisation & Systèmes multi-agents",
     description:
-      "Conception de prompts et contextes structurés, évaluation manuelle des sorties, tests de non-régression ciblés et provenance des affirmations.",
+      "Fondements académiques en recherche opérationnelle, optimisation combinatoire, décision, simulation et systèmes multi-agents. Domaines d'intérêt en cours d'approfondissement, distincts des compétences démontrées par les projets.",
   },
 ];

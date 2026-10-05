@@ -9,8 +9,8 @@ function Skills() {
       <Container>
         <SectionTitle
           eyebrow="Compétences"
-          title="Technologies que j'utilise."
-          description="Des compétences orientées IA appliquée, systèmes LLM, décision algorithmique et expérimentation machine learning."
+          title="Compétences et intérêts techniques."
+          description="Des pratiques soutenues par mes projets, complétées par des fondements académiques en optimisation, décision et systèmes multi-agents."
         />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

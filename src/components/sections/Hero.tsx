@@ -33,7 +33,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-300">
-              Je recherche un stage de fin d'études en intelligence artificielle, dans le cadre de mon Master 2 AI2D à Sorbonne Université. Je m'intéresse particulièrement aux systèmes agentiques et LLM, au RAG et au tool use, ainsi qu'à la planification, à la décision sous contraintes et au machine learning appliqué.
+              Je recherche un stage de fin d'études en intelligence artificielle, dans le cadre de mon Master 2 AI2D à Sorbonne Université. Mes projets portent sur les systèmes agentiques bornés, la planification et la décision sous contraintes, ainsi que sur le machine learning appliqué. Ma formation nourrit aussi mon intérêt pour la recherche opérationnelle, l'optimisation et les systèmes multi-agents.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">

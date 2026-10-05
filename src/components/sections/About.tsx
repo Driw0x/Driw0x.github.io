@@ -16,8 +16,8 @@ const stats = [
   },
   {
     value: "3",
-    label: "Axes techniques",
-    description: "Agents, systèmes LLM & décision",
+    label: "Axes du profil",
+    description: "Agentique, optimisation & multi-agent",
   },
   {
     value: "2027",
