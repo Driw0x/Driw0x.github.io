@@ -19,7 +19,7 @@ export const skills: Skill[] = [
     category: "Systèmes LLM",
     title: "Agentic AI & Tool Use",
     description:
-      "Retrieval hybride, reranking, citations et grounding ; tool use et orchestration bornée read-only avec MCP ; prompts et contextes structurés avec frontières explicites, provenance, sorties vérifiables, évaluation manuelle et tests de non-régression ciblés.",
+      "Retrieval hybride, reranking, citations et grounding ; tool use et orchestration bornée read-only avec MCP ; prompts et contextes structurés avec frontières explicites, provenance, sorties vérifiables, évaluation manuelle et tests de non-régression ciblés. Pratique d'applications LLM avec sorties structurées, plusieurs providers, contrôles métier et validation humaine, testée synthétiquement.",
   },
 
   {

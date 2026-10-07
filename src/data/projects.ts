@@ -2,6 +2,30 @@ import type { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
+    title: "AI Job Application Workbench",
+
+    subtitle: "Application locale de candidature assistée par IA",
+
+    description:
+      "Application locale pour rechercher et analyser des offres, préparer des CV et lettres à partir des faits documentés d'une base de connaissances externe, puis suivre les candidatures. Plusieurs providers LLM s'intègrent à un workflow avec génération structurée, suivi des documents et validation humaine avant toute soumission.",
+
+    technologies: [
+      "Python",
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "SQLite",
+      "LLM APIs",
+    ],
+
+    github: "https://github.com/Driw0x/ai-job-application-workbench",
+
+    status: "Terminé",
+
+    featured: false,
+  },
+
+  {
     title: "CodeAgent",
 
     subtitle: "Système LLM local avec RAG, grounding et tool use",
