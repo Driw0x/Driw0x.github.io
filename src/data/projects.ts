@@ -91,6 +91,8 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/minimind",
 
+    huggingFace: "https://huggingface.co/Driw0x/minimind-rocm-pytorch",
+
     status: "En développement",
 
     featured: false,

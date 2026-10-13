@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import huggingFaceLogo from "../../assets/huggingface.svg";
 import type { Project } from "../../types/project";
 import Badge from "./Badge";
 import Button from "./Button";
@@ -63,6 +64,13 @@ export default function ProjectCard({ project }: Props) {
             <FiGithub />
             GitHub
           </Button>
+
+          {project.huggingFace && (
+            <Button href={project.huggingFace} external variant="secondary">
+              <img src={huggingFaceLogo} alt="" className="h-4 w-4 shrink-0 object-contain" />
+              Hugging Face
+            </Button>
+          )}
 
           {project.demo && (
             <Button href={project.demo} external variant="primary">
