@@ -195,7 +195,7 @@ Ce portfolio a pour objectif de présenter mes compétences et mes projets dans 
 
 * Agentic AI et systèmes autonomes bornés
 * Recherche opérationnelle, planification, optimisation et décision
-* Modélisation agent et systèmes multi-agents comme domaines d'intérêt académiques
+* Modélisation et simulation multi-agent, avec coordination CNP dans TaskFleet et fondements académiques complémentaires
 * Machine Learning appliqué
 * LLM, RAG et tool use
 * Données pour l'IA

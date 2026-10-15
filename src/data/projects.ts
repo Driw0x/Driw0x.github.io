@@ -2,6 +2,30 @@ import type { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
+    title: "TaskFleet",
+
+    subtitle: "Simulation multi-agent et allocation de tâches",
+
+    description:
+      "Simulateur déterministe d'entrepôt comparant allocation FIFO, affectation avec OR-Tools CP-SAT et négociation Contract Net Protocol. La V1 terminée intègre capacités, stations partagées, perturbations et rejeu interactif. Un benchmark reproductible couvre 87 instances distinctes et conserve les simulations incomplètes. CP-SAT optimise l'affectation courante ; CNP reste une coordination locale synchrone, sans réseau réel ni collisions physiques.",
+
+    technologies: [
+      "Python",
+      "OR-Tools CP-SAT",
+      "Contract Net Protocol",
+      "FastAPI",
+      "Vue 3",
+      "TypeScript",
+    ],
+
+    github: "https://github.com/Driw0x/TaskFleet",
+
+    status: "Terminé",
+
+    featured: false,
+  },
+
+  {
     title: "AI Job Application Workbench",
 
     subtitle: "Application locale de candidature assistée par IA",
@@ -31,7 +55,7 @@ export const projects: Project[] = [
     subtitle: "Système LLM local avec RAG, grounding et tool use",
 
     description:
-      "Assistant local d'analyse de code Python combinant retrieval hybride, reranking, RAG sourcé avec citations et grounding, puis orchestration bornée de tools read-only via MCP. Des benchmarks internes couvrent retrieval, réponses RAG, routing et tool use. Le prototype ne démontre ni autonomie générale, ni mémoire conversationnelle, ni planification multi-étapes, ni système de production.",
+      "Assistant local d'analyse de code Python combinant retrieval hybride, reranking, RAG sourcé et tools read-only via MCP. Une mémoire conversationnelle persistante ajoute compaction extractive, reprise par projet et session et budget de contexte. Les benchmarks distinguent composants, fixtures mémoire et générations réelles, dont les finales autonomes restent peu fiables. Le prototype ne démontre ni autonomie générale, ni planification multi-étapes, ni système de production.",
 
     technologies: [
       "Python",
@@ -56,7 +80,7 @@ export const projects: Project[] = [
     subtitle: "ML expérimental pour l'analyse de comportements suspects",
     
     description:
-      "Pipeline offline d'analyse de démos CS2 combinant parsing, feature engineering, détection d'anomalies et classification supervisée. Les modèles sont évalués avec séparation des matchs, validation croisée groupée, tuning et comparaison multi-métriques. Le projet reste expérimental : aucun seuil opérationnel n'est retenu et l'analyse complète d'une démo ainsi que le server-side restent à développer.",
+      "Analyseur offline de démos CS2 combinant parsing, feature engineering, détection d'anomalies et classification supervisée évaluée par match. Une commande applique le modèle figé et produit classements, rapports JSON/Markdown, visualisations et contributions du Random Forest. M6 est techniquement terminé ; l'étude externe porte sur des joueurs présumés légitimes. Scores non calibrés, détection externe de tricheurs non validée et aucun seuil opérationnel ; le server-side reste planifié.",
 
     technologies: [
       "Python",

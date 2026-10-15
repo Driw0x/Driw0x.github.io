@@ -19,7 +19,7 @@ export const skills: Skill[] = [
     category: "Systèmes LLM",
     title: "Agentic AI & Tool Use",
     description:
-      "Retrieval hybride, reranking, citations et grounding ; tool use et orchestration bornée read-only avec MCP ; prompts et contextes structurés avec frontières explicites, provenance, sorties vérifiables, évaluation manuelle et tests de non-régression ciblés. Pratique d'applications LLM avec sorties structurées, plusieurs providers, contrôles métier et validation humaine, testée synthétiquement.",
+      "Retrieval hybride, reranking, citations et grounding ; tool use borné read-only avec MCP ; mémoire persistante, compaction extractive et budget de contexte testés, sans fiabilité autonome générale démontrée. Prompts structurés, provenance, évaluation manuelle et non-régression. Pratique d'applications LLM avec sorties structurées, plusieurs providers, contrôles métier et validation humaine, testée synthétiquement.",
   },
 
   {
@@ -33,13 +33,13 @@ export const skills: Skill[] = [
     category: "Machine Learning",
     title: "ML appliqué",
     description:
-      "Expérimentation ML offline : détection d'anomalies, classification tabulaire, validation groupée, tuning et comparaison de modèles, avec analyse des métriques et des seuils de décision.",
+      "Expérimentation ML offline : détection d'anomalies, classification tabulaire, validation groupée, tuning et comparaison de modèles. Intégration d'inférence et de rapports, contributions RF et étude externe présumée légitime, avec limites de calibration et de dépendance explicites.",
   },
 
   {
-    category: "Formation & intérêts",
+    category: "Simulation & optimisation",
     title: "Optimisation & Systèmes multi-agents",
     description:
-      "Fondements académiques en recherche opérationnelle, optimisation combinatoire, décision, simulation et systèmes multi-agents. Domaines d'intérêt en cours d'approfondissement, distincts des compétences démontrées par les projets.",
+      "Simulation multi-agent déterministe et coordination Contract Net évaluées dans TaskFleet ; pratique ciblée de l'affectation OR-Tools CP-SAT et comparaison à FIFO. Fondements académiques complémentaires en recherche opérationnelle et décision, sans expertise générale des solveurs ni système distribué réel démontrés.",
   },
 ];
