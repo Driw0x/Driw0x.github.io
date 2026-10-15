@@ -10,7 +10,7 @@ function Skills() {
         <SectionTitle
           eyebrow="Compétences"
           title="Compétences et intérêts techniques."
-          description="Des pratiques soutenues par mes projets, complétées par des fondements académiques en optimisation, décision et systèmes multi-agents."
+          description="Des pratiques en recherche opérationnelle, IA agentique et systèmes multi-agents soutenues par mes projets, complétées par le machine learning et l'ingénierie des données."
         />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -10,7 +10,7 @@ export default function Projects() {
         <SectionTitle
           eyebrow="Projets"
           title="Quelques projets techniques."
-          description="Une sélection de projets montrant des systèmes agentiques bornés, de la planification heuristique et du machine learning appliqué."
+          description="Trois projets complémentaires en recherche opérationnelle, IA agentique et systèmes multi-agents : simulation d'entrepôt, analyse de code et planification heuristique."
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">

@@ -4,10 +4,10 @@ export const projects: Project[] = [
   {
     title: "TaskFleet",
 
-    subtitle: "Simulation multi-agent et allocation de tâches",
+    subtitle: "Systèmes multi-agents et affectation sous contraintes",
 
     description:
-      "Simulateur déterministe d'entrepôt comparant allocation FIFO, affectation avec OR-Tools CP-SAT et négociation Contract Net Protocol. La V1 terminée intègre capacités, stations partagées, perturbations et rejeu interactif. Un benchmark reproductible couvre 87 instances distinctes et conserve les simulations incomplètes. CP-SAT optimise l'affectation courante ; CNP reste une coordination locale synchrone, sans réseau réel ni collisions physiques.",
+      "Simulateur déterministe d'entrepôt comparant allocation FIFO, affectation instantanée avec OR-Tools CP-SAT et coordination locale Contract Net Protocol. La V1 terminée intègre capacités, stations partagées, perturbations et rejeu interactif. Un benchmark reproductible couvre 87 instances distinctes et compare durée, retards, distances et échanges entre agents.",
 
     technologies: [
       "Python",
@@ -22,7 +22,7 @@ export const projects: Project[] = [
 
     status: "Terminé",
 
-    featured: false,
+    featured: true,
   },
 
   {
@@ -52,10 +52,10 @@ export const projects: Project[] = [
   {
     title: "CodeAgent",
 
-    subtitle: "Système LLM local avec RAG, grounding et tool use",
+    subtitle: "Agent LLM local avec RAG, MCP et mémoire",
 
     description:
-      "Assistant local d'analyse de code Python combinant retrieval hybride, reranking, RAG sourcé et tools read-only via MCP. Une mémoire conversationnelle persistante ajoute compaction extractive, reprise par projet et session et budget de contexte. Les benchmarks distinguent composants, fixtures mémoire et générations réelles, dont les finales autonomes restent peu fiables. Le prototype ne démontre ni autonomie générale, ni planification multi-étapes, ni système de production.",
+      "Agent d'analyse de code Python fondé sur un LLM local, avec recherche hybride, reranking et RAG sourcé. Sa boucle agentique utilise des outils via MCP et vérifie les citations et le grounding. Une mémoire persistante, la compaction extractive et un budget de contexte assurent la continuité des sessions. Des benchmarks internes évaluent recherche et utilisation d'outils ; des tests dédiés vérifient mémoire et contexte.",
 
     technologies: [
       "Python",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     subtitle: "ML expérimental pour l'analyse de comportements suspects",
     
     description:
-      "Analyseur offline de démos CS2 combinant parsing, feature engineering, détection d'anomalies et classification supervisée évaluée par match. Une commande applique le modèle figé et produit classements, rapports JSON/Markdown, visualisations et contributions du Random Forest. M6 est techniquement terminé ; l'étude externe porte sur des joueurs présumés légitimes. Scores non calibrés, détection externe de tricheurs non validée et aucun seuil opérationnel ; le server-side reste planifié.",
+      "Analyseur offline de démos CS2 combinant parsing, feature engineering, détection d'anomalies et classification supervisée évaluée par match. Un pipeline en ligne de commande applique le modèle entraîné et génère des classements, des rapports JSON/Markdown, des visualisations et des contributions du Random Forest. Le milestone M6 comprend l'inférence, le reporting et une étude externe sur des joueurs présumés légitimes.",
 
     technologies: [
       "Python",
@@ -94,7 +94,7 @@ export const projects: Project[] = [
 
     status: "En développement",
 
-    featured: true,
+    featured: false,
   },
 
   {
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     subtitle: "Entraînement local d'un Transformer decoder-only",
 
     description:
-      "Adaptation et entraînement local d'un petit modèle de langage Transformer decoder-only sous Windows sur GPU AMD. Après comparaison de checkpoints, DirectML a été archivé à cause d'une validation qualité négative ; le développement actif cible PyTorch ROCm. Un préentraînement Dense court et une génération cohérente sont documentés, tandis que le run complet et le SFT restent planifiés.",
+      "Adaptation et entraînement local d'un petit modèle de langage Transformer decoder-only sous Windows sur GPU AMD avec PyTorch ROCm. Un préentraînement Dense court produit un checkpoint réutilisable et une génération cohérente. Le travail associe diagnostic numérique, mixed precision, sauvegarde et rechargement de checkpoints, benchmarks GPU et comparaisons historiques sous DirectML.",
 
     technologies: [
       "Python",
@@ -126,10 +126,10 @@ export const projects: Project[] = [
   {
     title: "Kaggriculture",
 
-    subtitle: "Agent heuristique de décision sous contraintes",
+    subtitle: "Planification heuristique et décision sous contraintes",
 
     description:
-      "Agent autonome terminé pour la compétition Kaggriculture sur Kaggle. Sa version finale CHI14 applique un planning heuristique sous horizon fini pour allouer ressources, travailleurs et actions sous contraintes temporelles et économiques. L'évaluation locale est reproductible dans les limites documentées ; aucun résultat de leaderboard n'est revendiqué.",
+      "Agent autonome pour un environnement agricole simulé sur Kaggle, conçu pour maximiser l'argent final. Le planner final CHI14 alloue tâches, travailleurs et ressources sous contraintes temporelles et économiques, avec planification heuristique à horizon fini et replanification. Le projet associe tests du planner et évaluations locales des stratégies.",
 
     technologies: [
       "Python",
@@ -152,7 +152,7 @@ export const projects: Project[] = [
     subtitle: "Workflows réutilisables pour assistants IA",
 
     description:
-      "Collection structurée et évaluée de workflows réutilisables pour assistants IA, avec gestion du contexte, contraintes explicites, provenance des affirmations et sorties vérifiables. Elle couvre notamment la préparation de candidatures fondée sur les preuves et la généralisation privacy-aware de repositories, tout en gardant le contexte privé local. L'évaluation repose sur quatre walkthroughs qualitatifs manuels, sans benchmark automatisé.",
+      "Collection structurée de workflows réutilisables pour assistants IA, avec gestion du contexte, contraintes explicites, provenance des affirmations et sorties vérifiables. Elle couvre la préparation de candidatures fondée sur les preuves et la généralisation de repositories avec préservation du contexte privé local. Un cadre d'évaluation manuelle s'appuie sur quatre walkthroughs qualitatifs.",
 
     technologies: [
       "Prompt Engineering",

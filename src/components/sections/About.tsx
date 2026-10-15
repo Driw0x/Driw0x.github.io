@@ -17,7 +17,7 @@ const stats = [
   {
     value: "3",
     label: "Axes du profil",
-    description: "Agentique, optimisation & multi-agent",
+    description: "Recherche opérationnelle · IA agentique · Systèmes multi-agents",
   },
   {
     value: "2027",
