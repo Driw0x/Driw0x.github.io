@@ -4,15 +4,17 @@ export const projects: Project[] = [
   {
     title: "TaskFleet",
 
-    subtitle: "Systèmes multi-agents et affectation sous contraintes",
+    subtitle: "Systèmes multi-agents, optimisation et planification",
 
     description:
-      "Simulateur déterministe d'entrepôt comparant allocation FIFO, affectation instantanée avec OR-Tools CP-SAT et coordination locale Contract Net Protocol. La V1 terminée intègre capacités, stations partagées, perturbations et rejeu interactif. Un benchmark reproductible couvre 87 instances distinctes et compare durée, retards, distances et échanges entre agents.",
+      "Simulateur d'entrepôt multi-agents consacré à la coordination de robots et à l'optimisation des opérations logistiques. Il combine allocation de tâches, ordonnancement sous contraintes et coordination distribuée simulée, avec un module dédié à la planification de trajectoires et une interface permettant de visualiser et de comparer les stratégies.",
 
     technologies: [
       "Python",
       "OR-Tools CP-SAT",
       "Contract Net Protocol",
+      "DCOP",
+      "MAPF / CBS",
       "FastAPI",
       "Vue 3",
       "TypeScript",
@@ -26,12 +28,36 @@ export const projects: Project[] = [
   },
 
   {
+    title: "OR-Agent",
+
+    subtitle: "Formulation GAP, CP-SAT et contrôle humain",
+
+    description:
+      "Assistant local de modélisation et de résolution de problèmes d'affectation sous contraintes de capacité. Il associe interprétation de demandes en langage naturel, formulation structurée, résolution par contraintes et vérification indépendante des solutions, avec un parcours de revue et de validation humaine pour contrôler et corriger les formulations.",
+
+    technologies: [
+      "Python",
+      "Pydantic",
+      "OR-Tools CP-SAT",
+      "Ollama",
+      "Human-in-the-Loop",
+      "HTML / JavaScript",
+    ],
+
+    github: "https://github.com/Driw0x/OR-Agent-hitl",
+
+    status: "Terminé",
+
+    featured: false,
+  },
+
+  {
     title: "AI Job Application Workbench",
 
     subtitle: "Application locale de candidature assistée par IA",
 
     description:
-      "Application locale pour rechercher et analyser des offres, préparer des CV et lettres à partir des faits documentés d'une base de connaissances externe, puis suivre les candidatures. Plusieurs providers LLM s'intègrent à un workflow avec génération structurée, suivi des documents et validation humaine avant toute soumission.",
+      "Prototype d'application locale pour rechercher et analyser des offres, préparer des CV et lettres à partir des faits documentés d'une base de connaissances, puis suivre les candidatures. Il combine modèles de langage, génération de documents et revue humaine pour accompagner la préparation, avec soumission effectuée par l'utilisateur.",
 
     technologies: [
       "Python",
@@ -44,7 +70,7 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/ai-job-application-workbench",
 
-    status: "Terminé",
+    status: "Prototype fonctionnel",
 
     featured: false,
   },
@@ -52,10 +78,10 @@ export const projects: Project[] = [
   {
     title: "CodeAgent",
 
-    subtitle: "Agent LLM local avec RAG, MCP et mémoire",
+    subtitle: "Agent LLM local avec RAG, MCP et reprise humaine",
 
     description:
-      "Agent d'analyse de code Python fondé sur un LLM local, avec recherche hybride, reranking et RAG sourcé. Sa boucle agentique utilise des outils via MCP et vérifie les citations et le grounding. Une mémoire persistante, la compaction extractive et un budget de contexte assurent la continuité des sessions. Des benchmarks internes évaluent recherche et utilisation d'outils ; des tests dédiés vérifient mémoire et contexte.",
+      "Prototype d'assistant d'analyse de code Python reposant sur un modèle de langage local, la génération augmentée par récupération (RAG) et des outils MCP. Il combine recherche de contexte sourcé, mémoire persistante, planification et outils de consultation du code pour assister la compréhension d'un dépôt, avec possibilité d'intervention humaine.",
 
     technologies: [
       "Python",
@@ -65,6 +91,7 @@ export const projects: Project[] = [
       "Ollama",
       "MCP",
       "Tool Use",
+      "Human-in-the-Loop",
     ],
 
     github: "https://github.com/Driw0x/CodeAgent",
@@ -80,7 +107,7 @@ export const projects: Project[] = [
     subtitle: "ML expérimental pour l'analyse de comportements suspects",
     
     description:
-      "Analyseur offline de démos CS2 combinant parsing, feature engineering, détection d'anomalies et classification supervisée évaluée par match. Un pipeline en ligne de commande applique le modèle entraîné et génère des classements, des rapports JSON/Markdown, des visualisations et des contributions du Random Forest. Le milestone M6 comprend l'inférence, le reporting et une étude externe sur des joueurs présumés légitimes.",
+      "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2, consacré à l'étude des comportements de visée suspects. Il combine extraction de télémétrie, construction de caractéristiques, détection d'anomalies et classification supervisée pour produire des scores, des rapports et des visualisations facilitant l'examen des comportements.",
 
     technologies: [
       "Python",
@@ -103,7 +130,7 @@ export const projects: Project[] = [
     subtitle: "Entraînement local d'un Transformer decoder-only",
 
     description:
-      "Adaptation et entraînement local d'un petit modèle de langage Transformer decoder-only sous Windows sur GPU AMD avec PyTorch ROCm. Un préentraînement Dense court produit un checkpoint réutilisable et une génération cohérente. Le travail associe diagnostic numérique, mixed precision, sauvegarde et rechargement de checkpoints, benchmarks GPU et comparaisons historiques sous DirectML.",
+      "Adaptation et entraînement local d'un petit modèle de langage Transformer sous Windows sur GPU AMD, avec PyTorch et ROCm. Le projet couvre le préentraînement et l'ajustement supervisé, en associant précision mixte, diagnostic numérique et gestion des checkpoints pour explorer l'apprentissage de modèles sur matériel grand public.",
 
     technologies: [
       "Python",
@@ -129,7 +156,7 @@ export const projects: Project[] = [
     subtitle: "Planification heuristique et décision sous contraintes",
 
     description:
-      "Agent autonome pour un environnement agricole simulé sur Kaggle, conçu pour maximiser l'argent final. Le planner final CHI14 alloue tâches, travailleurs et ressources sous contraintes temporelles et économiques, avec planification heuristique à horizon fini et replanification. Le projet associe tests du planner et évaluations locales des stratégies.",
+      "Agent autonome développé pour un environnement agricole simulé. Il combine planification heuristique, allocation de ressources et prise de décision sous contraintes temporelles et économiques afin d'optimiser les actions et d'adapter sa stratégie à l'évolution de l'environnement, en tenant compte de la production, des déplacements et du marché.",
 
     technologies: [
       "Python",
@@ -152,7 +179,7 @@ export const projects: Project[] = [
     subtitle: "Workflows réutilisables pour assistants IA",
 
     description:
-      "Collection structurée de workflows réutilisables pour assistants IA, avec gestion du contexte, contraintes explicites, provenance des affirmations et sorties vérifiables. Elle couvre la préparation de candidatures fondée sur les preuves et la généralisation de repositories avec préservation du contexte privé local. Un cadre d'évaluation manuelle s'appuie sur quatre walkthroughs qualitatifs.",
+      "Collection de workflows réutilisables pour assistants IA, destinée à la gestion des connaissances, à la documentation de projets et à la préparation de candidatures. Elle associe gestion du contexte, contraintes explicites et traçabilité des affirmations pour produire des résultats vérifiables, tout en séparant les instructions publiques du contexte personnel.",
 
     technologies: [
       "Prompt Engineering",
@@ -177,7 +204,7 @@ export const projects: Project[] = [
     subtitle: "Optimisation heuristique de ressources réseau",
 
     description:
-      "Développement de deux approches heuristiques pour le challenge Future Network (Data Communications) de la Huawei France Tech Arena 2025. Les solutions explorent différentes stratégies de priorisation et de scoring pour l'allocation de ressources réseau sous contraintes.",
+      "Projet d'allocation de ressources réseau et d'ordonnancement de trafic sous contraintes de capacité, développé pour le challenge Future Network. Deux approches heuristiques combinent priorisation des flux, sélection de liaisons et fonctions de score pour répartir le trafic en tenant compte des variations de capacité dans le temps.",
 
     technologies: [
       "Python",
@@ -199,7 +226,7 @@ export const projects: Project[] = [
     subtitle: "Scanner semi-automatique de succès Genshin Impact",
 
     description:
-      "Outil Python semi-automatique permettant de détecter les succès obtenus dans Genshin Impact à partir de captures d'écran. Utilisation de l'OCR pour reconnaître les titres, de fuzzy matching pour les associer à une base de succès et génération d'un export JSON compatible avec des outils comme Paimon.moe.",
+      "Outil Python semi-automatique conçu pour réduire la saisie manuelle des succès obtenus dans Genshin Impact à partir de captures d'écran. Il combine prétraitement d'images, reconnaissance de texte en anglais et rapprochement approximatif avec une base de succès pour produire des exports JSON, dont un format destiné à Paimon.moe.",
 
     technologies: [
       "Python",
@@ -220,7 +247,7 @@ export const projects: Project[] = [
     subtitle: "Analyse de trajectoires de code étudiant",
 
     description:
-      "Projet académique réalisé dans le cadre du Master AI2D. Analyse de programmes Python à partir des arbres de syntaxe abstraite (AST), calcul de distances entre programmes, classification de profils d'apprentissage et production de visualisations statistiques.",
+      "Projet académique d'analyse des programmes Python successifs d'étudiants, destiné à caractériser leurs trajectoires d'apprentissage. Il combine arbres de syntaxe abstraite, distances d'édition entre programmes, classification par règles heuristiques et visualisations statistiques pour étudier les modifications du code et la progression vers les solutions attendues.",
 
     technologies: [
       "Python",
