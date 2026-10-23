@@ -279,7 +279,7 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/Projet-AI2D",
 
-    documentation: { fr: "main/README.md", "zh-CN": "main/README.zh-CN.md" },
+    documentation: { fr: "main/README.md", "zh-CN": "main/README.md" },
 
     status: "Terminé",
   },
