@@ -22,6 +22,8 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/TaskFleet",
 
+    documentation: { fr: "main/README.md", "zh-CN": "main/README.zh-CN.md" },
+
     status: "Terminé",
 
     featured: true,
@@ -46,6 +48,8 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/OR-Agent-hitl",
 
+    documentation: { fr: "main/README.md", "zh-CN": "main/README.zh-CN.md" },
+
     status: "Terminé",
 
     featured: false,
@@ -69,6 +73,8 @@ export const projects: Project[] = [
     ],
 
     github: "https://github.com/Driw0x/ai-job-application-workbench",
+
+    documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
 
     status: "Prototype fonctionnel",
 
@@ -96,6 +102,8 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/CodeAgent",
 
+    documentation: { fr: "main/README.md", "zh-CN": "main/README.zh-CN.md" },
+
     status: "Prototype fonctionnel",
 
     featured: true,
@@ -119,6 +127,8 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/CS2Guard",
 
+    documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
+
     status: "En développement",
 
     featured: false,
@@ -141,6 +151,8 @@ export const projects: Project[] = [
     ],
 
     github: "https://github.com/Driw0x/minimind",
+
+    documentation: { fr: "master/README.fr.md", "zh-CN": "master/README.zh-CN.md" },
 
     huggingFace: "https://huggingface.co/Driw0x/minimind-rocm-pytorch",
 
@@ -168,6 +180,8 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/Kaggriculture",
 
+    documentation: { fr: "master/README.fr.md", "zh-CN": "master/README.zh-CN.md" },
+
     status: "Terminé",
 
     featured: true,
@@ -193,6 +207,8 @@ export const projects: Project[] = [
     github:
       "https://github.com/Driw0x/ai-knowledge-workflows",
 
+    documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
+
     status: "Terminé",
 
     featured: false,
@@ -217,6 +233,8 @@ export const projects: Project[] = [
     github:
       "https://github.com/Driw0x/france-tech-arena-2025-future-network",
 
+    documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
+
     status: "Terminé",
   },
 
@@ -238,6 +256,8 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/Genshin_Achievements_Scanner",
 
+    documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
+
     status: "Terminé",
   },
 
@@ -258,6 +278,8 @@ export const projects: Project[] = [
     ],
 
     github: "https://github.com/Driw0x/Projet-AI2D",
+
+    documentation: { fr: "main/README.md", "zh-CN": "main/README.zh-CN.md" },
 
     status: "Terminé",
   },

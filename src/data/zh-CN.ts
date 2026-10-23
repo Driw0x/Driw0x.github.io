@@ -63,6 +63,7 @@ export const zhCN: Record<string, string> = {
   "Voir tous les projets": "查看全部项目",
   "Projet principal": "重点项目",
   "Démo": "演示",
+  "Documentation": "项目文档",
   "En développement": "开发中",
   "Prototype fonctionnel": "可运行原型",
   "Terminé": "已完成",

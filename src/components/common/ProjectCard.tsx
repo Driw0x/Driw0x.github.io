@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { FiBookOpen, FiGithub, FiExternalLink } from "react-icons/fi";
 import huggingFaceLogo from "../../assets/huggingface.svg";
 import type { Project } from "../../types/project";
 import Badge from "./Badge";
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default function ProjectCard({ project }: Props) {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   return (
     <motion.article
       initial={{ opacity: 0, y: 24 }}
@@ -65,6 +65,11 @@ export default function ProjectCard({ project }: Props) {
           <Button href={project.github} external variant="secondary">
             <FiGithub />
             GitHub
+          </Button>
+
+          <Button href={`${project.github}/blob/${project.documentation[language]}`} external variant="secondary">
+            <FiBookOpen />
+            {t("Documentation")}
           </Button>
 
           {project.huggingFace && (

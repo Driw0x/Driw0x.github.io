@@ -20,9 +20,11 @@ Une page **Projets** dédiée permet également de consulter l'ensemble de mes p
 
 Le sélecteur **FR / 中文**, disponible sur les deux pages et sur mobile, permet de passer du français au chinois simplifié. Le français est affiché par défaut ; le choix est mémorisé lorsque le stockage du navigateur est disponible. Les liens du CV suivent la langue sélectionnée : `public/cv/Victor_Ye_CV.pdf` en français, `public/cv/Victor_Ye_CV_zh-CN.pdf` en chinois simplifié.
 
-Les textes français restent dans les données et composants existants. Les traductions sont centralisées dans `src/data/zh-CN.ts`, avec le texte français comme clé ; toute modification d'un texte source doit aussi mettre à jour sa traduction. Les deux versions conservent les mêmes projets, liens, statuts et limites documentées dans la Knowledge Base.
+Les textes français restent dans les données et composants existants. Les traductions sont centralisées dans `src/data/zh-CN.ts`, avec le texte français comme clé ; toute modification d'un texte source doit aussi mettre à jour sa traduction. Les deux versions conservent les mêmes projets, statuts et limites documentées dans la Knowledge Base.
 
 Vérifier la couverture des traductions : `node --test tests/localization.test.mjs`.
+
+Chaque carte de projet propose un lien **Documentation** vers le README français ou chinois simplifié du dépôt, selon la langue sélectionnée. Les chemins et branches sont définis dans `src/data/projects.ts`. Les README et guides techniques de ces dépôts proposent des liens réciproques entre leurs versions linguistiques.
 
 ## Technologies utilisées
 
