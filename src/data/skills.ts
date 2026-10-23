@@ -19,7 +19,7 @@ export const skills: Skill[] = [
     category: "Systèmes LLM",
     title: "IA agentique & outils LLM",
     description:
-      "Systèmes LLM locaux avec retrieval hybride, reranking, citations, grounding et outils MCP. Mémoire, budgets et planification contrôlée dans une extension locale de CodeAgent, dont l'autonomie reste partiellement validée. Pratique du HITL : admission d'un modèle relu dans OR-Agent, reprise d'exécution dans CodeAgent et revue documentaire dans une application multi-provider. Succès assistés distingués des résultats autonomes.",
+      "Systèmes LLM locaux avec retrieval hybride, reranking, citations, grounding et outils MCP. Mémoire, budgets, plans multi-étapes et replanification bornée dans CodeAgent, avec contrôle des preuves et de la complétude. Pratique du HITL : admission d'un modèle relu dans OR-Agent, reprise d'exécution partiellement validée dans CodeAgent et revue documentaire dans une application multi-provider. Succès assistés distingués des résultats autonomes.",
   },
 
   {

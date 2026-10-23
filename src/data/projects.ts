@@ -61,7 +61,7 @@ export const projects: Project[] = [
     subtitle: "Application locale de candidature assistée par IA",
 
     description:
-      "Prototype d'application locale pour rechercher et analyser des offres, préparer des CV et lettres à partir des faits documentés d'une base de connaissances, puis suivre les candidatures. Il combine modèles de langage, génération de documents et revue humaine pour accompagner la préparation, avec soumission effectuée par l'utilisateur.",
+      "Prototype d'application locale pour rechercher et analyser des offres, préparer des CV à mise en page ATS et des lettres à partir des faits documentés d'une base de connaissances, puis suivre les candidatures. La concurrence de préparation est configurable et une relance est suggérée dix jours après un accusé de réception enregistré. Revue des documents et soumission restent humaines.",
 
     technologies: [
       "Python",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     subtitle: "Agent LLM local avec RAG, MCP et reprise humaine",
 
     description:
-      "Prototype d'assistant d'analyse de code Python reposant sur un modèle de langage local, la génération augmentée par récupération (RAG) et des outils MCP. Il combine recherche de contexte sourcé, mémoire persistante, planification et outils de consultation du code pour assister la compréhension d'un dépôt, avec possibilité d'intervention humaine.",
+      "Prototype d'assistant d'analyse de code Python avec RAG sourcé, mémoire persistante et outils MCP. Il combine plans multi-étapes, dépendances, collecte de preuves, budgets et replanification bornée. Deux scénarios locaux ont été réussis sans intervention humaine ; la reprise humaine reste disponible et partiellement validée.",
 
     technologies: [
       "Python",

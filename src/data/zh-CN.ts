@@ -43,8 +43,8 @@ export const zhCN: Record<string, string> = {
     "设计约束条件下的规划与分配启发式方法。在限定问题中使用 CP-SAT 进行广义指派问题（GAP）求解、时间调度、滚动时域规划及指定场景下的极小极大优化，并独立验证候选解。",
   "Systèmes LLM": "大语言模型系统",
   "IA agentique & outils LLM": "智能体 AI 与大语言模型工具",
-  "Systèmes LLM locaux avec retrieval hybride, reranking, citations, grounding et outils MCP. Mémoire, budgets et planification contrôlée dans une extension locale de CodeAgent, dont l'autonomie reste partiellement validée. Pratique du HITL : admission d'un modèle relu dans OR-Agent, reprise d'exécution dans CodeAgent et revue documentaire dans une application multi-provider. Succès assistés distingués des résultats autonomes.":
-    "本地大语言模型系统实践涵盖混合检索、重排序、引用、来源依据核验和 MCP 工具。CodeAgent 的本地扩展包含记忆、预算限制与受控规划，其自主性仅得到部分验证。人工介入（HITL）实践包括：在 OR-Agent 中审核并批准问题模型、在 CodeAgent 中恢复执行，以及在支持多个模型服务提供方的应用中审核文档。人工辅助成功与自主运行结果分别记录。",
+  "Systèmes LLM locaux avec retrieval hybride, reranking, citations, grounding et outils MCP. Mémoire, budgets, plans multi-étapes et replanification bornée dans CodeAgent, avec contrôle des preuves et de la complétude. Pratique du HITL : admission d'un modèle relu dans OR-Agent, reprise d'exécution partiellement validée dans CodeAgent et revue documentaire dans une application multi-provider. Succès assistés distingués des résultats autonomes.":
+    "本地大语言模型系统实践涵盖混合检索、重排序、引用、来源依据核验和 MCP 工具。CodeAgent 结合记忆、预算限制、多步骤计划与有限重规划，并检查证据和任务完成的完整性。人工介入（HITL）实践包括：在 OR-Agent 中审核并批准问题模型、在 CodeAgent 中恢复执行（仅获部分验证），以及在支持多个模型服务提供方的应用中审核文档。人工辅助成功与自主运行结果分别记录。",
   "Deep Learning": "深度学习",
   "PyTorch & Model Training": "PyTorch 与模型训练",
   "Adaptation et entraînement local d'un Transformer decoder-only avec PyTorch ROCm sur GPU AMD : Dense Pretrain et Full SFT, comparaison de checkpoints, mixed precision et diagnostics numériques. Résultats sur références locales, avec limites de factualité et de raisonnement ; DirectML historique et pratique guidée complémentaire avec Hugging Face.":
@@ -82,11 +82,11 @@ export const zhCN: Record<string, string> = {
   "Assistant local de modélisation et de résolution de problèmes d'affectation sous contraintes de capacité. Il associe interprétation de demandes en langage naturel, formulation structurée, résolution par contraintes et vérification indépendante des solutions, avec un parcours de revue et de validation humaine pour contrôler et corriger les formulations.":
     "用于容量约束指派问题建模与求解的本地助手。结合自然语言需求解析、结构化建模、约束求解与解的独立验证，并提供人工审核和确认流程，以检查和修正问题模型。",
   "Application locale de candidature assistée par IA": "AI 辅助求职的本地应用",
-  "Prototype d'application locale pour rechercher et analyser des offres, préparer des CV et lettres à partir des faits documentés d'une base de connaissances, puis suivre les candidatures. Il combine modèles de langage, génération de documents et revue humaine pour accompagner la préparation, avec soumission effectuée par l'utilisateur.":
-    "本地应用原型，用于搜索和分析职位、依据知识库中有记录的事实准备简历与求职信，并跟踪申请。结合语言模型、文档生成与人工审核辅助申请准备，最终由用户自行提交。",
+  "Prototype d'application locale pour rechercher et analyser des offres, préparer des CV à mise en page ATS et des lettres à partir des faits documentés d'une base de connaissances, puis suivre les candidatures. La concurrence de préparation est configurable et une relance est suggérée dix jours après un accusé de réception enregistré. Revue des documents et soumission restent humaines.":
+    "本地求职辅助应用原型，用于搜索和分析职位，根据知识库中有记录的事实准备采用 ATS 排版的简历与求职信，并跟踪申请。可配置同时准备申请材料的数量，并在记录收到确认回执十天后建议跟进。文档由用户审核，申请由用户自行提交。",
   "Agent LLM local avec RAG, MCP et reprise humaine": "结合 RAG、MCP 与人工介入恢复执行的本地 LLM 智能体",
-  "Prototype d'assistant d'analyse de code Python reposant sur un modèle de langage local, la génération augmentée par récupération (RAG) et des outils MCP. Il combine recherche de contexte sourcé, mémoire persistante, planification et outils de consultation du code pour assister la compréhension d'un dépôt, avec possibilité d'intervention humaine.":
-    "基于本地大语言模型、检索增强生成（RAG）和 MCP 工具的 Python 代码分析助手原型。结合有来源依据的上下文检索、持久化记忆、规划和代码查阅工具，辅助理解代码仓库，并支持人工介入。",
+  "Prototype d'assistant d'analyse de code Python avec RAG sourcé, mémoire persistante et outils MCP. Il combine plans multi-étapes, dépendances, collecte de preuves, budgets et replanification bornée. Deux scénarios locaux ont été réussis sans intervention humaine ; la reprise humaine reste disponible et partiellement validée.":
+    "Python 代码分析助手原型，结合有来源依据的检索增强生成（RAG）、持久化记忆与 MCP 工具。支持多步骤计划、步骤依赖、证据收集、预算限制及有限重规划。两个本地场景在无人工介入的情况下成功完成；仍支持人工介入恢复执行，其验证尚不完整。",
   "ML expérimental pour l'analyse de comportements suspects": "用于可疑行为分析的实验性机器学习",
   "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2, consacré à l'étude des comportements de visée suspects. Il combine extraction de télémétrie, construction de caractéristiques, détection d'anomalies et classification supervisée pour produire des scores, des rapports et des visualisations facilitant l'examen des comportements.":
     "用于离线分析 Counter-Strike 2 对局的实验性工具，研究可疑瞄准行为。结合遥测数据提取、特征构建、异常检测与监督分类，生成评分、报告和可视化结果，辅助审查游戏行为。",
