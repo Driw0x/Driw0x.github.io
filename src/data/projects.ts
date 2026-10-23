@@ -22,7 +22,7 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/TaskFleet",
 
-    documentation: { fr: "main/README.md", "zh-CN": "main/README.zh-CN.md" },
+    documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
 
     status: "Terminé",
 
@@ -48,7 +48,7 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/OR-Agent-hitl",
 
-    documentation: { fr: "main/README.md", "zh-CN": "main/README.zh-CN.md" },
+    documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
 
     status: "Terminé",
 
@@ -102,7 +102,7 @@ export const projects: Project[] = [
 
     github: "https://github.com/Driw0x/CodeAgent",
 
-    documentation: { fr: "main/README.md", "zh-CN": "main/README.zh-CN.md" },
+    documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
 
     status: "Prototype fonctionnel",
 
