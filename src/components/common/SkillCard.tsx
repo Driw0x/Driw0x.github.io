@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
 import type { Skill } from '../../types/skill'
+import { useLanguage } from '../../i18n'
 
 function SkillCard({ skill, index }: { skill: Skill; index: number }) {
+  const { t } = useLanguage()
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -11,9 +13,9 @@ function SkillCard({ skill, index }: { skill: Skill; index: number }) {
       whileHover={{ y: -6 }}
       className="glass rounded-3xl p-6 transition hover:border-cyan-300/40"
     >
-      <p className="text-sm font-medium text-cyan-300">{skill.category}</p>
-      <h3 className="mt-3 text-xl font-bold text-white">{skill.title}</h3>
-      <p className="mt-3 text-sm leading-6 text-slate-400">{skill.description}</p>
+      <p className="text-sm font-medium text-cyan-300">{t(skill.category)}</p>
+      <h3 className="mt-3 text-xl font-bold text-white">{t(skill.title)}</h3>
+      <p className="mt-3 text-sm leading-6 text-slate-400">{t(skill.description)}</p>
     </motion.div>
   )
 }

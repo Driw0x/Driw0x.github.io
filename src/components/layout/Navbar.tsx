@@ -1,38 +1,40 @@
 import { profile } from "../../data/profile";
+import { useLanguage } from "../../i18n";
 
 type NavbarProps = {
   projectsPage?: boolean;
 };
 
 function Navbar({ projectsPage = false }: NavbarProps) {
+  const { language, setLanguage, t, cvHref } = useLanguage();
   const base = import.meta.env.BASE_URL;
 
   const links = projectsPage
     ? [
-        { href: "/", label: "Accueil" },
+        { href: "/", label: t("Accueil") },
         {
-          href: `${base}cv/Victor_Ye_CV.pdf`,
-          label: "CV",
+          href: cvHref,
+          label: t("CV"),
           external: true,
         },
-        { href: "/#contact", label: "Contact" },
+        { href: "/#contact", label: t("Contact") },
       ]
     : [
-        { href: "#about", label: "À propos" },
-        { href: "#skills", label: "Compétences" },
-        { href: "#projects", label: "Projets" },
-        { href: "#timeline", label: "Parcours" },
+        { href: "#about", label: t("À propos") },
+        { href: "#skills", label: t("Compétences") },
+        { href: "#projects", label: t("Projets") },
+        { href: "#timeline", label: t("Parcours") },
         {
-          href: `${base}cv/Victor_Ye_CV.pdf`,
-          label: "CV",
+          href: cvHref,
+          label: t("CV"),
           external: true,
         },
-        { href: "#contact", label: "Contact" },
+        { href: "#contact", label: t("Contact") },
       ];
 
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-slate-950/60 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <a
           href={base}
           className="font-bold tracking-tight text-white"
@@ -51,6 +53,21 @@ function Navbar({ projectsPage = false }: NavbarProps) {
             >
               {link.label}
             </a>
+          ))}
+        </div>
+
+        <div role="group" aria-label={t("Langue du site")} className="flex shrink-0 items-center rounded-lg border border-white/15 p-1 text-sm">
+          {(["fr", "zh-CN"] as const).map((locale) => (
+            <button
+              key={locale}
+              type="button"
+              lang={locale}
+              aria-pressed={language === locale}
+              onClick={() => setLanguage(locale)}
+              className={`rounded-md px-3 py-1.5 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300 ${language === locale ? "bg-cyan-300/15 text-cyan-200" : "text-slate-300 hover:text-white"}`}
+            >
+              {locale === "fr" ? "FR" : "中文"}
+            </button>
           ))}
         </div>
       </nav>

@@ -4,12 +4,14 @@ import huggingFaceLogo from "../../assets/huggingface.svg";
 import type { Project } from "../../types/project";
 import Badge from "./Badge";
 import Button from "./Button";
+import { useLanguage } from "../../i18n";
 
 type Props = {
   project: Project;
 };
 
 export default function ProjectCard({ project }: Props) {
+  const { t } = useLanguage();
   return (
     <motion.article
       initial={{ opacity: 0, y: 24 }}
@@ -31,12 +33,12 @@ export default function ProjectCard({ project }: Props) {
                 : "border-cyan-400/30 bg-cyan-400/10 text-cyan-300"
             }`}
           >
-            {project.status}
+            {t(project.status)}
           </span>
 
           {project.featured && (
             <span className="rounded-full border border-amber-300/20 bg-amber-300/10 px-3 py-1 text-xs font-medium text-amber-200">
-              Projet principal
+              {t("Projet principal")}
             </span>
           )}
         </div>
@@ -46,16 +48,16 @@ export default function ProjectCard({ project }: Props) {
         </h3>
 
         <p className="mt-2 text-sm font-medium text-cyan-300">
-          {project.subtitle}
+          {t(project.subtitle)}
         </p>
 
         <p className="mt-5 leading-7 text-slate-300">
-          {project.description}
+          {t(project.description)}
         </p>
 
         <div className="mt-6 flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
-            <Badge key={tech}>{tech}</Badge>
+            <Badge key={tech}>{t(tech)}</Badge>
           ))}
         </div>
 
@@ -75,7 +77,7 @@ export default function ProjectCard({ project }: Props) {
           {project.demo && (
             <Button href={project.demo} external variant="primary">
               <FiExternalLink />
-              Démo
+              {t("Démo")}
             </Button>
           )}
         </div>

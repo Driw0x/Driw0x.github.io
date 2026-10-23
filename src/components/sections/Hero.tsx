@@ -3,8 +3,10 @@ import { FiArrowDown } from "react-icons/fi";
 import { profile } from "../../data/profile";
 import Button from "../common/Button";
 import Container from "../common/Container";
+import { useLanguage } from "../../i18n";
 
 export default function Hero() {
+  const { t, cvHref } = useLanguage();
   return (
     <section className="relative flex min-h-screen items-center pt-24">
       <Container>
@@ -15,7 +17,7 @@ export default function Hero() {
             transition={{ duration: 0.75 }}
           >
             <div className="mb-6 inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm text-cyan-200">
-              À la recherche d'un stage de fin d'études
+              {t("À la recherche d'un stage de fin d'études")}
             </div>
 
             <h1 className="text-6xl font-black leading-[0.95] tracking-tight text-white md:text-8xl">
@@ -24,34 +26,34 @@ export default function Hero() {
 
             <div className="mt-6 max-w-3xl">
               <p className="text-2xl font-bold text-white md:text-4xl">
-                Étudiant en Master 2 AI2D
+                {t("Étudiant en Master 2 AI2D")}
               </p>
 
               <p className="mt-3 text-xl text-cyan-300">
-                Sorbonne Université
+                {t("Sorbonne Université")}
               </p>
             </div>
 
             <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-300">
-              Je recherche un stage de fin d'études dans le cadre de mon Master 2 AI2D à Sorbonne Université. Mes trois domaines d'intérêt sont la recherche opérationnelle, l'IA agentique et les systèmes multi-agents. Mes projets les illustrent par la planification et l'allocation sous contraintes, les agents LLM locaux et la simulation multi-agent. Le machine learning appliqué et l'ingénierie des données complètent ce profil.
+              {t("Je recherche un stage de fin d'études dans le cadre de mon Master 2 AI2D à Sorbonne Université. Mes trois domaines d'intérêt sont la recherche opérationnelle, l'IA agentique et les systèmes multi-agents. Mes projets les illustrent par la planification et l'allocation sous contraintes, les agents LLM locaux et la simulation multi-agent. Le machine learning appliqué et l'ingénierie des données complètent ce profil.")}
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Button href="#projects">
-                Voir mes projets
+                {t("Voir mes projets")}
                 <FiArrowDown />
               </Button>
 
               <Button
-                href="/cv/Victor_Ye_CV.pdf"
+                href={cvHref}
                 variant="secondary"
                 external
               >
-                Voir mon CV
+                {t("Voir mon CV")}
               </Button>
 
               <Button href="#contact" variant="secondary">
-                Me contacter
+                {t("Me contacter")}
               </Button>
             </div>
           </motion.div>

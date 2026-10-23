@@ -1,8 +1,10 @@
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { profile } from "../../data/profile";
 import Container from "../common/Container";
+import { useLanguage } from "../../i18n";
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="border-t border-white/10 py-10">
       <Container>
@@ -10,7 +12,7 @@ export default function Footer() {
           <div>
             <p className="font-bold text-white">{profile.name}</p>
             <p className="mt-1 text-sm text-slate-400">
-              Étudiant en Master 2 AI2D · Sorbonne Université
+              {t("Étudiant en Master 2 AI2D · Sorbonne Université")}
             </p>
           </div>
 
@@ -24,7 +26,7 @@ export default function Footer() {
             </a>
 
             <a href={`mailto:${profile.email}`} className="flex items-center gap-2 transition hover:text-cyan-300">
-              <FiMail /> Email
+              <FiMail /> {t("Email")}
             </a>
           </div>
 

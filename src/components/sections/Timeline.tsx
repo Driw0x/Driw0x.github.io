@@ -2,15 +2,17 @@ import { motion } from "framer-motion";
 import Container from "../common/Container";
 import SectionTitle from "../common/SectionTitle";
 import { timeline } from "../../data/timeline";
+import { useLanguage } from "../../i18n";
 
 export default function Timeline() {
+  const { t } = useLanguage();
   return (
     <section id="timeline" className="py-28">
       <Container>
         <SectionTitle
-          eyebrow="Parcours"
-          title="Mon évolution"
-          description="Les principales étapes de mon parcours académique et de mes projets."
+          eyebrow={t("Parcours")}
+          title={t("Mon évolution")}
+          description={t("Les principales étapes de mon parcours académique et de mes projets.")}
         />
 
         <div className="relative mt-16">
@@ -37,22 +39,22 @@ export default function Timeline() {
                 <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:border-cyan-300/40 hover:bg-white/[0.05]">
                   {/* Année */}
                   <span className="inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-sm font-medium text-cyan-300">
-                    {item.period}
+                    {t(item.period)}
                   </span>
 
                   {/* Titre */}
                   <h3 className="mt-5 text-3xl font-bold text-white">
-                    {item.title}
+                    {t(item.title)}
                   </h3>
 
                   {/* Sous-titre */}
                   <p className="mt-2 text-lg text-cyan-300">
-                    {item.subtitle}
+                    {t(item.subtitle)}
                   </p>
 
                   {/* Description */}
                   <p className="mt-6 leading-8 text-slate-300">
-                    {item.description}
+                    {t(item.description)}
                   </p>
                 </div>
               </motion.div>

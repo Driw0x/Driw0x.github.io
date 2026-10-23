@@ -5,6 +5,7 @@ import Container from "../components/common/Container";
 import ProjectCard from "../components/common/ProjectCard";
 import SectionTitle from "../components/common/SectionTitle";
 import { projects } from "../data/projects";
+import { useLanguage } from "../i18n";
 
 const projectGroups = [
   {
@@ -30,6 +31,7 @@ const projectGroups = [
 ];
 
 export default function ProjectsPage() {
+  const { t } = useLanguage();
   return (
     <>
       <Background />
@@ -40,9 +42,9 @@ export default function ProjectsPage() {
         <section className="py-28">
           <Container>
             <SectionTitle
-              eyebrow="Projets"
-              title="Tous mes projets."
-              description="Découvrez mes projets en recherche opérationnelle, IA agentique et systèmes multi-agents, ainsi qu'en machine learning et ingénierie des données."
+              eyebrow={t("Projets")}
+              title={t("Tous mes projets.")}
+              description={t("Découvrez mes projets en recherche opérationnelle, IA agentique et systèmes multi-agents, ainsi qu'en machine learning et ingénierie des données.")}
             />
 
             <div className="mt-12 space-y-16">
@@ -59,7 +61,7 @@ export default function ProjectsPage() {
                   <section key={group.title}>
                     <div className="mb-6 flex items-center gap-3">
                       <h2 className="text-2xl font-bold text-white">
-                        {group.title}
+                        {t(group.title)}
                       </h2>
 
                       <span className="text-sm text-slate-500">

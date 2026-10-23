@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Container from "../common/Container";
 import SectionTitle from "../common/SectionTitle";
 import { projects } from "../../data/projects";
+import { useLanguage } from "../../i18n";
 
 const stats = [
   {
@@ -27,13 +28,14 @@ const stats = [
 ];
 
 export default function About() {
+  const { t } = useLanguage();
   return (
     <section id="about" className="py-28">
       <Container>
         <SectionTitle
-          eyebrow="Profil"
-          title="Quelques informations clés."
-          description="Un aperçu de mon parcours, de mes projets et de mes principaux domaines techniques."
+          eyebrow={t("Profil")}
+          title={t("Quelques informations clés.")}
+          description={t("Un aperçu de mon parcours, de mes projets et de mes principaux domaines techniques.")}
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -51,11 +53,11 @@ export default function About() {
               </h3>
 
               <p className="mt-5 text-xl font-semibold text-white">
-                {stat.label}
+                {t(stat.label)}
               </p>
 
               <p className="mt-3 text-sm leading-7 text-slate-400">
-                {stat.description}
+                {t(stat.description)}
               </p>
             </motion.div>
           ))}
