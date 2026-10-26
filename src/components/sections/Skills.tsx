@@ -3,6 +3,7 @@ import Container from '../common/Container'
 import SectionTitle from '../common/SectionTitle'
 import SkillCard from '../common/SkillCard'
 import { useLanguage } from '../../i18n'
+import Button from '../common/Button'
 
 function Skills() {
   const { t } = useLanguage()
@@ -19,6 +20,12 @@ function Skills() {
           {skills.map((skill, index) => (
             <SkillCard key={skill.title} skill={skill} index={index} />
           ))}
+        </div>
+
+        <div className="mt-10 flex justify-center">
+          <Button href="#/skills" variant="secondary">
+            {t("Explorer compétences, projets et certificats")}
+          </Button>
         </div>
       </Container>
     </section>

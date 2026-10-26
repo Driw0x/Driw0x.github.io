@@ -2,6 +2,7 @@ import type { Skill } from "../types/skill";
 
 export const skills: Skill[] = [
   {
+    id: "data",
     category: "Données pour l'IA",
     title: "Data & Feature Engineering",
     description:
@@ -9,6 +10,7 @@ export const skills: Skill[] = [
   },
 
   {
+    id: "optimization",
     category: "Recherche opérationnelle",
     title: "Heuristiques & Décision",
     description:
@@ -16,6 +18,7 @@ export const skills: Skill[] = [
   },
 
   {
+    id: "agents",
     category: "Systèmes LLM",
     title: "IA agentique & outils LLM",
     description:
@@ -23,6 +26,7 @@ export const skills: Skill[] = [
   },
 
   {
+    id: "training",
     category: "Deep Learning",
     title: "PyTorch & Model Training",
     description:
@@ -30,6 +34,7 @@ export const skills: Skill[] = [
   },
 
   {
+    id: "ml",
     category: "Machine Learning",
     title: "ML appliqué",
     description:
@@ -37,6 +42,7 @@ export const skills: Skill[] = [
   },
 
   {
+    id: "multi-agent",
     category: "Systèmes multi-agents",
     title: "Simulation & optimisation",
     description:

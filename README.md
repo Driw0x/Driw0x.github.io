@@ -18,7 +18,11 @@ Le portfolio est organisé autour d'une page principale présentant :
 
 Une page **Projets** dédiée permet également de consulter l'ensemble de mes projets sans surcharger la page principale.
 
-Le sélecteur **FR / 中文**, disponible sur les deux pages et sur mobile, permet de passer du français au chinois simplifié. Le français est affiché par défaut ; le choix est mémorisé lorsque le stockage du navigateur est disponible. Les liens du CV suivent la langue sélectionnée : `public/cv/Victor_Ye_CV.pdf` en français, `public/cv/Victor_Ye_CV_zh-CN.pdf` en chinois simplifié.
+La page **Explorer** (`#/skills`) relie les compétences aux projets et aux certificats dans un graphe interactif, sur ordinateur et mobile. Elle propose zoom, déplacement du fond à la souris et fiches de détail avec justificatifs. Chaque carte de compétence sélectionne le domaine correspondant dans le graphe complet (`#/skills?skill=agents`, par exemple).
+
+Les associations sont centralisées dans `src/data/skillConnections.ts`. Elles réutilisent les six domaines et les projets existants sans modifier leur niveau de maîtrise. Les cinq justificatifs Google, Oracle et Microsoft viennent des liens et de la capture LinkedIn fournis par le propriétaire le 26 octobre 2026. Les dates Microsoft et Google restent au mois ; les dates exactes Oracle sont confirmées par sa page nominative. Les attestations Hugging Face sont documentées dans les fiches Knowledge Base « Agents IA » et « Modèles Transformer » ; aucune date n'est inventée. Les évaluations Microsoft Applied Skills, le badge Google, la certification Oracle et les attestations de cours restent distingués. Les liens vers un domaine portent sur une partie de son contenu, sans attribuer l'ensemble du domaine au certificat.
+
+Le sélecteur **FR / 中文**, disponible sur toutes les pages et sur mobile, permet de passer du français au chinois simplifié. Le français est affiché par défaut ; le choix est mémorisé lorsque le stockage du navigateur est disponible. Les liens du CV suivent la langue sélectionnée : `public/cv/Victor_Ye_CV.pdf` en français, `public/cv/Victor_Ye_CV_zh-CN.pdf` en chinois simplifié.
 
 Les textes français restent dans les données et composants existants. Les traductions sont centralisées dans `src/data/zh-CN.ts`, avec le texte français comme clé ; toute modification d'un texte source doit aussi mettre à jour sa traduction. Les deux versions conservent les mêmes projets, statuts et limites documentées dans la Knowledge Base.
 

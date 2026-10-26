@@ -32,6 +32,8 @@ function Navbar({ projectsPage = false }: NavbarProps) {
         { href: "#contact", label: t("Contact") },
       ];
 
+  links.splice(1, 0, { href: "#/skills", label: t("Explorer") });
+
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-slate-950/60 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
@@ -42,7 +44,7 @@ function Navbar({ projectsPage = false }: NavbarProps) {
           {profile.name}
         </a>
 
-        <div className="hidden items-center gap-7 text-sm text-slate-300 md:flex">
+        <div className="hidden items-center gap-4 text-sm text-slate-300 md:flex lg:gap-7">
           {links.map((link) => (
             <a
               key={link.href}

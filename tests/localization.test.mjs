@@ -22,6 +22,7 @@ test("Chinese translations cover all descriptive data and UI translation calls",
   const fields = {
     projects: { projects: ["subtitle", "description", "status"] },
     skills: { skills: ["category", "title", "description"] },
+    skillConnections: { certifications: ["label", "kind", "description"] },
     timeline: { timeline: ["period", "title", "subtitle", "description"] },
     personal: { languages: ["name", "level"], interests: ["title", "description"] },
   };
@@ -54,5 +55,39 @@ test("Chinese translations cover all descriptive data and UI translation calls",
       ts.forEachChild(node, visit);
     }
     visit(source);
+  }
+});
+
+test("skill connections reference existing skills and projects, with distinct public credentials", async () => {
+  const { skills } = await loadData("skills");
+  const { projects } = await loadData("projects");
+  const { certifications, projectSkillIds } = await loadData("skillConnections");
+  const skillIds = new Set(skills.map((skill) => skill.id));
+  assert.equal(skillIds.size, skills.length, "Skill IDs must be unique");
+  const projectNames = new Set(projects.map((project) => project.title));
+  const coveredSkills = new Set();
+
+  for (const [project, ids] of Object.entries(projectSkillIds)) {
+    assert.ok(projectNames.has(project), `Unknown project: ${project}`);
+    assert.ok(ids.length > 0, `Missing skill connections: ${project}`);
+    assert.equal(new Set(ids).size, ids.length, `Duplicate connection: ${project}`);
+    for (const id of ids) {
+      assert.ok(skillIds.has(id), `Unknown skill: ${id}`);
+      coveredSkills.add(id);
+    }
+  }
+  assert.deepEqual(coveredSkills, skillIds, "Every skill needs project evidence");
+
+  assert.equal(new Set(certifications.map((certificate) => certificate.id)).size, certifications.length);
+  assert.equal(new Set(certifications.map((certificate) => certificate.url)).size, certifications.length);
+  for (const certificate of certifications) {
+    assert.equal(new URL(certificate.url).protocol, "https:");
+    assert.ok(certificate.skillIds.length > 0);
+    for (const id of certificate.skillIds) assert.ok(skillIds.has(id), `Unknown certificate skill: ${id}`);
+    if (certificate.issuedOn) assert.match(certificate.issuedOn, /^\d{4}-\d{2}(-\d{2})?$/);
+    if (certificate.expiresOn) {
+      assert.match(certificate.expiresOn, /^\d{4}-\d{2}-\d{2}$/);
+      assert.ok(certificate.expiresOn > certificate.issuedOn, "Expiration must follow issue date");
+    }
   }
 });

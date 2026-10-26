@@ -43,3 +43,45 @@ body {
     linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
   background-size: 56px 56px;
 }
+
+.explorer-canvas {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+  cursor: grab;
+}
+
+.explorer-canvas:active {
+  cursor: grabbing;
+}
+
+.explorer-tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.explorer-tool:hover:not(:disabled) {
+  background-color: rgb(255 255 255 / 0.08);
+}
+
+.explorer-tool:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.explorer-node,
+.explorer-related {
+  cursor: pointer;
+}
+
+.explorer-tool:focus-visible,
+.explorer-node:focus-visible,
+.explorer-related:focus-visible {
+  outline: 2px solid #67e8f9;
+  outline-offset: 4px;
+}
