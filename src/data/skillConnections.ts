@@ -11,8 +11,8 @@ export interface Certification {
   expiresOn?: string;
 }
 
-// Issuer links and LinkedIn capture supplied by the owner on 2026-10-26.
-// Month-only dates preserve the precision of the capture. Oracle confirms the exact dates.
+// Issuer links supplied by the owner and verified on 2026-10-26.
+// Exact dates and credential scopes are documented in the Knowledge Base Certifications register.
 export const certifications: Certification[] = [
   {
     id: "google-adk",
@@ -23,7 +23,18 @@ export const certifications: Certification[] = [
     description: "Badge consacré à l'ingénierie d'agents avec Google Agent Development Kit (ADK).",
     url: "https://www.credly.com/badges/1bc19421-7c99-4276-8778-61ffda4fc2a2/public_url",
     skillIds: ["agents"],
-    issuedOn: "2026-10",
+    issuedOn: "2026-10-26",
+  },
+  {
+    id: "google-multi-agent",
+    title: "Deploy Multi-Agent Architectures",
+    label: "Architectures multi-agents",
+    issuer: "Google Cloud",
+    kind: "Badge de compétences",
+    description: "Badge pratique : agents ADK, communication A2A, outils MCP et déploiement sur Agent Engine dans un laboratoire évalué.",
+    url: "https://www.credly.com/badges/093d9027-8545-4d95-9fe2-affcba9e2fce",
+    skillIds: ["agents", "multi-agent"],
+    issuedOn: "2026-10-26",
   },
   {
     id: "oracle-agentic-ai",
@@ -46,7 +57,7 @@ export const certifications: Certification[] = [
     description: "Évaluation pratique : connecter un agent à un serveur MCP et suivre l'utilisation des outils dans Microsoft Foundry.",
     url: "https://learn.microsoft.com/fr-fr/users/victorye-3151/credentials/50a19ce04736009c",
     skillIds: ["agents"],
-    issuedOn: "2026-10",
+    issuedOn: "2026-10-25",
   },
   {
     id: "microsoft-tools",
@@ -57,7 +68,7 @@ export const certifications: Certification[] = [
     description: "Évaluation pratique : créer un agent avec le SDK Microsoft Foundry et intégrer des outils natifs et personnalisés.",
     url: "https://learn.microsoft.com/fr-fr/users/victorye-3151/credentials/153159a7a72345ea",
     skillIds: ["agents"],
-    issuedOn: "2026-10",
+    issuedOn: "2026-10-25",
   },
   {
     id: "microsoft-agents",
@@ -68,7 +79,7 @@ export const certifications: Certification[] = [
     description: "Évaluation pratique : déployer un modèle, créer un agent et le tester dans Microsoft Foundry.",
     url: "https://learn.microsoft.com/fr-fr/users/victorye-3151/credentials/7257c57a159a21a2",
     skillIds: ["agents"],
-    issuedOn: "2026-10",
+    issuedOn: "2026-10-25",
   },
   {
     id: "hf-agents",
