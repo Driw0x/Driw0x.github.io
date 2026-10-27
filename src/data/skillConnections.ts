@@ -11,7 +11,7 @@ export interface Certification {
   expiresOn?: string;
 }
 
-// Issuer links verified on 2026-10-26; Microsoft chat credential verified on 2026-10-27.
+// Issuer links verified on 2026-10-26; Microsoft chat and Copilot credentials verified on 2026-10-27.
 // Exact dates and credential scopes are documented in the Knowledge Base Certifications register.
 export const certifications: Certification[] = [
   {
@@ -89,6 +89,17 @@ export const certifications: Certification[] = [
     kind: "Évaluation pratique",
     description: "Évaluation pratique : préparer et déployer un modèle dans Microsoft Foundry, créer une application de chat avec le SDK et gérer l'historique conversationnel.",
     url: "https://learn.microsoft.com/fr-fr/users/victorye-3151/credentials/522d9664db1a0b99",
+    skillIds: ["agents"],
+    issuedOn: "2026-10-27",
+  },
+  {
+    id: "microsoft-copilot-issues",
+    title: "Microsoft Applied Skills: Resolve GitHub issues by using GitHub Copilot",
+    label: "Résolution d'issues avec Copilot",
+    issuer: "Microsoft",
+    kind: "Évaluation pratique",
+    description: "Évaluation pratique : investiguer des issues GitHub avec Copilot Ask, les corriger avec le mode Agent, vérifier le build et les tests, puis préparer une pull request et clôturer l'issue.",
+    url: "https://learn.microsoft.com/fr-fr/users/victorye-3151/credentials/9cbf418702fd9b6c",
     skillIds: ["agents"],
     issuedOn: "2026-10-27",
   },
