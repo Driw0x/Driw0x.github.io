@@ -13,7 +13,6 @@ import Timeline from "./components/sections/Timeline";
 import Personal from "./components/sections/Personal";
 
 import ProjectsPage from "./pages/ProjectsPage";
-import SkillsPage from "./pages/SkillsPage";
 
 export default function App() {
   const [hash, setHash] = useState(window.location.hash);
@@ -32,11 +31,6 @@ export default function App() {
 
   if (hash === "#/projects") {
     return <ProjectsPage />;
-  }
-
-  if (hash.split("?")[0] === "#/skills") {
-    const skillId = new URLSearchParams(hash.split("?")[1]).get("skill") ?? "";
-    return <SkillsPage key={skillId} initialSkillId={skillId} />;
   }
 
   return (

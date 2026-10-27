@@ -1,5 +1,16 @@
 // French source text remains canonical. Keep project names and library names unchanged.
 export const zhCN: Record<string, string> = {
+  "Développer": "展开",
+  "Toutes les compétences": "全部技能",
+  "projet associé": "个相关项目",
+  "projets associés": "个相关项目",
+  "Projet": "项目",
+  "Certificat": "证书",
+  "Choisissez un domaine pour découvrir les projets qui le mettent en pratique et les formations qui le complètent.": "选择一个领域，了解相关项目实践和补充培训。",
+  "Vue d'ensemble des compétences": "技能总览",
+  "Projets — mise en pratique": "项目 — 实践应用",
+  "Certificats — formations et évaluations": "证书 — 培训与评估",
+  "Aucun certificat associé à ce domaine.": "该领域暂无相关证书。",
   "Explorer": "探索",
   "Certificats": "证书",
   "Compétences, projets & certifications.": "技能、项目与认证",
@@ -9,6 +20,7 @@ export const zhCN: Record<string, string> = {
   "certificat associé": "项相关证书",
   "certificats associés": "项相关证书",
   "Éléments et liens": "条目与关联",
+  "Fermer les détails": "关闭详情",
   "Cliquez sur un élément pour explorer ses liens.": "点击条目以探索相关内容。",
   "Zoom du graphe": "关系图缩放",
   "Réduire": "缩小",
@@ -84,28 +96,28 @@ export const zhCN: Record<string, string> = {
     "通过项目积累运筹学、智能体 AI 和多智能体系统的实践经验，并辅以机器学习和数据工程实践。",
   "Données pour l'IA": "面向 AI 的数据工程",
   "Data & Feature Engineering": "数据与特征工程",
-  "Construction et validation de datasets, feature engineering, prévention du data leakage et reprise par checkpoint de traitements longs.":
-    "构建与验证数据集、开展特征工程、防止数据泄漏，并通过检查点恢复长时间运行的数据处理任务。",
+  "Construction et validation de datasets multi-sources, parsing et normalisation de données hétérogènes. Calcul de caractéristiques temporelles ou structurelles adaptées aux analyses et aux modèles. Prévention du data leakage, contrôles de cohérence et reprise par checkpoint des traitements longs.":
+    "构建并验证多来源数据集，解析和规范化异构数据。计算适用于分析和建模的时间或结构特征。防范数据泄漏，检查数据一致性，并通过检查点恢复长时间运行的数据处理任务。",
   "Recherche opérationnelle": "运筹学",
   "Heuristiques & Décision": "启发式方法与决策",
-  "Conception d'heuristiques de planification et d'allocation sous contraintes. Pratique ciblée de CP-SAT pour l'affectation GAP, l'ordonnancement temporel, l'horizon glissant et une optimisation minimax sur scénarios déclarés, avec vérification indépendante des candidats.":
-    "设计约束条件下的规划与分配启发式方法。在限定问题中使用 CP-SAT 进行广义指派问题（GAP）求解、时间调度、滚动时域规划及指定场景下的极小极大优化，并独立验证候选解。",
+  "Conception d'heuristiques de planification et d'allocation sous contraintes. Pratique ciblée de CP-SAT pour l'affectation GAP, l'ordonnancement temporel, l'horizon glissant et une optimisation minimax sur scénarios déclarés, avec vérification indépendante des candidats. Comparaison expérimentale des stratégies.":
+    "设计约束条件下的规划与分配启发式方法。在限定问题中使用 CP-SAT 求解 GAP、进行时间调度、滚动时域规划及指定场景下的极小极大优化，独立验证候选解，并通过实验比较策略。",
   "Systèmes LLM": "大语言模型系统",
   "IA agentique & outils LLM": "智能体 AI 与大语言模型工具",
-  "Systèmes LLM locaux avec retrieval hybride, reranking, citations, grounding et outils MCP. Mémoire, budgets, plans multi-étapes et replanification bornée dans CodeAgent, avec contrôle des preuves et de la complétude. Pratique du HITL : admission d'un modèle relu dans OR-Agent, reprise d'exécution partiellement validée dans CodeAgent et revue documentaire dans une application multi-provider. Succès assistés distingués des résultats autonomes.":
-    "本地大语言模型系统实践涵盖混合检索、重排序、引用、来源依据核验和 MCP 工具。CodeAgent 结合记忆、预算限制、多步骤计划与有限重规划，并检查证据和任务完成的完整性。人工介入（HITL）实践包括：在 OR-Agent 中审核并批准问题模型、在 CodeAgent 中恢复执行（仅获部分验证），以及在支持多个模型服务提供方的应用中审核文档。人工辅助成功与自主运行结果分别记录。",
+  "Systèmes LLM locaux : retrieval hybride, reranking, citations et outils MCP. Orchestration de plans multi-étapes avec mémoire, budgets, contrôle des preuves et replanification bornée. Intégration du contrôle humain et de reprises partiellement validées ; résultats assistés distingués des succès autonomes.":
+    "本地 LLM 系统涵盖混合检索、重排序、引用与 MCP 工具。通过记忆、预算、证据检查和有限重规划编排多步骤计划。集成人工审核与仅获部分验证的接续执行机制；人工辅助成功与自主运行成功分别记录。",
   "Deep Learning": "深度学习",
   "PyTorch & Model Training": "PyTorch 与模型训练",
-  "Adaptation et entraînement local d'un Transformer decoder-only avec PyTorch ROCm sur GPU AMD : Dense Pretrain et Full SFT, comparaison de checkpoints, mixed precision et diagnostics numériques. Résultats sur références locales, avec limites de factualité et de raisonnement ; DirectML historique et pratique guidée complémentaire avec Hugging Face.":
-    "使用 PyTorch ROCm 在 AMD GPU 上适配并本地训练仅解码器 Transformer：完成稠密模型预训练和全参数监督微调，比较检查点，使用混合精度并开展数值诊断。结果基于本地参考测试，在事实准确性和推理能力方面仍有限制；另有历史 DirectML 实验和 Hugging Face 指导式练习。",
+  "Adaptation et entraînement local d'un Transformer decoder-only avec PyTorch ROCm sur GPU AMD : préentraînement, ajustement supervisé, mixed precision et diagnostics numériques. Gestion et comparaison de checkpoints, avec résultats sur références locales et limites documentées de factualité et de raisonnement.":
+    "使用 PyTorch ROCm 在 AMD GPU 上适配并本地训练仅解码器 Transformer，涵盖预训练、监督微调、混合精度与数值诊断。管理和比较检查点；结果基于本地参考测试，事实准确性和推理能力的限制均有记录。",
   "Machine Learning": "机器学习",
   "ML appliqué": "应用机器学习",
-  "Expérimentation ML offline : détection d'anomalies, classification tabulaire, validation groupée, tuning et comparaison de modèles. Intégration d'inférence et de rapports ; reproduction sur test historique et analyse d'une cohorte à annotations négatives. Scores non calibrés, sans seuil opérationnel ni généralisation externe positive démontrés.":
-    "离线机器学习实验：异常检测、表格数据分类、分组验证、调参与模型比较。集成推理和报告生成，复现历史测试，并分析标注为阴性的样本群体。评分尚未校准，未确定实际应用阈值，也未获得外部泛化能力的正向验证。",
+  "Expérimentation ML offline : détection d'anomalies, classification tabulaire, validation groupée, tuning et comparaison de modèles. Intégration de l'inférence et de rapports, tests historiques et analyse de cohortes négatives. Scores non calibrés, sans seuil opérationnel ni généralisation externe positive démontrés.":
+    "离线机器学习实验涵盖异常检测、表格分类、分组验证、调参与模型比较。集成推理与报告，进行历史测试并分析阴性标注队列。评分未校准，未确定实际应用阈值，也未证明外部泛化能力。",
   "Systèmes multi-agents": "多智能体系统",
   "Simulation & optimisation": "仿真与优化",
-  "Simulation déterministe, Contract Net et allocation distribuée DSA-B dans TaskFleet. MAPF séparé avec A* espace-temps, CBS et vérification des collisions ; comparaisons avec références exhaustives sur petits cas. Q-learning indépendant tabulaire implémenté et évalué, sans généralisation apprise démontrée. Réseau simulé, sans système distribué réel.":
-    "在 TaskFleet 中实现确定性仿真、合同网协议和 DSA-B 分布式分配。独立的多智能体路径规划（MAPF）模块使用时空 A*、CBS 和碰撞检查，并在小规模案例上与穷举参考结果比较。已实现并评估独立表格型 Q-learning，但未证明其学习结果具有泛化能力。网络为仿真环境，并非真实分布式系统。",
+  "Simulation déterministe, coordination par Contract Net et allocation distribuée DSA-B. Planification multi-agents avec A* espace-temps, CBS et vérification des collisions sur petits cas. Q-learning indépendant tabulaire évalué, sans généralisation apprise démontrée. Réseau simulé, sans système distribué réel.":
+    "开展确定性仿真、合同网协调和 DSA-B 分布式分配。使用时空 A* 与 CBS 进行多智能体规划，并在小规模案例上检查碰撞。已评估独立表格型 Q-learning，但未证明学习结果的泛化能力。网络为仿真，并非真实分布式系统。",
   "Quelques projets techniques.": "技术项目精选",
   "Trois projets complémentaires en recherche opérationnelle, IA agentique et systèmes multi-agents : simulation d'entrepôt, analyse de code et planification heuristique.":
     "三个互补项目涉及运筹学、智能体 AI 和多智能体系统，分别围绕仓库仿真、代码分析与启发式规划展开。",

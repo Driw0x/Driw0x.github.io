@@ -12,6 +12,7 @@ function Navbar({ projectsPage = false }: NavbarProps) {
   const links = projectsPage
     ? [
         { href: "/", label: t("Accueil") },
+        { href: "/#skills", label: t("Compétences") },
         {
           href: cvHref,
           label: t("CV"),
@@ -31,8 +32,6 @@ function Navbar({ projectsPage = false }: NavbarProps) {
         },
         { href: "#contact", label: t("Contact") },
       ];
-
-  links.splice(1, 0, { href: "#/skills", label: t("Explorer") });
 
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-slate-950/60 backdrop-blur-xl">

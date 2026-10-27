@@ -6,7 +6,7 @@ export const skills: Skill[] = [
     category: "Données pour l'IA",
     title: "Data & Feature Engineering",
     description:
-      "Construction et validation de datasets, feature engineering, prévention du data leakage et reprise par checkpoint de traitements longs.",
+      "Construction et validation de datasets multi-sources, parsing et normalisation de données hétérogènes. Calcul de caractéristiques temporelles ou structurelles adaptées aux analyses et aux modèles. Prévention du data leakage, contrôles de cohérence et reprise par checkpoint des traitements longs.",
   },
 
   {
@@ -14,7 +14,7 @@ export const skills: Skill[] = [
     category: "Recherche opérationnelle",
     title: "Heuristiques & Décision",
     description:
-      "Conception d'heuristiques de planification et d'allocation sous contraintes. Pratique ciblée de CP-SAT pour l'affectation GAP, l'ordonnancement temporel, l'horizon glissant et une optimisation minimax sur scénarios déclarés, avec vérification indépendante des candidats.",
+      "Conception d'heuristiques de planification et d'allocation sous contraintes. Pratique ciblée de CP-SAT pour l'affectation GAP, l'ordonnancement temporel, l'horizon glissant et une optimisation minimax sur scénarios déclarés, avec vérification indépendante des candidats. Comparaison expérimentale des stratégies.",
   },
 
   {
@@ -22,7 +22,7 @@ export const skills: Skill[] = [
     category: "Systèmes LLM",
     title: "IA agentique & outils LLM",
     description:
-      "Systèmes LLM locaux avec retrieval hybride, reranking, citations, grounding et outils MCP. Mémoire, budgets, plans multi-étapes et replanification bornée dans CodeAgent, avec contrôle des preuves et de la complétude. Pratique du HITL : admission d'un modèle relu dans OR-Agent, reprise d'exécution partiellement validée dans CodeAgent et revue documentaire dans une application multi-provider. Succès assistés distingués des résultats autonomes.",
+      "Systèmes LLM locaux : retrieval hybride, reranking, citations et outils MCP. Orchestration de plans multi-étapes avec mémoire, budgets, contrôle des preuves et replanification bornée. Intégration du contrôle humain et de reprises partiellement validées ; résultats assistés distingués des succès autonomes.",
   },
 
   {
@@ -30,7 +30,7 @@ export const skills: Skill[] = [
     category: "Deep Learning",
     title: "PyTorch & Model Training",
     description:
-      "Adaptation et entraînement local d'un Transformer decoder-only avec PyTorch ROCm sur GPU AMD : Dense Pretrain et Full SFT, comparaison de checkpoints, mixed precision et diagnostics numériques. Résultats sur références locales, avec limites de factualité et de raisonnement ; DirectML historique et pratique guidée complémentaire avec Hugging Face.",
+      "Adaptation et entraînement local d'un Transformer decoder-only avec PyTorch ROCm sur GPU AMD : préentraînement, ajustement supervisé, mixed precision et diagnostics numériques. Gestion et comparaison de checkpoints, avec résultats sur références locales et limites documentées de factualité et de raisonnement.",
   },
 
   {
@@ -38,7 +38,7 @@ export const skills: Skill[] = [
     category: "Machine Learning",
     title: "ML appliqué",
     description:
-      "Expérimentation ML offline : détection d'anomalies, classification tabulaire, validation groupée, tuning et comparaison de modèles. Intégration d'inférence et de rapports ; reproduction sur test historique et analyse d'une cohorte à annotations négatives. Scores non calibrés, sans seuil opérationnel ni généralisation externe positive démontrés.",
+      "Expérimentation ML offline : détection d'anomalies, classification tabulaire, validation groupée, tuning et comparaison de modèles. Intégration de l'inférence et de rapports, tests historiques et analyse de cohortes négatives. Scores non calibrés, sans seuil opérationnel ni généralisation externe positive démontrés.",
   },
 
   {
@@ -46,6 +46,6 @@ export const skills: Skill[] = [
     category: "Systèmes multi-agents",
     title: "Simulation & optimisation",
     description:
-      "Simulation déterministe, Contract Net et allocation distribuée DSA-B dans TaskFleet. MAPF séparé avec A* espace-temps, CBS et vérification des collisions ; comparaisons avec références exhaustives sur petits cas. Q-learning indépendant tabulaire implémenté et évalué, sans généralisation apprise démontrée. Réseau simulé, sans système distribué réel.",
+      "Simulation déterministe, coordination par Contract Net et allocation distribuée DSA-B. Planification multi-agents avec A* espace-temps, CBS et vérification des collisions sur petits cas. Q-learning indépendant tabulaire évalué, sans généralisation apprise démontrée. Réseau simulé, sans système distribué réel.",
   },
 ];
