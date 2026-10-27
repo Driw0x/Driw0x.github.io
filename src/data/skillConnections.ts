@@ -11,7 +11,7 @@ export interface Certification {
   expiresOn?: string;
 }
 
-// Issuer links supplied by the owner and verified on 2026-10-26.
+// Issuer links verified on 2026-10-26; Microsoft chat credential verified on 2026-10-27.
 // Exact dates and credential scopes are documented in the Knowledge Base Certifications register.
 export const certifications: Certification[] = [
   {
@@ -80,6 +80,17 @@ export const certifications: Certification[] = [
     url: "https://learn.microsoft.com/fr-fr/users/victorye-3151/credentials/7257c57a159a21a2",
     skillIds: ["agents"],
     issuedOn: "2026-10-25",
+  },
+  {
+    id: "microsoft-chat",
+    title: "Microsoft Applied Skills: Develop a Generative AI Chat App Using the Microsoft Foundry SDK",
+    label: "Chat génératif avec Foundry SDK",
+    issuer: "Microsoft",
+    kind: "Évaluation pratique",
+    description: "Évaluation pratique : préparer et déployer un modèle dans Microsoft Foundry, créer une application de chat avec le SDK et gérer l'historique conversationnel.",
+    url: "https://learn.microsoft.com/fr-fr/users/victorye-3151/credentials/522d9664db1a0b99",
+    skillIds: ["agents"],
+    issuedOn: "2026-10-27",
   },
   {
     id: "hf-agents",
