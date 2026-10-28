@@ -11,7 +11,7 @@ export interface Certification {
   expiresOn?: string;
 }
 
-// Issuer links verified on 2026-10-26; Microsoft chat and Copilot credentials verified on 2026-10-27.
+// Issuer links verified on 2026-10-26; Microsoft chat/Copilot on 2026-10-27 and Copilot Studio on 2026-10-28.
 // Exact dates and credential scopes are documented in the Knowledge Base Certifications register.
 export const certifications: Certification[] = [
   {
@@ -102,6 +102,17 @@ export const certifications: Certification[] = [
     url: "https://learn.microsoft.com/fr-fr/users/victorye-3151/credentials/9cbf418702fd9b6c",
     skillIds: ["agents"],
     issuedOn: "2026-10-27",
+  },
+  {
+    id: "microsoft-autonomous-agents",
+    title: "Microsoft Applied Skills: Enhance agents with autonomous capabilities",
+    label: "Agents autonomes avec Copilot Studio",
+    issuer: "Microsoft",
+    kind: "Évaluation pratique",
+    description: "Évaluation pratique : configurer un agent Copilot Studio avec connaissances, flows comme outils, déclencheurs événementiels ou récurrents, gestion des erreurs et interaction humaine.",
+    url: "https://learn.microsoft.com/fr-fr/users/victorye-3151/credentials/479c01b5ec78d615",
+    skillIds: ["agents"],
+    issuedOn: "2026-10-28",
   },
   {
     id: "hf-agents",
