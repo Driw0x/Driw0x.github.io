@@ -11,7 +11,7 @@ export interface Certification {
   expiresOn?: string;
 }
 
-// Issuer links verified from 2026-10-26 to 2026-10-29; exact scopes and dates are kept in the KB register.
+// Issuer links verified from 2026-10-26 to 2026-10-30; exact scopes and dates are kept in the KB register.
 // Exact dates and credential scopes are documented in the Knowledge Base Certifications register.
 export const certifications: Certification[] = [
   {
@@ -68,6 +68,18 @@ export const certifications: Certification[] = [
     url: "https://www.credly.com/badges/bd4fd793-683d-4ba8-b8e2-2be463c8d342",
     skillIds: ["data"],
     issuedOn: "2026-10-29",
+  },
+  {
+    id: "google-cloud-data-analytics",
+    title: "Google Cloud Data Analytics Certificate",
+    label: "Analyse de données dans le cloud",
+    issuer: "Google Cloud",
+    kind: "Certificat de formation",
+    description: "Parcours fondamental de cinq cours : SQL de base, nettoyage, gestion et transformation des données, analyse, visualisation et communication des résultats dans le cloud.",
+    url: "https://www.credly.com/badges/4f299054-92ec-416b-9bd3-a6393a36c654",
+    skillIds: ["data"],
+    issuedOn: "2026-10-29",
+    expiresOn: "2029-10-29",
   },
   {
     id: "oracle-agentic-ai",
