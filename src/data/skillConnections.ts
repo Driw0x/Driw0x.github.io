@@ -59,6 +59,17 @@ export const certifications: Certification[] = [
     issuedOn: "2026-10-29",
   },
   {
+    id: "google-bigquery-warehouse",
+    title: "Build a Data Warehouse with BigQuery Skill Badge",
+    label: "Entrepôt de données avec BigQuery",
+    issuer: "Google Cloud",
+    kind: "Badge de compétences",
+    description: "Badge pratique : créer des tables avec jointures et unions, diagnostiquer les jointures, partitionner par date et traiter JSON, tableaux et structures dans BigQuery, dans un challenge lab évalué.",
+    url: "https://www.credly.com/badges/bd4fd793-683d-4ba8-b8e2-2be463c8d342",
+    skillIds: ["data"],
+    issuedOn: "2026-10-29",
+  },
+  {
     id: "oracle-agentic-ai",
     title: "Agentic AI Certified Foundations Associate",
     label: "Fondamentaux de l'IA agentique",
