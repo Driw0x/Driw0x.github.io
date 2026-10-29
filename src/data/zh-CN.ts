@@ -43,6 +43,8 @@ export const zhCN: Record<string, string> = {
   "Attestation de cours": "课程证明",
   "Agents avec Google ADK": "使用 Google ADK 开发智能体",
   "Architectures multi-agents": "多智能体架构",
+  "Workflows avec Gemini Enterprise": "使用 Gemini Enterprise 编排工作流",
+  "Badge pratique : utiliser des assistants Gemini Enterprise pour réunir des sources multiples, produire des contenus multimédias et automatiser des actions entre systèmes dans une évaluation appliquée.": "实操技能徽章：在应用评估中使用 Gemini Enterprise 智能体助手整合多种来源、制作多媒体内容，并自动执行跨系统操作。",
   "Badge pratique : agents ADK, communication A2A, outils MCP et déploiement sur Agent Engine dans un laboratoire évalué.": "实操技能徽章：在考核实验中使用 ADK 构建智能体、通过 A2A 通信、集成 MCP 工具并部署至 Agent Engine。",
   "Fondamentaux de l'IA agentique": "智能体 AI 基础",
   "MCP & agents dans Foundry": "Foundry 中的 MCP 与智能体",

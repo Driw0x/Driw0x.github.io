@@ -11,7 +11,7 @@ export interface Certification {
   expiresOn?: string;
 }
 
-// Issuer links verified on 2026-10-26; Microsoft chat/Copilot on 2026-10-27 and Copilot Studio on 2026-10-28.
+// Issuer links verified from 2026-10-26 to 2026-10-29; exact scopes and dates are kept in the KB register.
 // Exact dates and credential scopes are documented in the Knowledge Base Certifications register.
 export const certifications: Certification[] = [
   {
@@ -35,6 +35,17 @@ export const certifications: Certification[] = [
     url: "https://www.credly.com/badges/093d9027-8545-4d95-9fe2-affcba9e2fce",
     skillIds: ["agents", "multi-agent"],
     issuedOn: "2026-10-26",
+  },
+  {
+    id: "google-gemini-workflows",
+    title: "Orchestrate Multi-agent Workflows with Gemini Enterprise",
+    label: "Workflows avec Gemini Enterprise",
+    issuer: "Google Cloud",
+    kind: "Badge de compétences",
+    description: "Badge pratique : utiliser des assistants Gemini Enterprise pour réunir des sources multiples, produire des contenus multimédias et automatiser des actions entre systèmes dans une évaluation appliquée.",
+    url: "https://www.credly.com/badges/3bd546e7-6260-4340-a966-b83d11b178b6/public_url",
+    skillIds: ["agents", "multi-agent"],
+    issuedOn: "2026-10-29",
   },
   {
     id: "oracle-agentic-ai",
