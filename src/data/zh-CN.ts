@@ -98,28 +98,28 @@ export const zhCN: Record<string, string> = {
     "通过项目积累运筹学、智能体 AI 和多智能体系统的实践经验，并辅以机器学习和数据工程实践。",
   "Données pour l'IA": "面向 AI 的数据工程",
   "Data & Feature Engineering": "数据与特征工程",
-  "Construction et validation de datasets multi-sources, parsing et normalisation de données hétérogènes. Calcul de caractéristiques temporelles ou structurelles adaptées aux analyses et aux modèles. Prévention du data leakage, contrôles de cohérence et reprise par checkpoint des traitements longs.":
-    "构建并验证多来源数据集，解析和规范化异构数据。计算适用于分析和建模的时间或结构特征。防范数据泄漏，检查数据一致性，并通过检查点恢复长时间运行的数据处理任务。",
+  "Construction et validation de datasets multi-sources, parsing et normalisation de données hétérogènes. Calcul de caractéristiques temporelles et structurelles pour l'analyse et les modèles. Prévention du data leakage, contrôles de cohérence et reprise des traitements par checkpoint.":
+    "构建并验证多来源数据集，解析和规范化异构数据。计算用于分析和建模的时间与结构特征。防范数据泄漏，检查数据一致性，并通过检查点恢复数据处理任务。",
   "Recherche opérationnelle": "运筹学",
   "Heuristiques & Décision": "启发式方法与决策",
-  "Conception d'heuristiques de planification et d'allocation sous contraintes. Pratique ciblée de CP-SAT pour l'affectation GAP, l'ordonnancement temporel, l'horizon glissant et une optimisation minimax sur scénarios déclarés, avec vérification indépendante des candidats. Comparaison expérimentale des stratégies.":
-    "设计约束条件下的规划与分配启发式方法。在限定问题中使用 CP-SAT 求解 GAP、进行时间调度、滚动时域规划及指定场景下的极小极大优化，独立验证候选解，并通过实验比较策略。",
+  "Conception d'heuristiques de planification et d'allocation sous contraintes. Modélisation et résolution de problèmes d'affectation et d'ordonnancement avec CP-SAT. Planification à horizon glissant, vérification indépendante des solutions et comparaison expérimentale des stratégies.":
+    "设计约束条件下的规划与分配启发式方法。使用 CP-SAT 对分配与调度问题建模并求解。开展滚动时域规划，独立验证解，并通过实验比较策略。",
   "Systèmes LLM": "大语言模型系统",
   "IA agentique & outils LLM": "智能体 AI 与大语言模型工具",
-  "Systèmes LLM locaux : retrieval hybride, reranking, citations et outils MCP. Orchestration de plans multi-étapes avec mémoire, budgets, contrôle des preuves et replanification bornée. Intégration du contrôle humain et de reprises partiellement validées ; résultats assistés distingués des succès autonomes.":
-    "本地 LLM 系统涵盖混合检索、重排序、引用与 MCP 工具。通过记忆、预算、证据检查和有限重规划编排多步骤计划。集成人工审核与仅获部分验证的接续执行机制；人工辅助成功与自主运行成功分别记录。",
+  "Développement d'agents LLM locaux avec recherche hybride, reranking, citations et outils MCP. Orchestration de plans multi-étapes avec mémoire, budgets d'exécution et contrôle des preuves. Intégration de la validation humaine dans les workflows de décision et d'exécution.":
+    "开发本地 LLM 智能体，集成混合检索、重排序、引用与 MCP 工具。利用记忆、执行预算和证据检查编排多步骤计划。在决策与执行工作流中集成人工审核。",
   "Deep Learning": "深度学习",
   "PyTorch & Model Training": "PyTorch 与模型训练",
-  "Adaptation et entraînement local d'un Transformer decoder-only avec PyTorch ROCm sur GPU AMD : préentraînement, ajustement supervisé, mixed precision et diagnostics numériques. Gestion et comparaison de checkpoints, avec résultats sur références locales et limites documentées de factualité et de raisonnement.":
-    "使用 PyTorch ROCm 在 AMD GPU 上适配并本地训练仅解码器 Transformer，涵盖预训练、监督微调、混合精度与数值诊断。管理和比较检查点；结果基于本地参考测试，事实准确性和推理能力的限制均有记录。",
+  "Adaptation et entraînement local d'un Transformer decoder-only avec PyTorch ROCm sur GPU AMD. Préentraînement, ajustement supervisé et mixed precision. Diagnostic des instabilités numériques, gestion des checkpoints et comparaison des performances et de la qualité des modèles.":
+    "使用 PyTorch ROCm 在 AMD GPU 上适配并本地训练仅解码器 Transformer。开展预训练、监督微调和混合精度训练。诊断数值不稳定问题，管理检查点，并比较模型性能与质量。",
   "Machine Learning": "机器学习",
   "ML appliqué": "应用机器学习",
-  "Expérimentation ML offline : détection d'anomalies, classification tabulaire, validation groupée, tuning et comparaison de modèles. Intégration de l'inférence et de rapports, tests historiques et analyse de cohortes négatives. Scores non calibrés, sans seuil opérationnel ni généralisation externe positive démontrés.":
-    "离线机器学习实验涵盖异常检测、表格分类、分组验证、调参与模型比较。集成推理与报告，进行历史测试并分析阴性标注队列。评分未校准，未确定实际应用阈值，也未证明外部泛化能力。",
+  "Construction de pipelines de détection d'anomalies et de classification tabulaire. Validation croisée groupée, recherche d'hyperparamètres et comparaison multi-métriques des modèles. Analyse des faux positifs, intégration de l'inférence et génération de rapports d'analyse.":
+    "构建异常检测与表格分类流水线。开展分组交叉验证、超参数搜索及多指标模型比较。分析误报，集成推理，并生成分析报告。",
   "Systèmes multi-agents": "多智能体系统",
   "Simulation & optimisation": "仿真与优化",
-  "Simulation déterministe, coordination par Contract Net et allocation distribuée DSA-B. Planification multi-agents avec A* espace-temps, CBS et vérification des collisions sur petits cas. Q-learning indépendant tabulaire évalué, sans généralisation apprise démontrée. Réseau simulé, sans système distribué réel.":
-    "开展确定性仿真、合同网协调和 DSA-B 分布式分配。使用时空 A* 与 CBS 进行多智能体规划，并在小规模案例上检查碰撞。已评估独立表格型 Q-learning，但未证明学习结果的泛化能力。网络为仿真，并非真实分布式系统。",
+  "Modélisation et simulation de systèmes multi-agents. Coordination par Contract Net et allocation distribuée avec DSA-B. Planification de chemins avec A* espace-temps et CBS, vérification des collisions et comparaison des stratégies à partir de scénarios reproductibles.":
+    "对多智能体系统进行建模与仿真。使用合同网协议进行协调，使用 DSA-B 进行分布式分配。利用时空 A* 与 CBS 规划路径、检查碰撞，并通过可复现的场景比较策略。",
   "Quelques projets techniques.": "技术项目精选",
   "Trois projets complémentaires en recherche opérationnelle, IA agentique et systèmes multi-agents : simulation d'entrepôt, analyse de code et planification heuristique.":
     "三个互补项目涉及运筹学、智能体 AI 和多智能体系统，分别围绕仓库仿真、代码分析与启发式规划展开。",
