@@ -48,6 +48,17 @@ export const certifications: Certification[] = [
     issuedOn: "2026-10-29",
   },
   {
+    id: "google-bigquery-ml-data",
+    title: "Engineer Data for Predictive Modeling with BigQuery ML Skill Badge",
+    label: "Données prédictives avec BigQuery ML",
+    issuer: "Google Cloud",
+    kind: "Badge de compétences",
+    description: "Badge pratique : transformations et pipelines ETL vers BigQuery avec Cloud Storage et Dataflow, construction de modèles BigQuery ML et copies de données avec Cloud Composer, dans un challenge lab évalué.",
+    url: "https://www.credly.com/badges/102b6b69-2b17-4e15-ae99-4a258df1e7ae/public_url",
+    skillIds: ["data", "ml"],
+    issuedOn: "2026-10-29",
+  },
+  {
     id: "oracle-agentic-ai",
     title: "Agentic AI Certified Foundations Associate",
     label: "Fondamentaux de l'IA agentique",

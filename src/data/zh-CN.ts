@@ -44,6 +44,8 @@ export const zhCN: Record<string, string> = {
   "Agents avec Google ADK": "使用 Google ADK 开发智能体",
   "Architectures multi-agents": "多智能体架构",
   "Workflows avec Gemini Enterprise": "使用 Gemini Enterprise 编排工作流",
+  "Données prédictives avec BigQuery ML": "使用 BigQuery ML 处理预测建模数据",
+  "Badge pratique : transformations et pipelines ETL vers BigQuery avec Cloud Storage et Dataflow, construction de modèles BigQuery ML et copies de données avec Cloud Composer, dans un challenge lab évalué.": "实操技能徽章：在考核实验中使用 Cloud Storage 和 Dataflow 构建通往 BigQuery 的数据转换与 ETL 流水线，创建 BigQuery ML 模型，并通过 Cloud Composer 复制数据。",
   "Badge pratique : utiliser des assistants Gemini Enterprise pour réunir des sources multiples, produire des contenus multimédias et automatiser des actions entre systèmes dans une évaluation appliquée.": "实操技能徽章：在应用评估中使用 Gemini Enterprise 智能体助手整合多种来源、制作多媒体内容，并自动执行跨系统操作。",
   "Badge pratique : agents ADK, communication A2A, outils MCP et déploiement sur Agent Engine dans un laboratoire évalué.": "实操技能徽章：在考核实验中使用 ADK 构建智能体、通过 A2A 通信、集成 MCP 工具并部署至 Agent Engine。",
   "Fondamentaux de l'IA agentique": "智能体 AI 基础",
