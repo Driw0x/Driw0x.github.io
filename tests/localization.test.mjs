@@ -82,7 +82,7 @@ test("skill connections reference existing skills and projects, with distinct pu
   assert.equal(new Set(certifications.map((certificate) => certificate.url)).size, certifications.length);
   for (const certificate of certifications) {
     assert.equal(new URL(certificate.url).protocol, "https:");
-    assert.ok(certificate.skillIds.length > 0);
+    // Credentials outside the six project-backed domains are displayed as complementary certificates.
     for (const id of certificate.skillIds) assert.ok(skillIds.has(id), `Unknown certificate skill: ${id}`);
     if (certificate.issuedOn) assert.match(certificate.issuedOn, /^\d{4}-\d{2}(-\d{2})?$/);
     if (certificate.expiresOn) {

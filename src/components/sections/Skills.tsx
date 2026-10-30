@@ -4,6 +4,7 @@ import { FiArrowUpRight, FiAward, FiBox, FiChevronDown } from 'react-icons/fi'
 import { skills } from '../../data/skills'
 import { projects } from '../../data/projects'
 import { certifications, projectSkillIds } from '../../data/skillConnections'
+import type { Certification } from '../../data/skillConnections'
 import Container from '../common/Container'
 import SectionTitle from '../common/SectionTitle'
 import SkillCard from '../common/SkillCard'
@@ -15,6 +16,21 @@ const domains = skills.map((skill) => ({
   projects: projects.filter((project) => projectSkillIds[project.title]?.includes(skill.id)),
   certificates: certifications.filter((certificate) => certificate.skillIds.includes(skill.id)),
 }))
+
+const complementaryCertificates = certifications.filter((certificate) => !certificate.skillIds.length)
+
+const complementaryGroups = Array.from(
+  complementaryCertificates.reduce((groups, cert) => {
+    const groupName = cert.issuer.toLowerCase().includes('google') ? 'Google' : cert.issuer
+    const existing = groups.get(groupName)
+    if (existing) {
+      existing.push(cert)
+    } else {
+      groups.set(groupName, [cert])
+    }
+    return groups
+  }, new Map<string, Certification[]>())
+).map(([name, certificates]) => ({ name, certificates }))
 
 function Skills() {
   const { t, language } = useLanguage()
@@ -36,6 +52,24 @@ function Skills() {
     return new Intl.DateTimeFormat(language, {
       month: 'long', year: 'numeric', ...(date.length === 10 ? { day: 'numeric' } as const : {}),
     }).format(new Date(`${date.length === 7 ? `${date}-01` : date}T12:00:00Z`))
+  }
+
+  function renderCertificate(certificate: Certification) {
+    return (
+      <details key={certificate.id} className="group rounded-2xl border border-amber-300/15 bg-slate-950/40">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-4 focus-visible:outline-2 focus-visible:outline-cyan-300 [&::-webkit-details-marker]:hidden">
+          <span><span className="block text-sm font-medium text-slate-100">{t(certificate.label)}</span><span className="mt-1 block text-xs leading-5 text-slate-400">{certificate.issuer} · {t(certificate.kind)}</span></span>
+          <FiChevronDown className="shrink-0 text-amber-200 transition group-open:rotate-180" aria-hidden="true" />
+        </summary>
+        <div className="space-y-4 px-4 pb-4">
+          <p className="text-sm font-medium leading-6 text-white">{t(certificate.title)}</p>
+          <p className="text-sm leading-6 text-slate-300">{t(certificate.description)}</p>
+          {certificate.issuedOn && <p className="text-xs text-slate-400">{t("Obtention")} : <span className="capitalize">{formatDate(certificate.issuedOn)}</span></p>}
+          {certificate.expiresOn && <p className="text-xs text-slate-400">{t("Expiration")} : {formatDate(certificate.expiresOn)}</p>}
+          <Button href={certificate.url} external variant="secondary" className="gap-2">{t("Voir le justificatif")}<FiArrowUpRight /></Button>
+        </div>
+      </details>
+    )
   }
 
   return (
@@ -62,6 +96,25 @@ function Skills() {
               </motion.div>
             ))}
           </div>
+          {complementaryGroups.length > 0 && (
+            <section aria-labelledby="complementary-certificates-title" className="mt-10 max-w-3xl">
+              <h3 id="complementary-certificates-title" className="flex items-center gap-2 text-lg font-semibold text-amber-200"><FiAward aria-hidden="true" />{t("Certificats complémentaires")}</h3>
+              <div className="mt-6 space-y-6">
+                {complementaryGroups.map((group) => (
+                  <details key={group.name} className="group/compl rounded-2xl border border-amber-300/15 bg-slate-950/40">
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-4 focus-visible:outline-2 focus-visible:outline-cyan-300 [&::-webkit-details-marker]:hidden">
+                      <span className="flex items-center gap-2 text-sm font-medium text-slate-100">
+                        <span>{group.name}</span>
+                        <span className="text-xs text-slate-400">({group.certificates.length})</span>
+                      </span>
+                      <FiChevronDown className="shrink-0 text-amber-200 transition group-open/compl:rotate-180" aria-hidden="true" />
+                    </summary>
+                    <div className="space-y-3 px-4 pb-4">{group.certificates.map(renderCertificate)}</div>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
           <motion.dialog
             ref={dialog}
             layoutRoot
@@ -102,21 +155,7 @@ function Skills() {
                           <section aria-labelledby="skill-certificates-title">
                             <h4 id="skill-certificates-title" className="flex items-center gap-2 text-sm font-semibold text-amber-200"><FiAward aria-hidden="true" />{t("Certificats — formations et évaluations")}<span className="ml-auto text-slate-400">{selected.certificates.length}</span></h4>
                             <div className="mt-4 space-y-3">
-                              {selected.certificates.map((certificate) => (
-                                <details key={certificate.id} className="group rounded-2xl border border-amber-300/15 bg-slate-950/40">
-                                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-4 focus-visible:outline-2 focus-visible:outline-cyan-300 [&::-webkit-details-marker]:hidden">
-                                    <span><span className="block text-sm font-medium text-slate-100">{t(certificate.label)}</span><span className="mt-1 block text-xs leading-5 text-slate-400">{certificate.issuer} · {t(certificate.kind)}</span></span>
-                                    <FiChevronDown className="shrink-0 text-amber-200 transition group-open:rotate-180" aria-hidden="true" />
-                                  </summary>
-                                  <div className="space-y-4 px-4 pb-4">
-                                    <p className="text-sm font-medium leading-6 text-white">{t(certificate.title)}</p>
-                                    <p className="text-sm leading-6 text-slate-300">{t(certificate.description)}</p>
-                                    {certificate.issuedOn && <p className="text-xs text-slate-400">{t("Obtention")} : <span className="capitalize">{formatDate(certificate.issuedOn)}</span></p>}
-                                    {certificate.expiresOn && <p className="text-xs text-slate-400">{t("Expiration")} : {formatDate(certificate.expiresOn)}</p>}
-                                    <Button href={certificate.url} external variant="secondary" className="gap-2">{t("Voir le justificatif")}<FiArrowUpRight /></Button>
-                                  </div>
-                                </details>
-                              ))}
+                              {selected.certificates.map(renderCertificate)}
                               {!selected.certificates.length && <p className="rounded-2xl border border-dashed border-white/10 p-5 text-sm leading-6 text-slate-400">{t("Aucun certificat associé à ce domaine.")}</p>}
                             </div>
                           </section>
