@@ -45,6 +45,8 @@ export const zhCN: Record<string, string> = {
   "Certificats complémentaires": "补充技能证书",
   "Réseau Google Cloud sécurisé": "Google Cloud 网络安全配置",
   "Challenge lab : configurer des règles de pare-feu VPC et des tags réseau, limiter SSH à un bastion via IAP, puis accéder à une VM depuis ce bastion.": "考核实验：配置 VPC 防火墙规则和网络标签，将 SSH 访问限制为通过 IAP 连接堡垒机，再从堡垒机连接虚拟机。",
+  "Équilibrage de charge sur Google Cloud": "Google Cloud 负载均衡",
+  "Challenge lab : écrire des commandes gcloud, déployer des VM Compute Engine et des applications conteneurisées sur GKE, puis configurer des équilibreurs réseau et HTTP.": "考核实验：编写 gcloud 命令，部署 Compute Engine 虚拟机和 GKE 容器化应用，并配置网络与 HTTP 负载均衡器。",
   "Solutions IA avec Azure PostgreSQL": "基于 Azure PostgreSQL 的 AI 解决方案",
   "Évaluation pratique : configurer Azure Database pour PostgreSQL avec pgvector, générer des embeddings via Azure OpenAI, implémenter la recherche sémantique vectorielle et construire un pipeline RAG.": "实操评估：配置 Azure Database for PostgreSQL 并启用 pgvector，通过 Azure OpenAI 生成嵌入向量，实现语义向量搜索并构建 RAG 检索增强生成管道。",
   "Analyse de données dans le cloud": "云端数据分析",

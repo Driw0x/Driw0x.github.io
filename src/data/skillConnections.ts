@@ -104,6 +104,16 @@ export const certifications: Certification[] = [
     issuedOn: "2026-10-30",
   },
   {
+    id: "google-load-balancing",
+    title: "Implement Load Balancing on Compute Engine Skill Badge",
+    label: "Équilibrage de charge sur Google Cloud",
+    issuer: "Google Cloud",
+    kind: "Badge de compétences",
+    description: "Challenge lab : écrire des commandes gcloud, déployer des VM Compute Engine et des applications conteneurisées sur GKE, puis configurer des équilibreurs réseau et HTTP.",
+    url: "https://www.credly.com/badges/cb48d057-a3c1-4fdb-bc7b-32423a6d36d2",
+    skillIds: [],
+  },
+  {
     id: "oracle-agentic-ai",
     title: "Agentic AI Certified Foundations Associate",
     label: "Fondamentaux de l'IA agentique",
