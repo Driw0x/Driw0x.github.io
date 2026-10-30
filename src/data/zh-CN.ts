@@ -48,6 +48,8 @@ export const zhCN: Record<string, string> = {
   "Architectures multi-agents": "多智能体架构",
   "Workflows avec Gemini Enterprise": "使用 Gemini Enterprise 编排工作流",
   "Données prédictives avec BigQuery ML": "使用 BigQuery ML 处理预测建模数据",
+  "Données et API ML sur Google Cloud": "Google Cloud 数据处理与机器学习 API",
+  "Challenge lab introductif : exécuter des jobs Dataflow et Spark sur Dataproc, puis appeler les API Speech-to-Text et Cloud Natural Language. Utilisation de modèles préentraînés, sans entraînement de modèle personnel.": "入门考核实验：运行 Dataflow 作业和 Dataproc 上的 Spark 作业，然后调用 Speech-to-Text 和 Cloud Natural Language API。使用预训练模型，不涉及自行训练模型。",
   "Entrepôt de données avec BigQuery": "使用 BigQuery 构建数据仓库",
   "Badge pratique : créer des tables avec jointures et unions, diagnostiquer les jointures, partitionner par date et traiter JSON, tableaux et structures dans BigQuery, dans un challenge lab évalué.": "实操技能徽章：在考核实验中使用连接和联合创建 BigQuery 表，排查连接问题，按日期分区，并处理 JSON、数组和结构体。",
   "Badge pratique : transformations et pipelines ETL vers BigQuery avec Cloud Storage et Dataflow, construction de modèles BigQuery ML et copies de données avec Cloud Composer, dans un challenge lab évalué.": "实操技能徽章：在考核实验中使用 Cloud Storage 和 Dataflow 构建通往 BigQuery 的数据转换与 ETL 流水线，创建 BigQuery ML 模型，并通过 Cloud Composer 复制数据。",

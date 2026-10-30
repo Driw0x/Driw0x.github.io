@@ -82,6 +82,17 @@ export const certifications: Certification[] = [
     expiresOn: "2029-10-29",
   },
   {
+    id: "google-prepare-ml-apis",
+    title: "Prepare Data for ML APIs on Google Cloud Skill Badge",
+    label: "Données et API ML sur Google Cloud",
+    issuer: "Google Cloud",
+    kind: "Badge de compétences",
+    description: "Challenge lab introductif : exécuter des jobs Dataflow et Spark sur Dataproc, puis appeler les API Speech-to-Text et Cloud Natural Language. Utilisation de modèles préentraînés, sans entraînement de modèle personnel.",
+    url: "https://www.credly.com/badges/03c042f6-b6a2-4c72-9b0b-894e78378a91",
+    skillIds: ["data", "ml"],
+    issuedOn: "2026-10-30",
+  },
+  {
     id: "oracle-agentic-ai",
     title: "Agentic AI Certified Foundations Associate",
     label: "Fondamentaux de l'IA agentique",
