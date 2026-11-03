@@ -11,7 +11,7 @@ export interface Certification {
   expiresOn?: string;
 }
 
-// Issuer links verified from 2026-10-26 to 2026-10-30; exact scopes and dates are kept in the KB register.
+// Issuer links verified from 2026-10-26 to 2026-11-03; exact scopes and dates are kept in the KB register.
 // Exact dates and credential scopes are documented in the Knowledge Base Certifications register.
 export const certifications: Certification[] = [
   {
@@ -112,6 +112,40 @@ export const certifications: Certification[] = [
     description: "Challenge lab : écrire des commandes gcloud, déployer des VM Compute Engine et des applications conteneurisées sur GKE, puis configurer des équilibreurs réseau et HTTP.",
     url: "https://www.credly.com/badges/cb48d057-a3c1-4fdb-bc7b-32423a6d36d2",
     skillIds: [],
+  },
+  {
+    id: "google-app-dev-environment",
+    title: "Set Up an App Dev Environment on Google Cloud Skill Badge",
+    label: "Environnement de développement sur Google Cloud",
+    issuer: "Google Cloud",
+    kind: "Badge de compétences",
+    description: "Challenge lab : construire et connecter une infrastructure cloud centrée sur le stockage avec Cloud Storage, IAM, Cloud Functions et Pub/Sub.",
+    url: "https://www.credly.com/badges/145e07e4-a810-4a36-8717-28a78a7f719b",
+    skillIds: [],
+    issuedOn: "2026-10-30",
+  },
+  {
+    id: "google-cloud-computing-foundations",
+    title: "Google Cloud Computing Foundations Certificate",
+    label: "Fondations du cloud computing Google Cloud",
+    issuer: "Google Cloud",
+    kind: "Certificat de formation",
+    description: "Parcours fondamental : cloud computing, infrastructure, réseau et sécurité, données, ML et IA, complété par quatre skill badges pratiques.",
+    url: "https://www.credly.com/badges/3cb7f75b-ea29-40f6-9f64-fff011ee285c",
+    skillIds: [],
+    issuedOn: "2026-11-03",
+  },
+  {
+    id: "datacamp-ai-engineer-developers",
+    title: "AI Engineer for Developers Associate",
+    label: "AI Engineer pour développeurs",
+    issuer: "DataCamp",
+    kind: "Certification",
+    description: "Certification évaluée par un examen chronométré et un examen pratique en Python : gouvernance IA, usage de modèles, programmation et développement d'applications IA.",
+    url: "https://www.datacamp.com/certificate/AIEDA0015145626253",
+    skillIds: ["agents"],
+    issuedOn: "2026-11-03",
+    expiresOn: "2028-11-03",
   },
   {
     id: "oracle-agentic-ai",
