@@ -11,7 +11,7 @@ export interface Certification {
   expiresOn?: string;
 }
 
-// Issuer links verified from 2026-10-26 to 2026-11-03; exact scopes and dates are kept in the KB register.
+// Issuer links verified from 2026-10-26 to 2026-11-06; exact scopes and dates are kept in the KB register.
 // Exact dates and credential scopes are documented in the Knowledge Base Certifications register.
 export const certifications: Certification[] = [
   {
@@ -146,6 +146,18 @@ export const certifications: Certification[] = [
     skillIds: ["agents"],
     issuedOn: "2026-11-03",
     expiresOn: "2028-11-03",
+  },
+  {
+    id: "datacamp-ai-engineer-data-scientists",
+    title: "AI Engineer for Data Scientists Associate",
+    label: "AI Engineer pour data scientists",
+    issuer: "DataCamp",
+    kind: "Certification",
+    description: "Certification évaluée par deux examens chronométrés et un examen pratique en Python : gestion des données, analyse exploratoire, expérimentation statistique, développement de modèles, gouvernance et applications IA.",
+    url: "https://www.datacamp.com/certificate/AEDS0018381519215",
+    skillIds: ["data", "ml"],
+    issuedOn: "2026-11-06",
+    expiresOn: "2028-11-06",
   },
   {
     id: "oracle-agentic-ai",

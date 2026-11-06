@@ -53,6 +53,8 @@ export const zhCN: Record<string, string> = {
   "Parcours fondamental : cloud computing, infrastructure, réseau et sécurité, données, ML et IA, complété par quatre skill badges pratiques.": "基础学习路径：云计算、基础设施、网络与安全、数据、机器学习和人工智能，并完成四项实操技能徽章。",
   "AI Engineer pour développeurs": "面向开发者的 AI 工程师",
   "Certification évaluée par un examen chronométré et un examen pratique en Python : gouvernance IA, usage de modèles, programmation et développement d'applications IA.": "通过限时考试和 Python 实操考试评估的认证：人工智能治理、模型使用、编程和人工智能应用开发。",
+  "AI Engineer pour data scientists": "面向数据科学家的 AI 工程师",
+  "Certification évaluée par deux examens chronométrés et un examen pratique en Python : gestion des données, analyse exploratoire, expérimentation statistique, développement de modèles, gouvernance et applications IA.": "通过两项限时考试和一项 Python 实操考试评估的认证：数据管理、探索性分析、统计实验、模型开发、人工智能治理和人工智能应用。",
   "Solutions IA avec Azure PostgreSQL": "基于 Azure PostgreSQL 的 AI 解决方案",
   "Évaluation pratique : configurer Azure Database pour PostgreSQL avec pgvector, générer des embeddings via Azure OpenAI, implémenter la recherche sémantique vectorielle et construire un pipeline RAG.": "实操评估：配置 Azure Database for PostgreSQL 并启用 pgvector，通过 Azure OpenAI 生成嵌入向量，实现语义向量搜索并构建 RAG 检索增强生成管道。",
   "Analyse de données dans le cloud": "云端数据分析",
