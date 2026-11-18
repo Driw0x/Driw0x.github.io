@@ -87,7 +87,7 @@ Driw0x.github.io/
 │       └── deploy.yml
 │
 ├── public/
-│   └── projects/
+│   └── cv/
 │
 ├── src/
 │   ├── components/
@@ -96,8 +96,6 @@ Driw0x.github.io/
 │   │   └── sections/
 │   │
 │   ├── data/
-│   │
-│   ├── hooks/
 │   │
 │   ├── pages/
 │   │
@@ -151,9 +149,9 @@ Contient les pages supplémentaires du portfolio.
 
 La page dédiée aux projets permet d'afficher l'ensemble des projets tandis que la page d'accueil n'en présente qu'une sélection.
 
-### `public/projects`
+### `public/cv`
 
-Contient les ressources statiques associées aux différents projets présentés sur le portfolio.
+Contient les CV PDF en français et en chinois simplifié.
 
 ## Projets
 

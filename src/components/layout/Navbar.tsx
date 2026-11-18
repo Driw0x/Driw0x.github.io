@@ -11,14 +11,14 @@ function Navbar({ projectsPage = false }: NavbarProps) {
 
   const links = projectsPage
     ? [
-        { href: "/", label: t("Accueil") },
-        { href: "/#skills", label: t("Compétences") },
+        { href: base, label: t("Accueil") },
+        { href: `${base}#skills`, label: t("Compétences") },
         {
           href: cvHref,
           label: t("CV"),
           external: true,
         },
-        { href: "/#contact", label: t("Contact") },
+        { href: `${base}#contact`, label: t("Contact") },
       ]
     : [
         { href: "#about", label: t("À propos") },
