@@ -61,7 +61,7 @@ export const projects: Project[] = [
     subtitle: "Application locale de candidature assistée par IA",
 
     description:
-      "Prototype d'application locale pour rechercher et analyser des offres, préparer des CV à mise en page ATS et des lettres à partir des faits documentés d'une base de connaissances, puis suivre les candidatures. La concurrence de préparation est configurable et une relance est suggérée dix jours après un accusé de réception enregistré. Revue des documents et soumission restent humaines.",
+      "Application locale pour rechercher et analyser des offres, puis préparer des CV ATS et des lettres à partir de faits documentés. Elle contrôle les preuves et mesures utilisées, conserve la revue humaine, renforce la reprise OAuth et fournit un déploiement Docker pour poste local ou NAS.",
 
     technologies: [
       "Python",
@@ -70,6 +70,7 @@ export const projects: Project[] = [
       "TypeScript",
       "SQLite",
       "LLM APIs",
+      "Docker",
     ],
 
     github: "https://github.com/Driw0x/ai-job-application-workbench",
@@ -84,10 +85,10 @@ export const projects: Project[] = [
   {
     title: "CodeAgent",
 
-    subtitle: "Agent LLM local avec RAG, MCP et reprise humaine",
+    subtitle: "Agent LLM local avec RAG fiable, MCP et reprise humaine",
 
     description:
-      "Prototype d'assistant d'analyse de code Python avec RAG sourcé, mémoire persistante et outils MCP. Il combine plans multi-étapes, dépendances, collecte de preuves, budgets et replanification bornée. Deux scénarios locaux ont été réussis sans intervention humaine ; la reprise humaine reste disponible et partiellement validée.",
+      "Assistant d'analyse de code Python avec RAG sourcé, mémoire persistante et outils MCP. M9 ajoute identifiants et versions de chunks, contrôles d'intégrité de l'index et fiabilité des sources. Les alternatives de retrieval et de vérification sont retenues uniquement lorsqu'elles progressent sur holdout.",
 
     technologies: [
       "Python",
@@ -115,7 +116,7 @@ export const projects: Project[] = [
     subtitle: "ML expérimental pour l'analyse de comportements suspects",
     
     description:
-      "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2, consacré à l'étude des comportements de visée suspects. Il combine extraction de télémétrie, construction de caractéristiques, détection d'anomalies et classification supervisée pour produire des scores, des rapports et des visualisations facilitant l'examen des comportements.",
+      "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2. Il combine télémétrie, détection d'anomalies, classification tabulaire et modélisation temporelle. M7 compare CNN, LSTM, GRU et Transformer, puis benchmarke le modèle retenu sur GPU AMD avec ROCm.",
 
     technologies: [
       "Python",
@@ -123,6 +124,8 @@ export const projects: Project[] = [
       "Supervised Learning",
       "Feature Engineering",
       "Anomaly Detection",
+      "PyTorch",
+      "ROCm",
     ],
 
     github: "https://github.com/Driw0x/CS2Guard",
@@ -137,10 +140,10 @@ export const projects: Project[] = [
   {
     title: "MiniMind AMD / ROCm",
 
-    subtitle: "Entraînement local d'un Transformer decoder-only",
+    subtitle: "Entraînement local Dense et MoE sur GPU AMD",
 
     description:
-      "Adaptation et entraînement local d'un petit modèle de langage Transformer sous Windows sur GPU AMD, avec PyTorch et ROCm. Le projet couvre le préentraînement et l'ajustement supervisé, en associant précision mixte, diagnostic numérique et gestion des checkpoints pour explorer l'apprentissage de modèles sur matériel grand public.",
+      "Adaptation et entraînement local d'un petit modèle de langage sous Windows sur GPU AMD avec PyTorch ROCm. Les chemins Dense et Mixture of Experts couvrent préentraînement et ajustement supervisé, avec mixed precision, diagnostics numériques, checkpoints et comparaison de qualité sur des références locales.",
 
     technologies: [
       "Python",
@@ -148,6 +151,7 @@ export const projects: Project[] = [
       "Transformers",
       "ROCm",
       "GPU Training",
+      "Mixture of Experts",
     ],
 
     github: "https://github.com/Driw0x/minimind",

@@ -14,7 +14,7 @@ export const skills: Skill[] = [
     category: "Systèmes LLM",
     title: "IA agentique & outils LLM",
     description:
-      "Développement d'agents LLM locaux avec recherche hybride, reranking, citations et outils MCP. Orchestration de plans multi-étapes avec mémoire, budgets d'exécution et contrôle des preuves. Intégration de la validation humaine dans les workflows de décision et d'exécution.",
+      "Développement d'agents LLM locaux avec recherche hybride, citations et outils MCP. Orchestration de plans multi-étapes, contrôle des preuves, intégrité d'index et fiabilité des sources. Intégration de la validation humaine dans les workflows de décision et d'exécution.",
   },
 
   {
@@ -38,7 +38,7 @@ export const skills: Skill[] = [
     category: "Machine Learning",
     title: "ML appliqué",
     description:
-      "Construction de pipelines de détection d'anomalies et de classification tabulaire. Validation croisée groupée, recherche d'hyperparamètres et comparaison multi-métriques des modèles. Analyse des faux positifs, intégration de l'inférence et génération de rapports d'analyse.",
+      "Construction de pipelines de détection d'anomalies et de classification tabulaire ou temporelle. Validation groupée, recherche d'hyperparamètres et comparaison multi-métriques. Analyse des faux positifs, bootstrap, intégration de l'inférence et génération de rapports.",
   },
 
   {
@@ -46,6 +46,6 @@ export const skills: Skill[] = [
     category: "Deep Learning",
     title: "PyTorch & Model Training",
     description:
-      "Adaptation et entraînement local d'un Transformer decoder-only avec PyTorch ROCm sur GPU AMD. Préentraînement, ajustement supervisé et mixed precision. Diagnostic des instabilités numériques, gestion des checkpoints et comparaison des performances et de la qualité des modèles.",
+      "Adaptation et entraînement local de variantes Dense et Mixture of Experts avec PyTorch ROCm sur GPU AMD. Préentraînement, ajustement supervisé et mixed precision. Diagnostic numérique, checkpoints et comparaison des performances et de la qualité des modèles.",
   },
 ];
