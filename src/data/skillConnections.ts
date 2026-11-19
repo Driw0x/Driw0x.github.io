@@ -11,7 +11,7 @@ export interface Certification {
   expiresOn?: string;
 }
 
-// Issuer links verified from 2026-10-26 to 2026-11-06; exact scopes and dates are kept in the KB register.
+// Issuer links verified from 2026-10-26 to 2026-11-19; exact scopes and dates are kept in the KB register.
 // Exact dates and credential scopes are documented in the Knowledge Base Certifications register.
 export const certifications: Certification[] = [
   {
@@ -158,6 +158,17 @@ export const certifications: Certification[] = [
     skillIds: ["data", "ml"],
     issuedOn: "2026-11-06",
     expiresOn: "2028-11-06",
+  },
+  {
+    id: "google-deepmind-small-language-model",
+    title: "Google DeepMind: Train A Small Language Model",
+    label: "Petit modèle de langage Google DeepMind",
+    issuer: "Google DeepMind",
+    kind: "Badge de compétences",
+    description: "Challenge lab avancé : construire un tokenizer caractère pour du texte arabe, développer une baseline n-gram et préparer un dataset pour entraîner un modèle de langage Transformer caractère.",
+    url: "https://www.skills.google/public_profiles/f65c1a01-ff4b-4f30-8495-c202b0de8cc4/badges/29767599",
+    skillIds: ["data", "training"],
+    issuedOn: "2026-11-19",
   },
   {
     id: "oracle-agentic-ai",
