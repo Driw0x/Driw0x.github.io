@@ -14,7 +14,7 @@ export const skills: Skill[] = [
     category: "Systèmes LLM",
     title: "IA agentique & outils LLM",
     description:
-      "Développement d'agents LLM locaux avec recherche hybride, citations et outils MCP. Orchestration de plans multi-étapes, contrôle des preuves, intégrité d'index et fiabilité des sources. Intégration de la validation humaine dans les workflows de décision et d'exécution.",
+      "Développement d'agents LLM locaux avec recherche hybride, citations et outils MCP. Orchestration de plans multi-étapes, contrôle des preuves, intégrité d'index et fiabilité des sources. Comparaison mesurée d'un moteur natif et de LangGraph, avec traces locales et validation humaine.",
   },
 
   {

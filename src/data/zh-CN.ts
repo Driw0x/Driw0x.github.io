@@ -167,38 +167,38 @@ export const zhCN: Record<string, string> = {
   "Prototypes": "原型项目",
   "Finalisés": "已完成项目",
   "Systèmes multi-agents, optimisation et planification": "多智能体系统、优化与规划",
-  "Simulateur d'entrepôt multi-agents consacré à la coordination de robots et à l'optimisation des opérations logistiques. Il combine allocation de tâches, ordonnancement sous contraintes et coordination distribuée simulée, avec un module dédié à la planification de trajectoires et une interface permettant de visualiser et de comparer les stratégies.":
-    "面向机器人协调与物流作业优化的多智能体仓库仿真器。结合任务分配、约束调度和仿真环境中的分布式协调，配有独立的路径规划模块，以及用于策略可视化与比较的界面。",
+  "Simulateur d'entrepôt multi-agents pour comparer des stratégies de coordination et d'optimisation logistique. Il combine allocation de tâches, ordonnancement sous contraintes, coordination distribuée simulée et planification de trajectoires, avec une interface de visualisation des résultats.":
+    "多智能体仓库模拟器，用于比较协调与物流优化策略。系统结合任务分配、约束调度、模拟分布式协调和路径规划，并提供结果可视化界面。",
   "Formulation GAP, CP-SAT et contrôle humain": "GAP 建模、CP-SAT 与人工审核",
-  "Assistant local de modélisation et de résolution de problèmes d'affectation sous contraintes de capacité. Il associe interprétation de demandes en langage naturel, formulation structurée, résolution par contraintes et vérification indépendante des solutions, avec un parcours de revue et de validation humaine pour contrôler et corriger les formulations.":
-    "用于容量约束指派问题建模与求解的本地助手。结合自然语言需求解析、结构化建模、约束求解与解的独立验证，并提供人工审核和确认流程，以检查和修正问题模型。",
+  "Assistant local pour formuler et résoudre des problèmes d'affectation sous contraintes de capacité. Il transforme des demandes en modèles structurés, utilise CP-SAT, vérifie indépendamment les solutions et conserve une revue humaine avant validation.":
+    "本地助手，用于构建并求解容量约束下的分配问题。它将需求转为结构化模型，使用 CP-SAT 求解，独立验证结果，并在确认前保留人工审核。",
   "Application locale de candidature assistée par IA": "AI 辅助求职的本地应用",
-  "Prototype d'application locale pour rechercher et analyser des offres, préparer des CV à mise en page ATS et des lettres à partir des faits documentés d'une base de connaissances, puis suivre les candidatures. La concurrence de préparation est configurable et une relance est suggérée dix jours après un accusé de réception enregistré. Revue des documents et soumission restent humaines.":
-    "本地求职辅助应用原型，用于搜索和分析职位，根据知识库中有记录的事实准备采用 ATS 排版的简历与求职信，并跟踪申请。可配置同时准备申请材料的数量，并在记录收到确认回执十天后建议跟进。文档由用户审核，申请由用户自行提交。",
-  "Agent LLM local avec RAG, MCP et reprise humaine": "结合 RAG、MCP 与人工介入恢复执行的本地 LLM 智能体",
-  "Prototype d'assistant d'analyse de code Python avec RAG sourcé, mémoire persistante et outils MCP. Il combine plans multi-étapes, dépendances, collecte de preuves, budgets et replanification bornée. Deux scénarios locaux ont été réussis sans intervention humaine ; la reprise humaine reste disponible et partiellement validée.":
-    "Python 代码分析助手原型，结合有来源依据的检索增强生成（RAG）、持久化记忆与 MCP 工具。支持多步骤计划、步骤依赖、证据收集、预算限制及有限重规划。两个本地场景在无人工介入的情况下成功完成；仍支持人工介入恢复执行，其验证尚不完整。",
+  "Application locale pour rechercher des offres et préparer des CV ATS et lettres de motivation à partir de faits documentés. Elle contrôle les preuves utilisées, conserve la validation humaine et se déploie avec Docker sur poste local ou NAS.":
+    "本地求职应用，用于搜索职位，并根据已记录事实准备 ATS 简历和求职信。应用检查所用证据，保留人工确认，并可通过 Docker 部署到本机或 NAS。",
+  "Agent LLM local avec RAG fiable, MCP et reprise humaine": "具备可靠 RAG、MCP 与人工恢复机制的本地 LLM 智能体",
+  "Assistant local d'analyse de code Python combinant RAG sourcé, mémoire persistante, outils MCP et orchestration LangGraph. Il produit des réponses traçables, contrôle les preuves et permet une reprise humaine lors des exécutions complexes.":
+    "本地 Python 代码分析助手，结合可溯源 RAG、持久记忆、MCP 工具与 LangGraph 编排。它生成可追踪的回答、检查证据，并允许人工接管复杂执行。",
   "ML expérimental pour l'analyse de comportements suspects": "用于可疑行为分析的实验性机器学习",
-  "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2, consacré à l'étude des comportements de visée suspects. Il combine extraction de télémétrie, construction de caractéristiques, détection d'anomalies et classification supervisée pour produire des scores, des rapports et des visualisations facilitant l'examen des comportements.":
-    "用于离线分析 Counter-Strike 2 对局的实验性工具，研究可疑瞄准行为。结合遥测数据提取、特征构建、异常检测与监督分类，生成评分、报告和可视化结果，辅助审查游戏行为。",
-  "Entraînement local d'un Transformer decoder-only": "仅解码器 Transformer 的本地训练",
-  "Adaptation et entraînement local d'un petit modèle de langage Transformer sous Windows sur GPU AMD, avec PyTorch et ROCm. Le projet couvre le préentraînement et l'ajustement supervisé, en associant précision mixte, diagnostic numérique et gestion des checkpoints pour explorer l'apprentissage de modèles sur matériel grand public.":
-    "在 Windows 环境下，使用 PyTorch 和 ROCm 在 AMD GPU 上适配并本地训练小型 Transformer 语言模型。项目涵盖预训练与监督微调，结合混合精度、数值诊断和检查点管理，探索消费级硬件上的模型训练。",
+  "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2. Il combine télémétrie, cinématique d'aim, signaux d'awareness et modèles temporels pour étudier les comportements suspects, sans constituer un système anti-triche opérationnel.":
+    "用于离线分析 Counter-Strike 2 对局的实验工具。它结合遥测、瞄准运动学、态势感知信号和时序模型来研究可疑行为，但不构成可运行的反作弊系统。",
+  "Entraînement local Dense et MoE sur GPU AMD": "在 AMD GPU 上本地训练 Dense 与 MoE 模型",
+  "Adaptation et entraînement local d'un petit modèle de langage sous Windows sur GPU AMD avec PyTorch ROCm. Le projet compare architectures Dense et Mixture of Experts, mixed precision, stabilité numérique et qualité sur des références locales.":
+    "在 Windows 的 AMD GPU 上使用 PyTorch ROCm 适配并训练小型语言模型。项目比较 Dense 与 Mixture of Experts 架构、混合精度、数值稳定性及本地参考集上的质量。",
   "Planification heuristique et décision sous contraintes": "启发式规划与约束决策",
-  "Agent autonome développé pour un environnement agricole simulé. Il combine planification heuristique, allocation de ressources et prise de décision sous contraintes temporelles et économiques afin d'optimiser les actions et d'adapter sa stratégie à l'évolution de l'environnement, en tenant compte de la production, des déplacements et du marché.":
-    "为农业仿真环境开发的自主智能体。结合启发式规划、资源分配与时间和经济约束下的决策，在考虑生产、移动和市场因素的同时，优化行动并随环境变化调整策略。",
+  "Agent autonome pour un environnement agricole simulé. Il combine planification heuristique, allocation de ressources, déplacements et décisions économiques afin d'adapter sa stratégie aux contraintes temporelles, à la production disponible et aux évolutions du marché.":
+    "面向模拟农业环境的自主智能体。它结合启发式规划、资源分配、移动与经济决策，根据时间约束、可用产量和市场变化调整策略。",
   "Workflows réutilisables pour assistants IA": "面向 AI 助手的可复用工作流",
-  "Collection de workflows réutilisables pour assistants IA, destinée à la gestion des connaissances, à la documentation de projets et à la préparation de candidatures. Elle associe gestion du contexte, contraintes explicites et traçabilité des affirmations pour produire des résultats vérifiables, tout en séparant les instructions publiques du contexte personnel.":
-    "面向 AI 助手的可复用工作流集合，用于知识管理、项目文档编写和求职申请准备。结合上下文管理、明确约束和陈述溯源，帮助产出可验证的结果，并将公开指令与个人上下文分离。",
+  "Collection de workflows réutilisables pour la gestion des connaissances, la documentation de projets et la préparation de candidatures. Elle structure contexte, preuves, contraintes et revue humaine afin de produire des résultats vérifiables sans publier les données personnelles.":
+    "用于知识管理、项目文档和求职准备的可复用工作流集合。它组织上下文、证据、约束和人工审核，以生成可验证结果，同时避免公开个人数据。",
   "Optimisation heuristique de ressources réseau": "网络资源的启发式优化",
-  "Projet d'allocation de ressources réseau et d'ordonnancement de trafic sous contraintes de capacité, développé pour le challenge Future Network. Deux approches heuristiques combinent priorisation des flux, sélection de liaisons et fonctions de score pour répartir le trafic en tenant compte des variations de capacité dans le temps.":
-    "为 Future Network 挑战开发的网络资源分配与容量约束流量调度项目。两种启发式方法结合流量优先级、链路选择和评分函数，在分配流量时考虑容量随时间的变化。",
+  "Projet d'allocation de ressources réseau et d'ordonnancement de trafic sous contraintes de capacité. Deux approches heuristiques priorisent les flux, sélectionnent les liaisons et répartissent le trafic selon l'évolution temporelle des ressources disponibles.":
+    "容量约束下的网络资源分配与流量调度项目。两种启发式方法对流量排序、选择链路，并根据可用资源随时间的变化分配流量。",
   "Scanner semi-automatique de succès Genshin Impact": "《原神》成就半自动识别工具",
-  "Outil Python semi-automatique conçu pour réduire la saisie manuelle des succès obtenus dans Genshin Impact à partir de captures d'écran. Il combine prétraitement d'images, reconnaissance de texte en anglais et rapprochement approximatif avec une base de succès pour produire des exports JSON, dont un format destiné à Paimon.moe.":
-    "基于截图的半自动 Python 工具，用于减少手动录入《原神》已完成成就的工作。结合图像预处理、英文文字识别和成就数据库模糊匹配，导出 JSON，其中包含适用于 Paimon.moe 的格式。",
+  "Outil semi-automatique pour extraire les succès Genshin Impact depuis des captures d'écran. Il combine prétraitement d'images, reconnaissance de texte et rapprochement approximatif avec une base de succès, puis produit des exports JSON compatibles avec Paimon.moe.":
+    "从截图中提取《原神》成就的半自动工具。它结合图像预处理、文字识别和成就库模糊匹配，并生成兼容 Paimon.moe 的 JSON 导出。",
   "Analyse de trajectoires de code étudiant": "学生代码演变轨迹分析",
-  "Projet académique d'analyse des programmes Python successifs d'étudiants, destiné à caractériser leurs trajectoires d'apprentissage. Il combine arbres de syntaxe abstraite, distances d'édition entre programmes, classification par règles heuristiques et visualisations statistiques pour étudier les modifications du code et la progression vers les solutions attendues.":
-    "分析学生连续提交的 Python 程序、刻画学习轨迹的学术项目。结合抽象语法树、程序间编辑距离、启发式规则分类与统计可视化，研究代码修改及其向预期解法的演进。",
+  "Projet académique consacré à l'analyse de programmes Python successifs d'étudiants. Il combine arbres syntaxiques, distances d'édition, règles heuristiques et visualisations statistiques afin d'étudier les modifications du code et les trajectoires vers les solutions attendues.":
+    "分析学生连续 Python 程序版本的学术项目。它结合语法树、编辑距离、启发式规则和统计可视化，用于研究代码修改过程及通向预期解法的轨迹。",
   "Contract Net Protocol": "合同网协议（CNP）",
   "Human-in-the-Loop": "人工介入（HITL）",
   "LLM APIs": "大语言模型 API",
@@ -255,13 +255,7 @@ export const zhCN: Record<string, string> = {
     "我正在寻找人工智能与软件开发方向的毕业实习。如果您对我的背景感兴趣，或希望交流项目，欢迎联系我。",
   "M’envoyer un mail": "给我发邮件",
   "Étudiant en Master 2 AI2D · Sorbonne Université": "索邦大学 · AI2D 硕士二年级学生",
-  "Application locale pour rechercher et analyser des offres, puis préparer des CV ATS et des lettres à partir de faits documentés. Elle contrôle les preuves et mesures utilisées, conserve la revue humaine, renforce la reprise OAuth et fournit un déploiement Docker pour poste local ou NAS.": "本地求职应用：搜索并分析职位，根据已记录事实生成 ATS 简历和求职信。应用检查所用证据与指标，保留人工审核，增强 OAuth 恢复能力，并支持通过 Docker 部署到本机或 NAS。",
-  "Agent LLM local avec RAG fiable, MCP et reprise humaine": "具备可靠 RAG、MCP 与人工恢复机制的本地 LLM 智能体",
-  "Assistant d'analyse de code Python avec RAG sourcé, mémoire persistante et outils MCP. M9 ajoute identifiants et versions de chunks, contrôles d'intégrité de l'index et fiabilité des sources. Les alternatives de retrieval et de vérification sont retenues uniquement lorsqu'elles progressent sur holdout.": "Python 代码分析助手，采用可溯源 RAG、持久记忆与 MCP 工具。M9 增加代码块标识与版本、索引完整性检查和来源可靠性控制；只有在留出集上取得提升的检索与验证方案才会被采用。",
-  "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2. Il combine télémétrie, détection d'anomalies, classification tabulaire et modélisation temporelle. M7 compare CNN, LSTM, GRU et Transformer, puis benchmarke le modèle retenu sur GPU AMD avec ROCm.": "用于离线分析 Counter-Strike 2 对局的实验工具，结合遥测、异常检测、表格分类与时序建模。M7 比较 CNN、LSTM、GRU 和 Transformer，并在采用 ROCm 的 AMD GPU 上测试所选模型。",
-  "Entraînement local Dense et MoE sur GPU AMD": "在 AMD GPU 上本地训练 Dense 与 MoE 模型",
-  "Adaptation et entraînement local d'un petit modèle de langage sous Windows sur GPU AMD avec PyTorch ROCm. Les chemins Dense et Mixture of Experts couvrent préentraînement et ajustement supervisé, avec mixed precision, diagnostics numériques, checkpoints et comparaison de qualité sur des références locales.": "在 Windows 的 AMD GPU 上使用 PyTorch ROCm 适配并训练小型语言模型。Dense 与 Mixture of Experts 路径涵盖预训练和监督微调，并结合混合精度、数值诊断、检查点及本地参考集质量比较。",
-  "Développement d'agents LLM locaux avec recherche hybride, citations et outils MCP. Orchestration de plans multi-étapes, contrôle des preuves, intégrité d'index et fiabilité des sources. Intégration de la validation humaine dans les workflows de décision et d'exécution.": "开发具备混合检索、引用与 MCP 工具的本地 LLM 智能体。编排多步骤计划，控制证据、索引完整性与来源可靠性，并在决策和执行工作流中集成人工验证。",
+  "Développement d'agents LLM locaux avec recherche hybride, citations et outils MCP. Orchestration de plans multi-étapes, contrôle des preuves, intégrité d'index et fiabilité des sources. Comparaison mesurée d'un moteur natif et de LangGraph, avec traces locales et validation humaine.": "开发具备混合检索、引用与 MCP 工具的本地 LLM 智能体。编排多步骤计划，控制证据、索引完整性与来源可靠性；对原生引擎与 LangGraph 进行量化比较，并保留本地追踪和人工验证。",
   "Construction de pipelines de détection d'anomalies et de classification tabulaire ou temporelle. Validation groupée, recherche d'hyperparamètres et comparaison multi-métriques. Analyse des faux positifs, bootstrap, intégration de l'inférence et génération de rapports.": "构建异常检测以及表格或时序分类流水线，执行分组验证、超参数搜索与多指标比较，并开展误报分析、Bootstrap、推理集成和报告生成。",
   "Adaptation et entraînement local de variantes Dense et Mixture of Experts avec PyTorch ROCm sur GPU AMD. Préentraînement, ajustement supervisé et mixed precision. Diagnostic numérique, checkpoints et comparaison des performances et de la qualité des modèles.": "在 AMD GPU 上使用 PyTorch ROCm 适配并训练 Dense 与 Mixture of Experts 变体，涵盖预训练、监督微调和混合精度，以及数值诊断、检查点和模型性能与质量比较。",
 };

@@ -7,7 +7,7 @@ export const projects: Project[] = [
     subtitle: "Systèmes multi-agents, optimisation et planification",
 
     description:
-      "Simulateur d'entrepôt multi-agents consacré à la coordination de robots et à l'optimisation des opérations logistiques. Il combine allocation de tâches, ordonnancement sous contraintes et coordination distribuée simulée, avec un module dédié à la planification de trajectoires et une interface permettant de visualiser et de comparer les stratégies.",
+      "Simulateur d'entrepôt multi-agents pour comparer des stratégies de coordination et d'optimisation logistique. Il combine allocation de tâches, ordonnancement sous contraintes, coordination distribuée simulée et planification de trajectoires, avec une interface de visualisation des résultats.",
 
     technologies: [
       "Python",
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     subtitle: "Formulation GAP, CP-SAT et contrôle humain",
 
     description:
-      "Assistant local de modélisation et de résolution de problèmes d'affectation sous contraintes de capacité. Il associe interprétation de demandes en langage naturel, formulation structurée, résolution par contraintes et vérification indépendante des solutions, avec un parcours de revue et de validation humaine pour contrôler et corriger les formulations.",
+      "Assistant local pour formuler et résoudre des problèmes d'affectation sous contraintes de capacité. Il transforme des demandes en modèles structurés, utilise CP-SAT, vérifie indépendamment les solutions et conserve une revue humaine avant validation.",
 
     technologies: [
       "Python",
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     subtitle: "Application locale de candidature assistée par IA",
 
     description:
-      "Application locale pour rechercher et analyser des offres, puis préparer des CV ATS et des lettres à partir de faits documentés. Elle contrôle les preuves et mesures utilisées, conserve la revue humaine, renforce la reprise OAuth et fournit un déploiement Docker pour poste local ou NAS.",
+      "Application locale pour rechercher des offres et préparer des CV ATS et lettres de motivation à partir de faits documentés. Elle contrôle les preuves utilisées, conserve la validation humaine et se déploie avec Docker sur poste local ou NAS.",
 
     technologies: [
       "Python",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
 
     documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
 
-    status: "Prototype fonctionnel",
+    status: "Terminé",
 
     featured: false,
   },
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     subtitle: "Agent LLM local avec RAG fiable, MCP et reprise humaine",
 
     description:
-      "Assistant d'analyse de code Python avec RAG sourcé, mémoire persistante et outils MCP. M9 ajoute identifiants et versions de chunks, contrôles d'intégrité de l'index et fiabilité des sources. Les alternatives de retrieval et de vérification sont retenues uniquement lorsqu'elles progressent sur holdout.",
+      "Assistant local d'analyse de code Python combinant RAG sourcé, mémoire persistante, outils MCP et orchestration LangGraph. Il produit des réponses traçables, contrôle les preuves et permet une reprise humaine lors des exécutions complexes.",
 
     technologies: [
       "Python",
@@ -99,13 +99,14 @@ export const projects: Project[] = [
       "MCP",
       "Tool Use",
       "Human-in-the-Loop",
+      "LangGraph",
     ],
 
     github: "https://github.com/Driw0x/CodeAgent",
 
     documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
 
-    status: "Prototype fonctionnel",
+    status: "Terminé",
 
     featured: true,
   },
@@ -116,7 +117,7 @@ export const projects: Project[] = [
     subtitle: "ML expérimental pour l'analyse de comportements suspects",
     
     description:
-      "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2. Il combine télémétrie, détection d'anomalies, classification tabulaire et modélisation temporelle. M7 compare CNN, LSTM, GRU et Transformer, puis benchmarke le modèle retenu sur GPU AMD avec ROCm.",
+      "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2. Il combine télémétrie, cinématique d'aim, signaux d'awareness et modèles temporels pour étudier les comportements suspects, sans constituer un système anti-triche opérationnel.",
 
     technologies: [
       "Python",
@@ -143,7 +144,7 @@ export const projects: Project[] = [
     subtitle: "Entraînement local Dense et MoE sur GPU AMD",
 
     description:
-      "Adaptation et entraînement local d'un petit modèle de langage sous Windows sur GPU AMD avec PyTorch ROCm. Les chemins Dense et Mixture of Experts couvrent préentraînement et ajustement supervisé, avec mixed precision, diagnostics numériques, checkpoints et comparaison de qualité sur des références locales.",
+      "Adaptation et entraînement local d'un petit modèle de langage sous Windows sur GPU AMD avec PyTorch ROCm. Le projet compare architectures Dense et Mixture of Experts, mixed precision, stabilité numérique et qualité sur des références locales.",
 
     technologies: [
       "Python",
@@ -172,7 +173,7 @@ export const projects: Project[] = [
     subtitle: "Planification heuristique et décision sous contraintes",
 
     description:
-      "Agent autonome développé pour un environnement agricole simulé. Il combine planification heuristique, allocation de ressources et prise de décision sous contraintes temporelles et économiques afin d'optimiser les actions et d'adapter sa stratégie à l'évolution de l'environnement, en tenant compte de la production, des déplacements et du marché.",
+      "Agent autonome pour un environnement agricole simulé. Il combine planification heuristique, allocation de ressources, déplacements et décisions économiques afin d'adapter sa stratégie aux contraintes temporelles, à la production disponible et aux évolutions du marché.",
 
     technologies: [
       "Python",
@@ -197,7 +198,7 @@ export const projects: Project[] = [
     subtitle: "Workflows réutilisables pour assistants IA",
 
     description:
-      "Collection de workflows réutilisables pour assistants IA, destinée à la gestion des connaissances, à la documentation de projets et à la préparation de candidatures. Elle associe gestion du contexte, contraintes explicites et traçabilité des affirmations pour produire des résultats vérifiables, tout en séparant les instructions publiques du contexte personnel.",
+      "Collection de workflows réutilisables pour la gestion des connaissances, la documentation de projets et la préparation de candidatures. Elle structure contexte, preuves, contraintes et revue humaine afin de produire des résultats vérifiables sans publier les données personnelles.",
 
     technologies: [
       "Prompt Engineering",
@@ -224,7 +225,7 @@ export const projects: Project[] = [
     subtitle: "Optimisation heuristique de ressources réseau",
 
     description:
-      "Projet d'allocation de ressources réseau et d'ordonnancement de trafic sous contraintes de capacité, développé pour le challenge Future Network. Deux approches heuristiques combinent priorisation des flux, sélection de liaisons et fonctions de score pour répartir le trafic en tenant compte des variations de capacité dans le temps.",
+      "Projet d'allocation de ressources réseau et d'ordonnancement de trafic sous contraintes de capacité. Deux approches heuristiques priorisent les flux, sélectionnent les liaisons et répartissent le trafic selon l'évolution temporelle des ressources disponibles.",
 
     technologies: [
       "Python",
@@ -248,7 +249,7 @@ export const projects: Project[] = [
     subtitle: "Scanner semi-automatique de succès Genshin Impact",
 
     description:
-      "Outil Python semi-automatique conçu pour réduire la saisie manuelle des succès obtenus dans Genshin Impact à partir de captures d'écran. Il combine prétraitement d'images, reconnaissance de texte en anglais et rapprochement approximatif avec une base de succès pour produire des exports JSON, dont un format destiné à Paimon.moe.",
+      "Outil semi-automatique pour extraire les succès Genshin Impact depuis des captures d'écran. Il combine prétraitement d'images, reconnaissance de texte et rapprochement approximatif avec une base de succès, puis produit des exports JSON compatibles avec Paimon.moe.",
 
     technologies: [
       "Python",
@@ -271,7 +272,7 @@ export const projects: Project[] = [
     subtitle: "Analyse de trajectoires de code étudiant",
 
     description:
-      "Projet académique d'analyse des programmes Python successifs d'étudiants, destiné à caractériser leurs trajectoires d'apprentissage. Il combine arbres de syntaxe abstraite, distances d'édition entre programmes, classification par règles heuristiques et visualisations statistiques pour étudier les modifications du code et la progression vers les solutions attendues.",
+      "Projet académique consacré à l'analyse de programmes Python successifs d'étudiants. Il combine arbres syntaxiques, distances d'édition, règles heuristiques et visualisations statistiques afin d'étudier les modifications du code et les trajectoires vers les solutions attendues.",
 
     technologies: [
       "Python",
