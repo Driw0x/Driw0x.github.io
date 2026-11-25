@@ -139,12 +139,44 @@ export const projects: Project[] = [
   },
 
   {
+    title: "CS2xMBTI",
+
+    subtitle: "Profils déclaratifs et composition d'équipe CS2",
+
+    description:
+      "Application web en développement pour explorer des préférences déclarées, des rôles T/CT et une équipe de cinq joueurs. Questionnaires reproductibles et recommandations à règles explicites ; aucun diagnostic ni résultat de performance en jeu validé.",
+
+    technologies: ["Node.js", "SQLite", "JavaScript"],
+
+    websitePending: true,
+
+    status: "En développement",
+  },
+
+  {
+    title: "CS2-ILY",
+
+    subtitle: "Scénarios tactiques et vote d'équipe pour CS2",
+
+    description:
+      "Plugin CounterStrikeSharp en C# pour des rounds Inferno 3v3 : économies par équipe, tactiques chargées depuis des fichiers JSON et vote majoritaire pendant le freeze time. Le fonctionnement en partie reste à vérifier.",
+
+    technologies: ["C#", ".NET 10", "CounterStrikeSharp", "JSON"],
+
+    github: "https://github.com/Driw0x/CS2-ILY",
+
+    documentation: { fr: "main/README.md", "zh-CN": "main/README.md" },
+
+    status: "En développement",
+  },
+
+  {
     title: "MiniMind AMD / ROCm",
 
     subtitle: "Entraînement local Dense et MoE sur GPU AMD",
 
     description:
-      "Adaptation et entraînement local d'un petit modèle de langage sous Windows sur GPU AMD avec PyTorch ROCm. Le projet compare architectures Dense et Mixture of Experts, mixed precision, stabilité numérique et qualité sur des références locales.",
+      "Adaptation et entraînement local d'un petit modèle de langage sous Windows sur GPU AMD avec PyTorch ROCm. Le projet compare variantes Dense et Mixture of Experts et évalue une distillation MoE vers Dense sur des références locales, sans gain général démontré.",
 
     technologies: [
       "Python",
@@ -153,6 +185,7 @@ export const projects: Project[] = [
       "ROCm",
       "GPU Training",
       "Mixture of Experts",
+      "Knowledge Distillation",
     ],
 
     github: "https://github.com/Driw0x/minimind",

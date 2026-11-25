@@ -1,5 +1,11 @@
 // French source text remains canonical. Keep project names and library names unchanged.
 export const zhCN: Record<string, string> = {
+  "Site web à venir": "网站即将上线",
+  "Profils déclaratifs et composition d'équipe CS2": "CS2 自述性档案与战队组成",
+  "Application web en développement pour explorer des préférences déclarées, des rôles T/CT et une équipe de cinq joueurs. Questionnaires reproductibles et recommandations à règles explicites ; aucun diagnostic ni résultat de performance en jeu validé.": "开发中的网页应用，用于探索玩家自述偏好、T/CT 角色和五人战队组成。问卷抽题可复现，建议基于明确规则；尚未验证诊断效力或游戏表现。",
+  "Scénarios tactiques et vote d'équipe pour CS2": "CS2 战术方案与队内投票",
+  "Plugin CounterStrikeSharp en C# pour des rounds Inferno 3v3 : économies par équipe, tactiques chargées depuis des fichiers JSON et vote majoritaire pendant le freeze time. Le fonctionnement en partie reste à vérifier.": "用于 Inferno 3v3 回合的 C# CounterStrikeSharp 插件：按队伍分配经济，从 JSON 加载战术，并在冻结时间进行多数投票。实际对局运行仍待验证。",
+  "Adaptation et entraînement local d'un petit modèle de langage sous Windows sur GPU AMD avec PyTorch ROCm. Le projet compare variantes Dense et Mixture of Experts et évalue une distillation MoE vers Dense sur des références locales, sans gain général démontré.": "在 Windows 的 AMD GPU 上使用 PyTorch ROCm 适配并训练小型语言模型。项目比较 Dense 与混合专家模型，并在本地参考数据上评估从 MoE 到 Dense 的蒸馏，尚未证明总体收益。",
   "Développer": "展开",
   "Toutes les compétences": "全部技能",
   "projet associé": "个相关项目",

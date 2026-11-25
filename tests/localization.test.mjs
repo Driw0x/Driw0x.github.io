@@ -91,3 +91,12 @@ test("skill connections reference existing skills and projects, with distinct pu
     }
   }
 });
+
+test("CS2xMBTI exposes only a pending website button", async () => {
+  const { projects } = await loadData("projects");
+  const project = projects.find((item) => item.title === "CS2xMBTI");
+  assert.ok(project);
+  assert.equal(project.websitePending, true);
+  assert.equal(project.github, undefined);
+  assert.equal(project.documentation, undefined);
+});

@@ -143,8 +143,8 @@ function Skills() {
                                     <p className="text-xs text-emerald-200">{t(project.status)}</p>
                                     <p className="text-sm leading-6 text-slate-300">{t(project.description)}</p>
                                     <div className="flex flex-wrap gap-2">
-                                      <Button href={project.github} external variant="secondary" className="gap-2">{t("Voir le dépôt")}<FiArrowUpRight /></Button>
-                                      <Button href={`${project.github}/blob/${project.documentation[language]}`} external variant="secondary">{t("Documentation")}</Button>
+                                      {project.github && <Button href={project.github} external variant="secondary" className="gap-2">{t("Voir le dépôt")}<FiArrowUpRight /></Button>}
+                                      {project.github && project.documentation && <Button href={`${project.github}/blob/${project.documentation[language]}`} external variant="secondary">{t("Documentation")}</Button>}
                                     </div>
                                   </div>
                                 </details>

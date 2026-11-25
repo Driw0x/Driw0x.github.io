@@ -62,15 +62,26 @@ export default function ProjectCard({ project }: Props) {
         </div>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          <Button href={project.github} external variant="secondary">
-            <FiGithub />
-            GitHub
-          </Button>
+          {project.github && (
+            <Button href={project.github} external variant="secondary">
+              <FiGithub />
+              GitHub
+            </Button>
+          )}
 
-          <Button href={`${project.github}/blob/${project.documentation[language]}`} external variant="secondary">
-            <FiBookOpen />
-            {t("Documentation")}
-          </Button>
+          {project.github && project.documentation && (
+            <Button href={`${project.github}/blob/${project.documentation[language]}`} external variant="secondary">
+              <FiBookOpen />
+              {t("Documentation")}
+            </Button>
+          )}
+
+          {project.websitePending && (
+            <button type="button" disabled className="inline-flex cursor-not-allowed items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-400" aria-label={t("Site web à venir")}>
+              <FiExternalLink />
+              {t("Site web à venir")}
+            </button>
+          )}
 
           {project.huggingFace && (
             <Button href={project.huggingFace} external variant="secondary">
