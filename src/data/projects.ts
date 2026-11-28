@@ -7,7 +7,7 @@ export const projects: Project[] = [
     subtitle: "Systèmes multi-agents, optimisation et planification",
 
     description:
-      "Simulateur d'entrepôt multi-agents pour comparer des stratégies de coordination et d'optimisation logistique. Il combine allocation de tâches, ordonnancement sous contraintes, coordination distribuée simulée et planification de trajectoires, avec une interface de visualisation des résultats.",
+      "Simulateur d'entrepôt multi-agents pour comparer l'allocation de tâches, l'ordonnancement sous contraintes et la coordination distribuée simulée. Dans le module de trajectoires séparé (MAPF), CBS et la recherche exhaustive de référence concordent sur 144 cas en grille 2×2.",
 
     technologies: [
       "Python",
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     subtitle: "Formulation GAP, CP-SAT et contrôle humain",
 
     description:
-      "Assistant local pour formuler et résoudre des problèmes d'affectation sous contraintes de capacité. Il transforme des demandes en modèles structurés, utilise CP-SAT, vérifie indépendamment les solutions et conserve une revue humaine avant validation.",
+      "Assistant local pour des problèmes d'affectation sous contraintes de capacité (GAP). L'extraction par LLM reste expérimentale. Dans le parcours web, les formulations non certifiées sont revues avant résolution par CP-SAT. Une vérification arithmétique indépendante contrôle les solutions candidates.",
 
     technologies: [
       "Python",
@@ -85,10 +85,10 @@ export const projects: Project[] = [
   {
     title: "CodeAgent",
 
-    subtitle: "Agent LLM local avec RAG fiable, MCP et reprise humaine",
+    subtitle: "Agent LLM local avec RAG sourcé, MCP et reprise humaine",
 
     description:
-      "Assistant local d'analyse de code Python combinant RAG sourcé, mémoire persistante, outils MCP et orchestration LangGraph. Le socle M1–M10 est livré ; le projet est en pause car la piste d'entraînement GRPO reste bloquée sans solution identifiée.",
+      "Assistant local d'analyse de code Python avec RAG évalué sur corpus internes, mémoire persistante, outils MCP et orchestration LangGraph. Le socle M1–M10 est livré. Le projet est en pause, la piste d'entraînement GRPO restant bloquée.",
 
     technologies: [
       "Python",
@@ -159,7 +159,7 @@ export const projects: Project[] = [
     subtitle: "Scénarios tactiques et vote d'équipe pour CS2",
 
     description:
-      "Plugin CounterStrikeSharp en C# pour une manche Inferno 3v3 : économies par équipe, choix tactiques pendant la warmup, rôles individuels et HUD. Le fonctionnement en partie reste à vérifier.",
+      "Plugin CounterStrikeSharp en C# pour des sessions Inferno 3v3 de 5, 10 ou 15 manches. À chaque manche, les équipes reçoivent un budget, choisissent leurs tactiques pendant la warmup et attribuent les rôles individuels. Le fonctionnement en partie reste à vérifier.",
 
     technologies: ["C#", ".NET 10", "CounterStrikeSharp", "JSON"],
 

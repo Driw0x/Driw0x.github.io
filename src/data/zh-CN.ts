@@ -1,10 +1,11 @@
 // French source text remains canonical. Keep project names and library names unchanged.
 export const zhCN: Record<string, string> = {
+  "Menu": "菜单",
   "Site web à venir": "网站即将上线",
   "Profils déclaratifs et composition d'équipe CS2": "CS2 自述性档案与战队组成",
   "Application web en développement pour explorer des préférences déclarées, des rôles T/CT et une équipe de cinq joueurs. Questionnaire versionné et équilibré, raffinement et confirmation du profil avant publication ; aucun diagnostic ni résultat de performance en jeu validé.": "开发中的网页应用，用于探索玩家自述偏好、T/CT 角色和五人战队组成。问卷按版本管理并均衡抽题，发布前可细化并确认档案；尚未验证诊断效力或游戏表现。",
   "Scénarios tactiques et vote d'équipe pour CS2": "CS2 战术方案与队内投票",
-  "Plugin CounterStrikeSharp en C# pour une manche Inferno 3v3 : économies par équipe, choix tactiques pendant la warmup, rôles individuels et HUD. Le fonctionnement en partie reste à vérifier.": "用于 Inferno 3v3 单回合的 C# CounterStrikeSharp 插件：按队伍分配经济，在热身阶段选择战术、分配个人角色并显示 HUD。实际对局运行仍待验证。",
+  "Plugin CounterStrikeSharp en C# pour des sessions Inferno 3v3 de 5, 10 ou 15 manches. À chaque manche, les équipes reçoivent un budget, choisissent leurs tactiques pendant la warmup et attribuent les rôles individuels. Le fonctionnement en partie reste à vérifier.": "面向 Inferno 3v3 的 C# CounterStrikeSharp 插件，支持 5、10 或 15 回合的对局。每回合为各队分配预算，队员在热身阶段选择战术并分配个人角色。实际对局运行仍待验证。",
   "Adaptation et entraînement local d'un petit modèle de langage sous Windows sur GPU AMD avec PyTorch ROCm. Le projet compare variantes Dense et Mixture of Experts et évalue une distillation MoE vers Dense sur des références locales, sans gain général démontré.": "在 Windows 的 AMD GPU 上使用 PyTorch ROCm 适配并训练小型语言模型。项目比较 Dense 与混合专家模型，并在本地参考数据上评估从 MoE 到 Dense 的蒸馏，尚未证明总体收益。",
   "Développer": "展开",
   "Toutes les compétences": "全部技能",
@@ -173,17 +174,17 @@ export const zhCN: Record<string, string> = {
   "Prototypes": "原型项目",
   "Finalisés": "已完成项目",
   "Systèmes multi-agents, optimisation et planification": "多智能体系统、优化与规划",
-  "Simulateur d'entrepôt multi-agents pour comparer des stratégies de coordination et d'optimisation logistique. Il combine allocation de tâches, ordonnancement sous contraintes, coordination distribuée simulée et planification de trajectoires, avec une interface de visualisation des résultats.":
-    "多智能体仓库模拟器，用于比较协调与物流优化策略。系统结合任务分配、约束调度、模拟分布式协调和路径规划，并提供结果可视化界面。",
+  "Simulateur d'entrepôt multi-agents pour comparer l'allocation de tâches, l'ordonnancement sous contraintes et la coordination distribuée simulée. Dans le module de trajectoires séparé (MAPF), CBS et la recherche exhaustive de référence concordent sur 144 cas en grille 2×2.":
+    "多智能体仓库模拟器，用于比较任务分配、约束调度和模拟分布式协调策略。在独立的多智能体路径规划（MAPF）模块中，CBS 与穷举搜索基准在 2×2 网格的 144 个案例上结果一致。",
   "Formulation GAP, CP-SAT et contrôle humain": "GAP 建模、CP-SAT 与人工审核",
-  "Assistant local pour formuler et résoudre des problèmes d'affectation sous contraintes de capacité. Il transforme des demandes en modèles structurés, utilise CP-SAT, vérifie indépendamment les solutions et conserve une revue humaine avant validation.":
-    "本地助手，用于构建并求解容量约束下的分配问题。它将需求转为结构化模型，使用 CP-SAT 求解，独立验证结果，并在确认前保留人工审核。",
+  "Assistant local pour des problèmes d'affectation sous contraintes de capacité (GAP). L'extraction par LLM reste expérimentale. Dans le parcours web, les formulations non certifiées sont revues avant résolution par CP-SAT. Une vérification arithmétique indépendante contrôle les solutions candidates.":
+    "用于处理容量约束下广义分配问题（GAP）的本地助手。LLM 提取仍处于实验阶段。在网页流程中，未经验证的建模结果先经人工审核，再由 CP-SAT 求解。候选解经过独立的算术核验。",
   "Application locale de candidature assistée par IA": "AI 辅助求职的本地应用",
   "Application locale pour rechercher des offres et préparer des CV ATS et lettres de motivation à partir de faits documentés. Elle contrôle les preuves utilisées, conserve la validation humaine et se déploie avec Docker sur poste local ou NAS.":
     "本地求职应用，用于搜索职位，并根据已记录事实准备 ATS 简历和求职信。应用检查所用证据，保留人工确认，并可通过 Docker 部署到本机或 NAS。",
-  "Agent LLM local avec RAG fiable, MCP et reprise humaine": "具备可靠 RAG、MCP 与人工恢复机制的本地 LLM 智能体",
-  "Assistant local d'analyse de code Python combinant RAG sourcé, mémoire persistante, outils MCP et orchestration LangGraph. Le socle M1–M10 est livré ; le projet est en pause car la piste d'entraînement GRPO reste bloquée sans solution identifiée.":
-    "本地 Python 代码分析助手，结合可溯源 RAG、持久记忆、MCP 工具与 LangGraph 编排。M1–M10 已完成；由于 GRPO 训练方向受阻且尚无解决方案，项目目前暂停。",
+  "Agent LLM local avec RAG sourcé, MCP et reprise humaine": "具备来源引用式 RAG、MCP 与人工接手机制的本地 LLM 智能体",
+  "Assistant local d'analyse de code Python avec RAG évalué sur corpus internes, mémoire persistante, outils MCP et orchestration LangGraph. Le socle M1–M10 est livré. Le projet est en pause, la piste d'entraînement GRPO restant bloquée.":
+    "本地 Python 代码分析助手，采用在内部语料上评估的 RAG，并结合持久记忆、MCP 工具与 LangGraph 编排。M1–M10 基础功能已交付。GRPO 训练方向仍受阻，项目目前暂停。",
   "ML expérimental pour l'analyse de comportements suspects": "用于可疑行为分析的实验性机器学习",
   "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2. Il combine télémétrie, cinématique d'aim, signaux d'awareness et modèles temporels pour étudier les comportements suspects, sans constituer un système anti-triche opérationnel.":
     "用于离线分析 Counter-Strike 2 对局的实验工具。它结合遥测、瞄准运动学、态势感知信号和时序模型来研究可疑行为，但不构成可运行的反作弊系统。",
@@ -238,7 +239,7 @@ export const zhCN: Record<string, string> = {
   "Master 1 AI2D": "AI2D 硕士一年级",
   "Première année du Master AI2D. Réalisation du projet académique AI2D autour de l'analyse de trajectoires de code étudiant à partir d'arbres de syntaxe abstraite.":
     "AI2D 硕士一年级。完成基于抽象语法树分析学生代码演变轨迹的 AI2D 学术项目。",
-  "Licence Informatique": "计算机科学学士",
+  "Licence 3 Informatique": "计算机科学本科三年级",
   "Obtention de la Licence Informatique, avec une formation solide en algorithmique, programmation, structures de données et bases de l'intelligence artificielle.":
     "获得计算机科学学士学位，学习算法、编程、数据结构及人工智能基础，打下扎实基础。",
   "Personnel": "个人信息",

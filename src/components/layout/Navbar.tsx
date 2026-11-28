@@ -33,9 +33,28 @@ function Navbar({ projectsPage = false }: NavbarProps) {
         { href: "#contact", label: t("Contact") },
       ];
 
+  const navigationLinks = links.map((link) => (
+    <a
+      key={link.href}
+      href={link.href}
+      target={link.external ? "_blank" : undefined}
+      rel={link.external ? "noreferrer" : undefined}
+      onClick={(event) => {
+        const menu = event.currentTarget.closest("details");
+        if (menu) {
+          menu.open = false;
+          menu.querySelector("summary")?.focus({ preventScroll: true });
+        }
+      }}
+      className="rounded px-3 py-2 transition hover:text-cyan-200 focus-visible:outline-2 focus-visible:outline-cyan-300 md:px-0 md:py-0"
+    >
+      {link.label}
+    </a>
+  ));
+
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-slate-950/60 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
+      <nav className="relative mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-4 sm:gap-4 sm:px-6">
         <a
           href={base}
           className="font-bold tracking-tight text-white"
@@ -44,18 +63,25 @@ function Navbar({ projectsPage = false }: NavbarProps) {
         </a>
 
         <div className="hidden items-center gap-4 text-sm text-slate-300 md:flex lg:gap-7">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              target={"external" in link && link.external ? "_blank" : undefined}
-              rel={"external" in link && link.external ? "noreferrer" : undefined}
-              className="transition hover:text-cyan-200"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navigationLinks}
         </div>
+
+        <details
+          className="md:hidden"
+          onKeyDown={(event) => {
+            if (event.key === "Escape" && event.currentTarget.open) {
+              event.currentTarget.open = false;
+              event.currentTarget.querySelector("summary")?.focus();
+            }
+          }}
+        >
+          <summary className="cursor-pointer rounded-lg border border-white/15 px-2 py-1.5 text-sm text-slate-200 focus-visible:outline-2 focus-visible:outline-cyan-300">
+            {t("Menu")}
+          </summary>
+          <div className="absolute inset-x-4 top-full flex flex-col rounded-xl border border-white/15 bg-slate-950 p-2 text-sm text-slate-200 shadow-xl">
+            {navigationLinks}
+          </div>
+        </details>
 
         <div role="group" aria-label={t("Langue du site")} className="flex shrink-0 items-center rounded-lg border border-white/15 p-1 text-sm">
           {(["fr", "zh-CN"] as const).map((locale) => (

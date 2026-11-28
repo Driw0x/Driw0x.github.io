@@ -28,7 +28,7 @@ Les textes français restent dans les données et composants existants. Les trad
 
 Vérifier la couverture des traductions : `node --test tests/localization.test.mjs`.
 
-Chaque carte de projet propose un lien **Documentation** vers le README français ou chinois simplifié du dépôt, selon la langue sélectionnée. Pour Projet AI2D, exclu de la traduction, le README français est proposé dans les deux langues. Les chemins et branches sont définis dans `src/data/projects.ts`. Dans les 10 autres dépôts de projets, l'anglais est la langue par défaut de la documentation : `README.md` en anglais, `README.fr.md` en français et `README.zh-CN.md` en chinois simplifié. Les README et documents techniques proposent des liens réciproques entre les trois langues.
+Pour les projets avec une documentation publique, la carte ouvre le README correspondant à la langue sélectionnée. CS2-ILY et Projet AI2D ouvrent leur README français dans les deux langues. CS2xMBTI affiche « Site web à venir ». Les chemins et branches sont définis dans `src/data/projects.ts`. Dans les dépôts trilingues, `README.md` est en anglais, `README.fr.md` en français et `README.zh-CN.md` en chinois simplifié.
 
 ## Technologies utilisées
 

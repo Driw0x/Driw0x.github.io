@@ -17,7 +17,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     period: "2024 - 2025",
-    title: "Licence Informatique",
+    title: "Licence 3 Informatique",
     subtitle: "Sorbonne Université",
     description:
       "Obtention de la Licence Informatique, avec une formation solide en algorithmique, programmation, structures de données et bases de l'intelligence artificielle.",
