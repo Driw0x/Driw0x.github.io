@@ -2,9 +2,9 @@
 export const zhCN: Record<string, string> = {
   "Site web à venir": "网站即将上线",
   "Profils déclaratifs et composition d'équipe CS2": "CS2 自述性档案与战队组成",
-  "Application web en développement pour explorer des préférences déclarées, des rôles T/CT et une équipe de cinq joueurs. Questionnaires reproductibles et recommandations à règles explicites ; aucun diagnostic ni résultat de performance en jeu validé.": "开发中的网页应用，用于探索玩家自述偏好、T/CT 角色和五人战队组成。问卷抽题可复现，建议基于明确规则；尚未验证诊断效力或游戏表现。",
+  "Application web en développement pour explorer des préférences déclarées, des rôles T/CT et une équipe de cinq joueurs. Questionnaire versionné et équilibré, raffinement et confirmation du profil avant publication ; aucun diagnostic ni résultat de performance en jeu validé.": "开发中的网页应用，用于探索玩家自述偏好、T/CT 角色和五人战队组成。问卷按版本管理并均衡抽题，发布前可细化并确认档案；尚未验证诊断效力或游戏表现。",
   "Scénarios tactiques et vote d'équipe pour CS2": "CS2 战术方案与队内投票",
-  "Plugin CounterStrikeSharp en C# pour des rounds Inferno 3v3 : économies par équipe, tactiques chargées depuis des fichiers JSON et vote majoritaire pendant le freeze time. Le fonctionnement en partie reste à vérifier.": "用于 Inferno 3v3 回合的 C# CounterStrikeSharp 插件：按队伍分配经济，从 JSON 加载战术，并在冻结时间进行多数投票。实际对局运行仍待验证。",
+  "Plugin CounterStrikeSharp en C# pour une manche Inferno 3v3 : économies par équipe, choix tactiques pendant la warmup, rôles individuels et HUD. Le fonctionnement en partie reste à vérifier.": "用于 Inferno 3v3 单回合的 C# CounterStrikeSharp 插件：按队伍分配经济，在热身阶段选择战术、分配个人角色并显示 HUD。实际对局运行仍待验证。",
   "Adaptation et entraînement local d'un petit modèle de langage sous Windows sur GPU AMD avec PyTorch ROCm. Le projet compare variantes Dense et Mixture of Experts et évalue une distillation MoE vers Dense sur des références locales, sans gain général démontré.": "在 Windows 的 AMD GPU 上使用 PyTorch ROCm 适配并训练小型语言模型。项目比较 Dense 与混合专家模型，并在本地参考数据上评估从 MoE 到 Dense 的蒸馏，尚未证明总体收益。",
   "Développer": "展开",
   "Toutes les compétences": "全部技能",
@@ -182,8 +182,8 @@ export const zhCN: Record<string, string> = {
   "Application locale pour rechercher des offres et préparer des CV ATS et lettres de motivation à partir de faits documentés. Elle contrôle les preuves utilisées, conserve la validation humaine et se déploie avec Docker sur poste local ou NAS.":
     "本地求职应用，用于搜索职位，并根据已记录事实准备 ATS 简历和求职信。应用检查所用证据，保留人工确认，并可通过 Docker 部署到本机或 NAS。",
   "Agent LLM local avec RAG fiable, MCP et reprise humaine": "具备可靠 RAG、MCP 与人工恢复机制的本地 LLM 智能体",
-  "Assistant local d'analyse de code Python combinant RAG sourcé, mémoire persistante, outils MCP et orchestration LangGraph. Il produit des réponses traçables, contrôle les preuves et permet une reprise humaine lors des exécutions complexes.":
-    "本地 Python 代码分析助手，结合可溯源 RAG、持久记忆、MCP 工具与 LangGraph 编排。它生成可追踪的回答、检查证据，并允许人工接管复杂执行。",
+  "Assistant local d'analyse de code Python combinant RAG sourcé, mémoire persistante, outils MCP et orchestration LangGraph. Le socle M1–M10 est livré ; le projet est en pause car la piste d'entraînement GRPO reste bloquée sans solution identifiée.":
+    "本地 Python 代码分析助手，结合可溯源 RAG、持久记忆、MCP 工具与 LangGraph 编排。M1–M10 已完成；由于 GRPO 训练方向受阻且尚无解决方案，项目目前暂停。",
   "ML expérimental pour l'analyse de comportements suspects": "用于可疑行为分析的实验性机器学习",
   "Outil expérimental d'analyse hors ligne de parties Counter-Strike 2. Il combine télémétrie, cinématique d'aim, signaux d'awareness et modèles temporels pour étudier les comportements suspects, sans constituer un système anti-triche opérationnel.":
     "用于离线分析 Counter-Strike 2 对局的实验工具。它结合遥测、瞄准运动学、态势感知信号和时序模型来研究可疑行为，但不构成可运行的反作弊系统。",

@@ -88,7 +88,7 @@ export const projects: Project[] = [
     subtitle: "Agent LLM local avec RAG fiable, MCP et reprise humaine",
 
     description:
-      "Assistant local d'analyse de code Python combinant RAG sourcé, mémoire persistante, outils MCP et orchestration LangGraph. Il produit des réponses traçables, contrôle les preuves et permet une reprise humaine lors des exécutions complexes.",
+      "Assistant local d'analyse de code Python combinant RAG sourcé, mémoire persistante, outils MCP et orchestration LangGraph. Le socle M1–M10 est livré ; le projet est en pause car la piste d'entraînement GRPO reste bloquée sans solution identifiée.",
 
     technologies: [
       "Python",
@@ -106,7 +106,7 @@ export const projects: Project[] = [
 
     documentation: { fr: "main/README.fr.md", "zh-CN": "main/README.zh-CN.md" },
 
-    status: "Terminé",
+    status: "En pause",
 
     featured: true,
   },
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     subtitle: "Profils déclaratifs et composition d'équipe CS2",
 
     description:
-      "Application web en développement pour explorer des préférences déclarées, des rôles T/CT et une équipe de cinq joueurs. Questionnaires reproductibles et recommandations à règles explicites ; aucun diagnostic ni résultat de performance en jeu validé.",
+      "Application web en développement pour explorer des préférences déclarées, des rôles T/CT et une équipe de cinq joueurs. Questionnaire versionné et équilibré, raffinement et confirmation du profil avant publication ; aucun diagnostic ni résultat de performance en jeu validé.",
 
     technologies: ["Node.js", "SQLite", "JavaScript"],
 
@@ -159,7 +159,7 @@ export const projects: Project[] = [
     subtitle: "Scénarios tactiques et vote d'équipe pour CS2",
 
     description:
-      "Plugin CounterStrikeSharp en C# pour des rounds Inferno 3v3 : économies par équipe, tactiques chargées depuis des fichiers JSON et vote majoritaire pendant le freeze time. Le fonctionnement en partie reste à vérifier.",
+      "Plugin CounterStrikeSharp en C# pour une manche Inferno 3v3 : économies par équipe, choix tactiques pendant la warmup, rôles individuels et HUD. Le fonctionnement en partie reste à vérifier.",
 
     technologies: ["C#", ".NET 10", "CounterStrikeSharp", "JSON"],
 
